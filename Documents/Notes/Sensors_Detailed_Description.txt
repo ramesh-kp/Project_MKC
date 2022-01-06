@@ -1,0 +1,61 @@
+Ph Sensor:
+	The pH stands for the power of hydrogen, which is a measurement of the 
+	hydrogen ion concentration in the body. This is used in Water quality 
+	testing and Aquaculture. The total pH scale ranges from 1 to 14, with 7 
+	considered to be neutral. A pH less than 7 is said to be acidic and 
+	solutions with a pH greater than 7 are basic or alkaline.
+	The PH electrode has a single cylinder that allows direct connection to 
+	the input terminal of a pH meter, controller, or any pH device which has a 
+	BNC input terminal. The pH electrode probe is accurate and reliable that 
+	can give almost instantaneous readings.
+	
+Turbidity Sensor:
+	Turbidity sensors measure the amount of light that is scattered by the 
+	suspended solids in water. As the amount of total suspended solids (TSS) 
+	in water increases, the water’s turbidity level (and cloudiness or 
+	haziness) increases. Turbidity sensors are used in river and stream 
+	gaging, wastewater and effluent measurements, control instrumentation 
+	for settling ponds, sediment transport research, and laboratory 
+	measurements.
+	
+Total Suspended Solids:
+	TSS is an important water quality parameter measure for wastewater 
+	treatment operations and environmental health. Wastewater contains large 
+	quantities of suspended organic and inorganic material that must be 
+	removed through screening, filtration or settling/flotation methods 
+	prior to environmental discharge.
+	
+TDS Sensor:
+	This item can be used for water purifiers and filters, food (vegetables, 
+	fruits) and beverage quality monitoring, swimming pools, spas, aquariums, 
+	and hydroponics.
+	
+
+BOD/COD Sensor: 
+	Real Tech’s bypass BOD/COD sensor provides affordable real-time 
+	measurement of organic matter in water or wastewater. The BOD/COD sensor 
+	provides superior measurement performance across multiple wavelengths of 
+	light using UV LEDs. Designed to meet the needs of many monitoring 
+	applications, the BL series offers multiple sensor path length selections 
+	to meet the desired measurement range.
+	Chemical Oxygen Demand (COD) is a test that measures the amount of 
+	oxygen required to chemically oxidize the organic material and inorganic 
+	nutrients, such as Ammonia or Nitrate, present in water. 
+	BOD (Biochemical Oxygen Demand) Determination is a simple and easy way for 
+	monitoring the microorganisms' activity in water samples with extremely 
+	reliable results. The BOD measure this change in gas pressure between the 
+	beginning to the end of the analysis and give a result expressed in mg/l.
+	
+Coliforms:
+	Coliforms (coliform bacteria) are rod-shaped gram-negative bacteria that 
+	are commonly used as an indicator of the sanitary quality of water. 
+	Coliforms are ubiquitous in the environment but are prevalent in the 
+	intestine and faecal material of warm-blooded animals. 
+	
+Flow Rate Sensor:
+	A flow sensor (more commonly referred to as a “flow meter”) is an 
+	electronic device that measures or regulates the flow rate of liquids and 
+	gasses within pipes and tubes. Flow sensors are generally connected to 
+	gauges to render their measurements, but they can also be connected to 
+	computers and digital interfaces.
+	

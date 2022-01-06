@@ -1,0 +1,23 @@
+git init
+    Initialize the local directory as git repository.
+
+git status
+    Check whether there is any stages remaining.
+
+git add .
+    Add the files in your new local repository. This stages them for the first commit.
+
+git commit -m "First Commit"
+    Commit the files that you have staged in your local repository.
+
+git status
+    Check whether there is any stages remaining.
+
+git remote add main https://github.com/ramesh-kp/Project_MKC.git
+    Sets the remote repository
+
+git push main master
+    The local repository will be pushed to the remote repository.
+
+git pull https://github.com/ramesh-kp/Project_MKC.git
+    The code from the remote repository is pulled to the local repository

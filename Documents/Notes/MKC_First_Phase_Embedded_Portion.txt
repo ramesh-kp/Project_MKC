@@ -1,0 +1,18 @@
+Convert the value coming from the sensors to a meaningful level.
+How to install the sensors.
+Where to install the sensors (Middle of the pond or side of the pond).
+How do we connect the wires of the sensors.
+Material of the RS 485 box (Example Iron).
+Where to place the RS 485 box (Rainy season it shoulnot get wet).
+Identify the location of the sensors.
+What are things to takecare as part of installing sensors from the sensors vendor perspective.
+What are the challenges to install at the physical MKC location.
+Wiring, Putting the Box, Power coming all things need to be checked.
+Check the length of the cables.
+Where the power should be taken from (buliding).
+Check the power source of the embedded part.
+Check the videos of the sensors especially demonstration of install.
+
+Range of the sensors output.
+Volume of the level whether in the range sea level.
+

@@ -1,0 +1,106 @@
+Ph Sensor
+	https://www.seeedstudio.com/RS485-pH-Sensor-S-pH-01A-p-4632.html
+	Price 						Rs 10500
+	
+	https://www.alibaba.com/product-detail/BGT-D718-PH-Water-Quality-Monitoring_62470620532.html?spm=a2700.galleryofferlist.normal_offer.d_title.3933975b9QnmYr
+	Price						Rs 5200
+	
+Turbidity Sensor and TSS Sensor
+	https://www.tradeindia.com/products/nephelometer-rs485-4-20ma-output-turbidity-sensor-c5554403.html
+	Price:						Rs 45000
+	https://www.alibaba.com/product-detail/RK500-07-IP68-Optical-Digital-Online_62368625430.html?spm=a2700.galleryofferlist.normal_offer.d_title.61644b63YWlb70
+	Price:						Rs 45000
+	
+TDS Sensor
+	https://www.alibaba.com/product-detail/BGT-D718-4-20ma-or-RS485-Modbus-Conductivity_62467992655.html?mark=google_shopping&seo=1
+	Price:						Rs 5200
+	https://www.seeedstudio.com/EC-RS485-p-4848.html
+	Price:						Rs 10300
+	
+COD Sensor and BOD Sensor
+	COD
+	https://m.made-in-china.com/product/Digital-Chemical-Oxygen-Demand-Electrode-Probe-COD-Sensor-RS485-904696955.html
+	Price:						Rs 150000
+	BOD
+	https://www.alibaba.com/product-detail/beer-dissolved-oxygen-and-bod-meter_62308198393.html?mark=google_shopping&seo=1
+	Price:						Rs 33000
+	COD and BOD
+	https://www.alibaba.com/product-detail/Chemical-Oxygen-Demand-Waste-Water-Treatment_1600110713259.html
+	Price:						Rs 750000
+	
+Flow Meter
+	https://www.indiamart.com/proddetail/mag-flow-meter-with-rs485-modbus-19008996991.html
+	Price:						Rs 20000
+
+---------------------------------------------------------------------------------------------
+
+water level sensor
+smart energy
+environment monitoring system
+
+Water level sensor
+Industrial Liquid Level Sensor MODBUS RS485 Aviation Connector
+https://www.seeedstudio.com/Liquid-Level-Sensor-RS485-p-5005.html
+Interface: RS485 Communication
+Approx cost: Rs 10000 Approx
+
+Smart Energy Meter
+Single Techno Rs 232 Port Energy Meter 1 Phase, 240
+https://www.indiamart.com/proddetail/techno-rs-232-port-energy-meter-1-phase-23477318033.html
+Interface: Serial Communication
+Approx cost: Rs 1600 Approx
+
+Environment Monitoring System
+Smart City Environmental Monitoring
+https://www.indiamart.com/proddetail/smart-city-environmental-monitoring-21929336855.html
+Approx Cost: Not available in the site
+
+Air Quality Index 
+Adafruit SGP40 Air Quality Sensor Breakout – VOC Index – STEMMA QT/Qwiic
+https://robu.in/product/adafruit-sgp40-air-quality-sensor-breakout-voc-index-stemma-qt-qwiic/
+Interface: I2C Communication
+Approx Cost: Rs 2100
+
+Wind Speed
+Wind Speed Sensor Current Type(4 to 20mA) Anemometer Kit (Waterproof & Industrial)
+https://robu.in/product/wind-speed-sensor-current-type4-to-20ma-anemometer-kit-waterproof-industrial/
+Interface: Serial Communication
+Approx Cost: Rs 5000
+
+Temperature and Humidity Sensor
+Temperature-Humidity Sensor-AF5485 (Encased RS485 )
+https://www.seeedstudio.com/AF5485-Encased-RS485-Temperature-Humidity-Sensor-p-4194.html
+Interface: RS 485 Communication
+Approx Cost: Rs 4000
+
+Rainfall Sensor
+Industrial-Grade Optical Rain Gauge RG-9 Rain Sensor
+https://www.seeedstudio.com/Rain-Gauge-RG-9-p-4744.html
+Interface: Serial Communication
+Approx Cost: Rs 4000
+
+---------------------------------------------------------------------------------------------
+
+Ph sensor:
+https://www.vernier.com/product/ph-sensor/
+https://www.seeedstudio.com/RS485-pH-Sensor-S-pH-01A-p-4632.html
+https://robu.in/product/analog-ph-sensor-kit/
+https://www.dfrobot.com/product-1074.html
+
+Turbidity Sensor:
+https://www.vernier.com/product/turbidity-sensor/
+https://www.seeedstudio.com/Grove-Turbidity-Sensor-p-4399.html
+https://robu.in/product/turbidity-sensor-module/
+https://www.dfrobot.com/product-1394.html
+
+Total Dissolved Solids Sensor:
+https://www.seeedstudio.com/Grove-TDS-Sensor-p-4400.html
+https://www.dfrobot.com/product-1662.html
+https://www.indiamart.com/proddetail/digital-tds-total-dissolved-solid-meter-9055639088.html
+
+Flow Rate Sensor:
+https://www.vernier.com/product/flow-rate-sensor/
+https://www.seeedstudio.com/G1-2-Water-Flow-Sensor-Enclosure-p-1915.html
+https://robu.in/product/yf-s201-water-flow-measurement-sensor-with-1-30liter-min-flow-rate/
+https://www.dfrobot.com/product-1531.html
+
