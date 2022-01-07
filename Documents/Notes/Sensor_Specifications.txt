@@ -1,0 +1,29 @@
+Ph Sensor and Temperature Sensor
+    https://www.mouser.in/ProductDetail/Seeed-Studio/314990622?qs=sGAEpiMZZMv0NwlthflBizcfphr6Nc09GZ0DkOb50%2FE%3D
+    Range                   :   0 to 14 pH
+    Interface               :   RS-485
+    Power Supply            :   3.6 ~ 30V DC
+    Current Consumption     :   Max 6mA @24V DC
+    IP Rating               :   IP65
+    Cable Length            :   5 meters
+    Operating Temperature   :   -40 ~ 85 degree Celsius
+    Installation            :   All buried or probe into all of the measured medium
+    Device Weight           :   400g
+    Wiring                  :   Yellow      :   RS485+/A/T+
+                                White       :   RS485-/B/T-
+                                Red         :   VCC+, power supply
+                                Black       :   VCC-, power ground
+                                Blue        :   Current Output
+    Communication           :   9600, N, 8, 1 (9600bps, no parity, 8 data bits, one stop bit)
+    Output Mode             :   MODBUS RS485    :   pH          :   0 ~ 14 pH   :   pH = pH register value / 100
+                                                    Temperature :   -40 ~ 80    :   pH = temperature register value / 100 
+    Installation method     :   Under normal circumstances, the pH value in the air is between 6.2 and 7.8.
+                                Normal conditions Under the soil, the soil is neutral, the pH value is about 7, the soil in different places, 
+                                the actual pH value will be different, it should be determined according to the actual situation.
+          
+
+
+
+
+Ph Sensor
+Temperature Sensor

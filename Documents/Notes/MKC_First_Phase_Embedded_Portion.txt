@@ -1,3 +1,6 @@
+Water Management
+----------------
+06/01/2022
 Convert the value coming from the sensors to a meaningful value.
 How do we install the sensors.
 Material of the RS 485 box (Example Iron).
@@ -12,9 +15,42 @@ Where the power should be taken from (buliding).
 Check the power source of the embedded part.
 Volume of the level whether in the range sea level.
 
+************************************************************
+Find here available sensors. (Water level Sensors and Fire Sensors)
+Check the solutions provided by Naico.
 
+************************************************************
 What are things to takecare as part of installing sensors from the sensors vendor perspective.
 Check the videos of the sensors especially demonstration of install.
 Range of the sensors output.
 
+07/01/2022
+Activities in embedded system
+    Finding installation details.
+    Validating the data.
+    Identifying the functional working before installation.
+    Installation finetuning calibration.
+Python code to calibrate data from the sensors.
+Document the Data interpretations, Range and Specifications of the Water quality sensors.
 
+
+************************************************************
+Check whether the flow meter sensor depends upon the size of the pipe.
+Contact those persons who have installed the industrial grade water management sensors.
+Check the industrial installation guidlines.
+Document for each sensors how to install, how to read, how to calibrate and what are the interpretations.
+Check whether there is any water level sensors using ultrasound or laser technology to find the readings.
+Contact the vendors of each sensors.
+Contact with the offline distributers (local vendors) to procur the sensors.
+Draw the connection diagram.
+Draw sensor installation diagram.
+Draw the data structure diagram.
+
+Energy Management
+-----------------
+06/01/2022
+Check USB connector on the energy meter connected in the home.
+Check the communication between the energy meter and system.
+
+07/01/2022
+Buy one sample energy meter.

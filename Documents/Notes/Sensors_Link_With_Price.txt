@@ -1,16 +1,12 @@
 Digital Flow Meter Sensor
 	https://www.indiamart.com/proddetail/mag-flow-meter-with-rs485-modbus-19008996991.html
-	https://www.vernier.com/product/flow-rate-sensor/
-	https://www.seeedstudio.com/G1-2-Water-Flow-Sensor-Enclosure-p-1915.html
-	https://robu.in/product/yf-s201-water-flow-measurement-sensor-with-1-30liter-min-flow-rate/
-	https://www.dfrobot.com/product-1531.html
+	https://www.seeedstudio.com/G3-4-Water-Flow-Sensor-p-1083.html
+	https://robu.in/product/yfs403-5-18v-water-flow-sensor-flowmeter-g3-4-1-30l-min/
 
 Ph Sensor
+	https://www.indiamart.com/proddetail/ph-sensor-19672170448.html?pos=4&kwd=ph%20sensor%20industrial%20standard&tags=A||||7774.041|Price|product
 	https://www.seeedstudio.com/RS485-pH-Sensor-S-pH-01A-p-4632.html
-	https://www.alibaba.com/product-detail/BGT-D718-PH-Water-Quality-Monitoring_62470620532.html?spm=a2700.galleryofferlist.normal_offer.d_title.3933975b9QnmYr
-	https://www.vernier.com/product/ph-sensor/
 	https://robu.in/product/analog-ph-sensor-kit/
-	https://www.dfrobot.com/product-1074.html
 		
 Turbidity Sensor and TSS Sensor
 	https://www.tradeindia.com/products/nephelometer-rs485-4-20ma-output-turbidity-sensor-c5554403.html
