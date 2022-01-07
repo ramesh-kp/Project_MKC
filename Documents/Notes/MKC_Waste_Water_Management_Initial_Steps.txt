@@ -1,0 +1,49 @@
+Steps in embedded system for waste water management
+
+1.		Selecting Microcontroller
+2.		Power Resources Management
+		a.		Interfacing smart meter interface with microcontroller serially
+		b.		Collecting load capacity data from the sensor
+		c.		Collecting allocated load for each tenant
+		d.		Formatting the data from the meter
+		e.		Communication with the server
+3.		Water Resources Management
+		a.		Digital Flow Meter Sensor
+				a.		Interfacing Flow Meter Sensor interface with microcontroller serially
+				b.		Collecting water capacity data from the sensor
+				c.		Collecting allocated water capacity for each tenant
+				d.		Formatting the data from the Flow Meter Sensor
+				e.		Communication with the server
+		b.		Water Level Sensor
+				a.		Interfacing Water Level Sensor interface with microcontroller serially
+				b.		Collecting water level data from the sensor
+				c.		Collecting total water capacity in the source
+				d.		Formatting the data from the Water Level Sensor
+				e.		Communication with the server
+		c.		Ph Sensor
+				a.		Interfacing Ph Sensor interface with microcontroller serially
+				b.		Collecting Ph level data from the sensor
+				c.		Collecting Ph level of the water
+				d.		Formatting the data from the Ph Sensor
+				e.		Communication with the server
+		d.		Turbidity Sensor
+				a.		Interfacing Turbidity Sensor interface with microcontroller serially
+				b.		Collecting Turbidity level data from the sensor
+				c.		Collecting Turbidity level of the water
+				d.		Formatting the data from the Turbidity Sensor
+				e.		Communication with the server
+		e.		TDS Sensor
+				a.		Interfacing TDS Sensor interface with microcontroller serially
+				b.		Collecting TDS level data from the sensor
+				c.		Collecting TDS level of the water
+				d.		Formatting the data from the TDS Sensor
+				e.		Communication with the server
+		f.		COD and BOD Sensor
+				a.		Interfacing COD and BOD Sensor interface with microcontroller serially
+				b.		Collecting COD and BOD level data from the sensor
+				c.		Collecting COD and BOD level of the water
+				d.		Formatting the data from the COD and BOD Sensor
+				e.		Communication with the server
+		
+All these estimations are assumptions. There will be change in the estimated hours depending upon the 
+format of the output of the sensors (endians).
