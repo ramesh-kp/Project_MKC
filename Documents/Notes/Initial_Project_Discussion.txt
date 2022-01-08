@@ -6,15 +6,15 @@ Praveen
 A Company in the Wastewater treatment domain has contacted us to provide a 
 potential IoT solution to monitor the following parameters of the water.
 
-1.	PH
-2.	Turbidity
-3.	TSS - Total Suspended Solids (Not Get)
-4.	TDS - Total Dissolved Solids
+1.	PH Sensor
+2.	Turbidity Sensor
+3.	TSS Sensor - Total Suspended Solids (Not Get)
+4.	TDS Sensor - Total Dissolved Solids
 5.	VS (Not Get)
-6.	COD - Chemical Oxygen Demand (Not Get)
-7.	BOD - Biochemical Oxygen Demand (Not Get)
-8.	Coliforms (Not Get)
-9.	Flow Rate/hour  etc....
+6.	COD Sensor - Chemical Oxygen Demand (Not Get)
+7.	BOD Sensor - Biochemical Oxygen Demand (Not Get)
+8.	Coliform Sensor (Not Get)
+9.	Flow Meter
 10.	Water Level Sensor
 11.	Temperature Sensor
 12.	Humidity Sensor

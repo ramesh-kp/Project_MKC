@@ -1,0 +1,89 @@
+Ph Sensor
+	Power Supply            :   3.6 ~ 30V DC
+	Communication               :   RS-485
+    Range                   :   0 to 14 pH
+    Cable Length            :   5 meters
+	IP Rating               :   IP65
+	Operating Temperature   :   -40 ~ 85 degree Celsius
+    
+Turbidity and TSS Sensor
+	Power Supply            :   12 - 24V DC
+	Communication               :   RS485, 4 - 20mA
+	Range                   :   0 - 4000 NTU
+	Cable length            :   5m default
+	IP Rating				:   IP68
+	Operating Temperature   :   0 -+ 80 C
+	
+TDS Sensor
+	Power Supply            :   3.9 - 30V/DC
+	Communication	        :   RS485 Modbus-RTU
+	Range					:	0 - 20000us/cm
+	Cable Length            :   Power and Signal Cable：2 meters or Customize
+                                Electrode Cable ：  5 meters
+	IP Rating               :   Electrode       ：  IP68, 
+                                Transmitter     :   IP65
+	Operating Temperature	:   -40 ~ 80°C
+
+COD and BOD Sensor
+	Power supply            :   12VDC
+	Communication           :   RS485 Modbus
+	Range                   :   0-200mg, 0~1000mg/l COD (2mm optical path)
+    Cable length            :   Standard 10m cable, can be extended to 100 meters
+	IP Rating				:   IP68/NEMA6P
+
+Water Level Sensor
+	Power Supply            :   11 - 30V DC
+	Communication           :   RS485 Modbus-RTU Protocol
+    Range                   :   0 ~ 5 meters
+    Cable Length            :   5.3 meters
+	IP Rating               :   IP68
+	
+Digital Flow Meter Sensor
+	Power Supply            :   230 VAC, 110 VAC & 24 VDC or Battery Operated
+	Communication           :   Std. 4  20 mA / RS 485 on request / Pulse output
+	Range					:   0.5 m/sec for Minimum & 5m/sec for Maximum
+	Cable Length            :   10 meters
+	IP Rating		        :   IP 65
+	Diameter                :   15 to 400 mm
+    Process Pressure        :   Max. 25 kg/cm2
+    Process Temperature     :   Max. 150 C
+    
+RS485 Edge Device
+	Power Supply			:   12VDC(9~48VDC)
+	Communication
+		Ethernet
+			Speed			:   10/100Mbps
+			Distance		:   100m
+			Connector       :   RJ45
+		RS485
+			Band rate       :   300bps -115200bps
+			Distance        :   1200m
+			Port Numbers  	:   8
+			Signal          :   D+(A), D-(B)
+	IP Rating				:	IP30 protection, metal shell
+	Configure IP address, server and client mode, data bag size etc.
+    Real COM driver working mode
+    Support cross-gateway and cross-router communication
+
+Energy Meter
+	Power Supply            :   230 VAC
+    Displays				:	Active Energy (kWh),PF, Active Power(kW),
+								Voltage(Line to Line &Line to Neutral),Current, Frequency, 
+								Run Hour, Load Hour
+	Communication           :	RS 485
+	IP Rating		        :   IP 55
+	Metering Standard		:	IEC 62053-21/22
+	Old energy register back-up for re-start energy reading.
+    Password Protected
+
+Proteus Sensor
+	Parameters              :   BOD, COD, TOC, DOC, Dissolved Oxygen, Pressure, Chloride, pH, Temperature, Optical Brighteners, Nitrate, 
+                                ORP / REDOX, Coliforms (faecal, E. coli, total), Tryptophan, Refined Oils, Ammonium, EC / Salinity / TDS, 
+                                Turbidity, Crude Oils, CDOM
+    Internal Battery Life   :   1 to 24 month depending on sensors / logging rates
+    Power Supply          	:   5 - 15 vdc
+	Communication           :   USB, RS232 as standard. Modbus RS485, SDI-12 and/or Bluetooth optional
+	Data Memory             :   >1,000,000 logged readings
+	Depth Rating            :   200 m
+	Operating Temperature   :   0 to 50°C, non-freezing
+
