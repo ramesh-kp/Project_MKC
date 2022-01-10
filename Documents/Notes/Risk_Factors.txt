@@ -1,0 +1,42 @@
+STP Sensors
+    Power source for the STP source. (12V DC power supply with maximum current rating).
+    Power cable must also have the same length of the transmitter and reciever wire.
+    Sensors must be water proof since the sensors must be dipped in the water.
+    Sensors must be dipped in the minimum direct distance of the plant.
+    Depth of the seawage plant. (Maximum 1000m only the RS485 protocol can communicate).
+    Sensor having the range of the depth of the seawage plant.
+    
+RS485 To Ethernet Modbus Gateway
+    Power source for the RS485 To Ethernet Modbus Gateway. (12V DC power supply).
+    The gateway must be placced within 1000m from the sensors.
+    The output of the gateway is an ethernet port.
+    Maximum distance ethernet cable for communication is 100m.
+    Server must be within 100m from the gateway.
+    If the server is placed beyond 100m range, the communication between the gateway and the server is done by GSM module.
+    When using the GSM module the network must have full coverage in the area.
+    There will be a microntroller for sending the datas through the GSM module.
+    GSM have a 12V DC power supply.
+    Need another covering with IP65 box as the existing box is not corrosion free.
+
+Water Level Sensor
+    Power source for the Water Level Sensor. (12V DC power supply).
+    Mainly 3 water sources are there to calculate the height. Natural well, Mini dam and Overhead Tank.
+    There must be a 12V DC power supply near to the water sources.
+    Wired water level sensors have maximum coverage distance 5m.
+    Ultrasonic water level sensor have a maximum coverage distance of 600m.
+    Sensors must be placed in the minimum direct distance of the plant.
+    The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
+
+Flow Meter Sensor
+    Power source for the Flow Meter Sensor. (12V DC power supply).
+    Flow meter is used in overhead tank for getting the total volume of the water consumption.
+    Flow meter is used in the kitchen, washroomm and toilets for getting the respective usages.
+    In seawage treatment plant flow meter is used in the inlet pipe and outlet pipe for getting the volume of the treated water and its usage. 
+    For each flow meter sensor there must be power supply.
+    The diameter of the flow meter depends on the diameter of the pipe.
+    The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
+
+Energymeter
+    230v Ac power supply.
+    Serial output RS485. The meter must be placed within 1000m from the gateway.
+    
