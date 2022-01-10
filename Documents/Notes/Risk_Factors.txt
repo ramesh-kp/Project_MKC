@@ -40,3 +40,11 @@ Energymeter
     230v Ac power supply.
     Serial output RS485. The meter must be placed within 1000m from the gateway.
     
+Problems Facing
+...............
+Volume of the water source must be calculated.
+Checking the lower bed of the mini dam and well will be difficult.
+Position of flow meter sensors (Diameter and number of pipes effect the sensor specifications).
+Position of water level sensors (Specially the terrain of the water source).
+
+
