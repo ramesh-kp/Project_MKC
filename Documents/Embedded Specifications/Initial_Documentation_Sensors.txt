@@ -160,8 +160,3 @@ Identical Sensors:
 		Reference:
 		https://www.seeedstudio.com/G1-2-Water-Flow-Sensor-Enclosure-p-1915.html
 		
-Second Phase
----------------------------------------------------------------------------------------------
-
-
-		
