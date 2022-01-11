@@ -1,5 +1,5 @@
 1.  Needs
-2.  specification
+2.  Specification
 3.  System Design
 4.  Subsystem Design
 5.  Component Design
