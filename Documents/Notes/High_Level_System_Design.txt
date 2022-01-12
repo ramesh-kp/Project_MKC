@@ -26,7 +26,7 @@ Water Level Sensor
     Ultrasonic water level sensor have a maximum coverage distance of 600m.
     Sensors must be placed in the minimum direct distance of the plant.
     The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
-
+    
 Flow Meter Sensor
     Power source for the Flow Meter Sensor. (12V DC power supply).
     Flow meter is used in overhead tank for getting the total volume of the water consumption.
@@ -35,11 +35,10 @@ Flow Meter Sensor
     For each flow meter sensor there must be power supply.
     The diameter of the flow meter depends on the diameter of the pipe.
     The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
-
+  
 Energymeter
     230v Ac power supply.
     Serial output RS485. The meter must be placed within 1000m from the gateway.
-
 
 Problems Facing
 ...............
@@ -49,3 +48,10 @@ Position of flow meter sensors (Diameter and number of pipes effect the sensor s
 Giving power to the flow meters will be difficult, depending upon the position of the flow meters.
 Size of the flow meters will depend on the diameter of the pipe.
 Position of water level sensors (Specially the terrain of the water source).
+
+-Q. Will it show the remaining water level (from all 3 sources) (in litres) or will there be any indicator when water level 
+    is too low? Will it show warning signal?
+-Q. What is the backup if the flow sensor gets damaged due to extreme water pressure on flow.
+    Will it show sensor damaged indication.
+-Q. Suppose in any case, if the tank is running out of water/empty. Will the sensor send distress signal to the meter?
+
