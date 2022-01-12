@@ -49,9 +49,12 @@ Giving power to the flow meters will be difficult, depending upon the position o
 Size of the flow meters will depend on the diameter of the pipe.
 Position of water level sensors (Specially the terrain of the water source).
 
+Do the sensors need to check water quality in the seawage treatment plant before and after treating the water.
+
+Other Inputs:
+-------------
 -Q. Will it show the remaining water level (from all 3 sources) (in litres) or will there be any indicator when water level 
     is too low? Will it show warning signal?
 -Q. What is the backup if the flow sensor gets damaged due to extreme water pressure on flow.
     Will it show sensor damaged indication.
 -Q. Suppose in any case, if the tank is running out of water/empty. Will the sensor send distress signal to the meter?
-
