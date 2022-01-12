@@ -58,3 +58,5 @@ Other Inputs:
 -Q. What is the backup if the flow sensor gets damaged due to extreme water pressure on flow.
     Will it show sensor damaged indication.
 -Q. Suppose in any case, if the tank is running out of water/empty. Will the sensor send distress signal to the meter?
+
+
