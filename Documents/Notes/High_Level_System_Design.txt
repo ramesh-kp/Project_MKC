@@ -17,6 +17,7 @@ RS485 To Ethernet Modbus Gateway
     There will be a microntroller for sending the datas through the GSM module.
     GSM have a 12V DC power supply.
     Need another covering with IP65 box as the existing box is not corrosion free.
+    Commands for communication between gateway and sensors.
 
 Water Level Sensor
     Power source for the Water Level Sensor. (12V DC power supply).
@@ -39,6 +40,9 @@ Flow Meter Sensor
 Energymeter
     230v Ac power supply.
     Serial output RS485. The meter must be placed within 1000m from the gateway.
+
+Dont want exact accuracy of the depth of water source.
+Fix with wired water level sensor.
 
 Problems Facing
 ...............
@@ -63,11 +67,5 @@ Do the sensors need to check water quality in the seawage treatment plant before
 Height of the well, pond and mini dam must be given from the client side.
 Check whether we want to check the water quality parameters of water sources like well, dam and pond.
 
-Dont want exact accuracy of the depth of water source.
-Fix with wired water level sensor.
-
-Communication between gateway and sensors any commands.
 Communication between energymeter and gateway.
-Frequency of sensor output and gateway readings.
-Reading of flowmeter sensors.
 Error handling for identifying faulty sensors.
