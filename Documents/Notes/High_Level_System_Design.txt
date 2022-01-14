@@ -18,7 +18,10 @@ RS485 To Ethernet Modbus Gateway
     GSM have a 12V DC power supply.
     Need another covering with IP65 box as the existing box is not corrosion free.
     Commands for communication between gateway and sensors.
-
+    Server needs to send the command to enable the port.
+    After enabling the port server need to send the command to communicate with the sensors using RS485 protocol.
+    The sensors will send the reading of the inputs according to the commands which will send to the sensors through gateway.
+    
 Water Level Sensor
     Power source for the Water Level Sensor. (12V DC power supply).
     Mainly 3 water sources are there to calculate the height. Natural well, Mini dam and Overhead Tank.
@@ -69,3 +72,8 @@ Check whether we want to check the water quality parameters of water sources lik
 
 Communication between energymeter and gateway.
 Error handling for identifying faulty sensors.
+
+Questions
+1.  Protocol used in gateway.
+2.  Can Mqtt connection established in gateway.
+
