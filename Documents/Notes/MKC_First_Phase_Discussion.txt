@@ -54,3 +54,4 @@ Check the communication between the energy meter and system.
 
 07/01/2022
 Buy one sample energy meter.
+Buy one sample energymeter with USB output.

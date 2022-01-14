@@ -34,6 +34,9 @@ COD Sensor and BOD Sensor
 Water level sensor
 	Industrial Liquid Level Sensor MODBUS RS485 Aviation Connector
 	https://www.seeedstudio.com/Liquid-Level-Sensor-RS485-p-5005.html
+	HCCK rs485 price ultrasonic fuel meter flange level transmitter
+	https://www.alibaba.com/product-detail/HCCK-rs485-price-ultrasonic-fuel-meter_1600153742692.html?mark=google_shopping&seo=1
+	
 
 Smart Energy Meter
 	Single Techno Rs 232 Port Energy Meter 1 Phase, 240

@@ -1,35 +1,35 @@
 STP Sensors
-    Power source for the STP source. (12V DC power supply with maximum current rating).
-    Power cable must also have the same length of the transmitter and reciever wire.
-    Sensors must be water proof since the sensors must be dipped in the water.
-    Sensors must be dipped in the minimum direct distance of the plant.
-    Depth of the seawage plant. (Maximum 1000m only the RS485 protocol can communicate).
-    Sensor having the range of the depth of the seawage plant.
+    Power source for the STP sensors will be 12V DC power supply with maximum current rating. 
+    Power cable must also have the same length of the transmitter and receiver wire. 
+    Sensors must be water proof since the sensors must be dipped in the water. 
+    Sensors must be dipped in the minimum direct distance of the plant. 
+    Depth of the sewage plant must be of maximum 1000m only the RS485 protocol can communicate.    
     
 RS485 To Ethernet Modbus Gateway
-    Power source for the RS485 To Ethernet Modbus Gateway. (12V DC power supply).
-    The gateway must be placced within 1000m from the sensors.
-    The output of the gateway is an ethernet port.
-    Maximum distance ethernet cable for communication is 100m.
-    Server must be within 100m from the gateway.
-    If the server is placed beyond 100m range, the communication between the gateway and the server is done by GSM module.
-    When using the GSM module the network must have full coverage in the area.
-    There will be a microntroller for sending the datas through the GSM module.
-    GSM have a 12V DC power supply.
-    Need another covering with IP65 box as the existing box is not corrosion free.
-    Commands for communication between gateway and sensors.
-    Server needs to send the command to enable the port.
-    After enabling the port server need to send the command to communicate with the sensors using RS485 protocol.
-    The sensors will send the reading of the inputs according to the commands which will send to the sensors through gateway.
-    
+    Power source for the RS485 To Ethernet Modbus Gateway will be 12V DC power supply. 
+    The gateway must be placed within 1000m from the sensors. 
+    The output of the gateway is an ethernet port. M
+    Maximum distance ethernet cable for communication is 100m. 
+    Server must be within 100m from the gateway. 
+    If the server is placed beyond 100m range, the communication between the gateway and the server is done by GSM module. 
+    When using the GSM module, the network must have full coverage in the area. 
+    There will be a microcontroller for sending the data’s through the GSM module. 
+    GSM have a 12V DC power supply. 
+    Need another covering with IP65 box as the existing box is not corrosion free. 
+    Commands for communication between gateway and sensors. 
+    Server needs to send the command to enable the port. 
+    After enabling the port server need to send the command to communicate with the sensors using RS485 protocol. 
+    The sensors will send the reading of the inputs according to the commands which will send to the server through gateway.
+        
 Water Level Sensor
-    Power source for the Water Level Sensor. (12V DC power supply).
-    Mainly 3 water sources are there to calculate the height. Natural well, Mini dam and Overhead Tank.
-    There must be a 12V DC power supply near to the water sources.
-    Wired water level sensors have maximum coverage distance 5m.
-    Ultrasonic water level sensor have a maximum coverage distance of 600m.
-    Sensors must be placed in the minimum direct distance of the plant.
-    The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
+    Power source for the Water Level Sensor will be 12V DC power supply. 
+    Mainly 3 water sources are there to calculate the height. Natural well, Mini dam and Overhead Tank. 
+    There must be a 12V DC power supply near to the water sources. 
+    Wired water level sensors have maximum coverage distance 5m. 
+    Ultrasonic water level sensor have a maximum coverage distance of 30m. 
+    Sensors must be dipped in the plant. 
+    The output of the water level sensor is RS485. 
+    The sensor must be placed within 1000m from the gateway.
     
 Flow Meter Sensor
     Power source for the Flow Meter Sensor. (12V DC power supply).
@@ -41,8 +41,9 @@ Flow Meter Sensor
     The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
   
 Energymeter
-    230v Ac power supply.
-    Serial output RS485. The meter must be placed within 1000m from the gateway.
+    230v Ac power supply. 
+    Serial output RS485 or USB output. 
+    The meter must be placed within 1000m from the gateway.
 
 Dont want exact accuracy of the depth of water source.
 Fix with wired water level sensor.
