@@ -56,6 +56,8 @@ Position of flow meter sensors (Diameter and number of pipes effect the sensor s
 Giving power to the flow meters will be difficult, depending upon the position of the flow meters.
 Size of the flow meters will depend on the diameter of the pipe.
 Position of water level sensors (Specially the terrain of the water source).
+Want to check the power backup in the MKC.
+
 
 Other Inputs:
 -------------
@@ -68,13 +70,11 @@ Other Inputs:
 From the client side
 --------------------
 Do the sensors need to check water quality in the seawage treatment plant before and after treating the water.
-Height of the well, pond and mini dam must be given from the client side.
 Check whether we want to check the water quality parameters of water sources like well, dam and pond.
+Check single phase or three phase in MKC.
 
 Communication between energymeter and gateway.
 Error handling for identifying faulty sensors.
+Can Mqtt connection established in gateway.
 
-Questions
-1.  Protocol used in gateway.
-2.  Can Mqtt connection established in gateway.
-
+ 
