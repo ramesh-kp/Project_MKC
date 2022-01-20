@@ -1,30 +1,30 @@
 Closed
------------
-Ultrasonic water level sensor must be placed in the well outside the WIRASas the well is more than 12m depth.
+------
+An ultrasonic water level sensor must be placed in the well outside the WIRASas the well is more than 12m depth.
 2 overhead tank of total capacity 40,000l capacity.
-Seawage Treatment Plant (STP) sensors must be placed in a tank placed in the outlet of the STP.
+Sewage Treatment Plant (STP) sensors must be placed in a tank placed in the outlet of the STP.
 
 Overhead Tank 
     There are 2 overhead tank (Tank 1 and Tank 2).
     1 tank is again divided into 2 sections (Tank 2.1 and Tank 2.2).
     Distance between 2 tanks is approximately 60m.
-    Distance between dam and nearest tank is 150m.
-    Tank 1 the inputs is from dam and well.
+    Distance between the dam and nearest tank is 150m.
+    Tank 1 the inputs is from the dam and well.
     Tank 2.1 the input is from well as the water from this tank is used in kitchen and cooler (drinking) only.
-    Tank 2.2 is used for fire safty only.
-    The Tank 1, Tank 2.1 and Tank 2.2 use wired water level sensors as the maximum height of the overhead tank is 5m.
-    The inlet pipe diameter of the tank is 2 inch ASTM (from dam and well).
+    Tank 2.2 is used for fire safety only.
+    The Tank 1, Tank 2.1 and Tank 2.2 uses wired water level sensors as the maximum height of the overhead tank is 5m.
+    The inlet pipe diameter of the tank is 2 inch ASTM (from the dam and well).
     While the outlet pip have a diameter 3 inch ASTM.
-    From dam and well 2 inch inlet pipe is used by changing the valves.
+    From dam and well 2 inch inlet pipe is used by changing the valves
 
 STP Plant
-    Outlet of STP plant is 1.5 inch PVC pipe.
+    The outlet of STP plant is 1.5 inch PVC pipe.
     Need 2 flow meters in the inlet and outlet of the STP plant.
-    There will be 1 tank placed in the outside of the STP plant for placing the STP sensors.
+    There will be 1 tank placed on the outside of the STP plant for placing the STP sensors.
 
 Conclusion
     One edge device near to the tank.
-    The power cables and RS485 cables of the water level sensor placed in the dam will be connected to wiras. 
+    The power cables and RS485 cables of the water level sensor placed in the dam will be connected to WIRAS.
 
     Water level sensors
         3 for 3 tanks (wired type as the tanks are only maximum 5m depth).
@@ -32,30 +32,30 @@ Conclusion
         2 for dam (height will be calculated by MKC team).
 
     Flowmeter Sensors (Need a better clarification)
-        1 in the outlet of dam.
-        1 in the outlet of well.
+        1 at the outlet of dam.
+        1 at the outlet of well.
         1 in the kitchen inlet.
         1 in the toilet inlet.
-        1 in the washroom inlet
-        1 in the STP inlet.
-        1 in the STP outlet.
-        
+        1 in the washroom inlet 1 in the STP inlet.
+        1 at the STP outlet.
+
     STP Sensors
         All STP sensors must be dipped in the tank placed near to STP plant.
 
     Energymeter
-        The energymeter must have an RS485 or USB output.
-        Or the output of the energymeter must be connected to a smart energymeter.
+        The energy meter must have an RS485 or USB output.
+        Or the output of the energy meter must be connected to a smart energy meter.
 
 Action Plan from MKC 
 --------------------
 MKC team will give the depth of the dam.
-MKC team need to give the pipe diagram with exact diameter of each pipe.
+MKC team needs to give the pipe diagram with exact diameter of each pipe.
 The internal connection of the pipe is not explained properly.
 The number of flowmeters depends on the connection of pipes.
 It also depends the number of edge devices.
 MKC team must set a tank in the outlet of STP plant.
-The STP sensors need to dip in the tank. 
+The STP sensors need to dip in the tank.
+The MKC team will arrange a meeting the third party who will procure and implement the hardwares.
 
 Give rajesh the vendor details and hardware specifications.
 What items the MKC team need to give.
