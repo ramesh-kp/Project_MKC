@@ -1,0 +1,69 @@
+Sensors
+-------
+1.	PH Sensor
+2.	Turbidity Sensor
+3.	TSS Sensor - Total Suspended Solids
+4.	TDS Sensor - Total Dissolved Solids
+5.	COD Sensor - Chemical Oxygen Demand
+6.	BOD Sensor - Biochemical Oxygen Demand
+7.	Coliform Sensor
+8.	Flow Meter
+9.	Water Level Sensor
+10.	RS-485 Ethernet Edge Device
+11. Power Source
+
+All sensors must have 12v power supply and RS485 modbus output.
+The vendors must give the complete datasheet of the sensors.
+The datasheet must have the complete details of datas for communication.
+What data is to send, how the data is recieved and how the data is converted to readable values.
+Details of the frequecy of communication also needed.
+
+The first 7 sensors come under STP sensors.
+
+For flowmeter sensors the diameter of the sensor depends on the diameter of the pipes.
+Already MKC have 3 different diameter pipes.
+Flowmeters of 3 different diameters are needed.
+
+There will be 2 type of water level sensors.
+Wired water level sensor and Ultrasonic water level sensor.
+Dam and 3 overhead tanks are using wired water level sensor as its depth is of maximum 5m.
+The well is using Ultrasonic water level sensor as its depth is above 12m.
+
+The RS-485 Ethernet Edge Device are of mainly 5 types. 
+GW1101 (1 RS-485 to Ethernet Gateway)
+GW1102 (2 RS-485 to Ethernet Gateway)
+GW1104 (4 RS-485 to Ethernet Gateway)
+GW1108 (8 RS-485 to Ethernet Gateway)
+GW1116 (16 RS-485 to Ethernet Gateway)
+
+The STP plant need GW1108 RS-485 Ethernet Gateway as there will be more than 5 sensors attached to the gateway.
+The overhead tank will also need GW1108 RS-485 Ethernet Gateway.
+Depending upon the number of RS-485 inputs the type of RS-485 Ethernet Edge Device will also vary.
+
+The vendors providing RS-485 Ethernet Edge Device is 
+MOOTEK TECHNOLOGIES
+New No.:10|Old No.:14|-2nd Floor                          
+Aranganathan Subway Road| KAVERI NAGAR
+SAIDAPET | CHENNAI 600015|
+Mob:+91-7092520520|Skype: mootek Nathiya
+
+The vendors providing STP sensors is
+Fluidings
+Benson Thomas
+FLUIDINGS
+www.fluidings.com
+Maharashtra
+8928335585.
+
+The vendors providing flowmeter sensor is 
+Flowtech Instruments
+Deepak Chaudhary
+9725944834 
+Email : sales@flowtech-instruments.com 
+Website : www.flowtech-instruments.com
+Mobile Number: 08469769988 / 9428876496 / 8160255957
+
+Hi,
+
+For the project MKC monitoring system i have to buy one flowmeter sensor and RS-485 Ethernet Edge Device.
+
