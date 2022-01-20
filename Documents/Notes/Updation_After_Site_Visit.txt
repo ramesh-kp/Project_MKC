@@ -1,0 +1,30 @@
+
+
+Closed
+-----------
+Ultrasonic water level sensor must be placed in the well outside the WIRASas the well is more than 12m depth.
+2 overhead tank of total capacity 40,000l capacity.
+Seawage Treatment Plant (STP) sensors must be placed in a tank placed in the outlet of the STP.
+
+Overhead Tank 
+    There are 2 overhead tank (Tank 1 and Tank 2).
+    1 tank is again divided into 2 sections (Tank 2.1 and Tank 2.2).
+    Distance between 2 tanks is approximately 60m.
+    Distance between dam and nearest tank is 150m.
+    Tank 1 the inputs is from dam and well.
+    Tank 2.1 the input is from well as the water from this tank is used in kitchen and cooler (drinking) only.
+    Tank 2.2 is used for fire safty only.
+    The Tank 1, Tank 2.1 and Tank 2.2 use wired water level sensors as the maximum height of the overhead tank is 5m.
+    
+
+    From dam and well 2 inch inlet pipe is used by changing the valves.
+
+
+
+Open
+----
+MKC team will give the depth of the dam.
+
+Give rajesh the vendor details and hardware specifications.
+What items the MKC team need to give.
+Action items to implement.
