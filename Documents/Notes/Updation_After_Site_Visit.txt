@@ -1,5 +1,3 @@
-
-
 Closed
 -----------
 Ultrasonic water level sensor must be placed in the well outside the WIRASas the well is more than 12m depth.
@@ -15,15 +13,43 @@ Overhead Tank
     Tank 2.1 the input is from well as the water from this tank is used in kitchen and cooler (drinking) only.
     Tank 2.2 is used for fire safty only.
     The Tank 1, Tank 2.1 and Tank 2.2 use wired water level sensors as the maximum height of the overhead tank is 5m.
-    
-
+    The inlet pipe diameter of the tank is 2 inch ASTM (from dam and well).
+    While the outlet pip have a diameter 3 inch ASTM.
     From dam and well 2 inch inlet pipe is used by changing the valves.
 
+STP Plant
+    Outlet of STP plant is 1.5 inch PVC pipe.
+    Need 2 flow meters in the inlet and outlet of the STP plant.
+    There will be 1 tank placed in the outside of the STP plant for placing the STP sensors.
 
+Conclusion
+    One edge device near to the tank.
+    The power cables and RS485 cables of the water level sensor placed in the dam will be connected to wiras. 
 
-Open
-----
+    Water level sensors
+        3 for 3 tanks (wired type as the tanks are only maximum 5m depth).
+        1 for well (ultrasonic type as the well is more than 12m depth).
+        2 for dam (height will be calculated by MKC team).
+
+    Flowmeter Sensors (Need a better clarification)
+        1 in the outlet of dam.
+        1 in the outlet of well.
+        1 in the kitchen inlet.
+        1 in the toilet inlet.
+        1 in the washroom inlet
+        1 in the STP inlet.
+        1 in the STP outlet.
+        
+
+Action Plan from MKC 
+--------------------
 MKC team will give the depth of the dam.
+MKC team need to give the pipe diagram with exact diameter of each pipe.
+The internal connection of the pipe is not explained properly.
+The number of flowmeters depends on the connection of pipes.
+It also depends the number of edge devices.
+MKC team must set a tank in the outlet of STP plant.
+The STP sensors need to dip in the tank. 
 
 Give rajesh the vendor details and hardware specifications.
 What items the MKC team need to give.
