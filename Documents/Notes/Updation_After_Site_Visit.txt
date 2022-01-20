@@ -56,9 +56,3 @@ It also depends the number of edge devices.
 MKC team must set a tank in the outlet of STP plant.
 The STP sensors need to dip in the tank.
 The MKC team will arrange a meeting the third party who will procure and implement the hardwares.
-
-Give rajesh the vendor details and hardware specifications.
-What items the MKC team need to give.
-Action items to implement.
-
-Need to know the frequency of the flowmeters.

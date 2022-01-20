@@ -77,6 +77,4 @@ Communication between energymeter and gateway.
 Error handling for identifying faulty sensors.
 Can Mqtt connection established in gateway.
 
-Command to open the port in the gateway hub.
-Send command from wireless network to gateway hub.
  
