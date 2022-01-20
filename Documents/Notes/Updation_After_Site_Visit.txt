@@ -40,6 +40,12 @@ Conclusion
         1 in the STP inlet.
         1 in the STP outlet.
         
+    STP Sensors
+        All STP sensors must be dipped in the tank placed near to STP plant.
+
+    Energymeter
+        The energymeter must have an RS485 or USB output.
+        Or the output of the energymeter must be connected to a smart energymeter.
 
 Action Plan from MKC 
 --------------------
@@ -54,3 +60,5 @@ The STP sensors need to dip in the tank.
 Give rajesh the vendor details and hardware specifications.
 What items the MKC team need to give.
 Action items to implement.
+
+Need to know the frequency of the flowmeters.
