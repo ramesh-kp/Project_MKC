@@ -99,11 +99,55 @@ Flowmeter
         Remote Type : Suitable for overhead lines or limitations of vertical space.
         Wafer Type : Suitable for bigger size lines as well as limitations of pipe length.
         TC Joint : Suitable for food industries.
-    
 
+RS-485 Ethernet Edge Device
+    Support virtual and real ID mapping to achieve flexible access between Master and Slave devices.
+    Support -40~75℃ wide temperature operation.
+    Modbus gateway supports multiple network protocols, such as Modbus, TCP, IP, UDP, TELNET,
+        ARP, ICMP, HTTP, DNS and DHCP protocols. 
+    It possesses complete management function, and supports access control, rapid configuration, 
+        online upgrading, etc. 
+    
+    Features and Benefits
+        Support virtual and real ID mapping to achieve flexible access between Master and Slave devices.
+        Support IP address and MAC address filtering, which is easy to achieve accurate access control.
+        Support monitoring for serial port status and parameters, so the communication status will be clear at a glance.
+    Specification
+        Ethernet
+            Protocol: Modbus TCP, TCP, IP, UDP, ARP, HTTP, TELNET, SNMP, ICMP, DHCP, DNS
+            Interface form: RJ45
+            Duplex mode: full/half duplex mode self-adaption
+        Serial Port
+            Standard: RS-485
+            Protocol: Modbus RTU/ASCII
+            RS-485 signal: D+, D-, GND
+            Baudrate: 300 - 115200bps
+            Data bit: 5bit, 6bit, 7bit, 8bit
+            Parity bit: None, Even, Odd, Space, Mark
+            Stop bit: 1bit, 2bit
+            Operating mode: RTU Master, RTU Slave, ASCII Master and ASCII Slave
+        Configuration
+            WEB configuration management, TELNET configuration, Windows configuration tool
+        Security
+            Classification of User Permissions, IP address filtering, MAC address filtering, WEB Console, TELNET Console
+        Indicator
+            Power supply indicator, running indicator, Ethernet port indicator, serial port indicator.
+        Power Requirement
+            Power supply range: 12~48VDC
+            Connection mode: 3-pin 5.08mm pitch terminal blocks
+            Power supply protection: nonpolarity connection
+        Power Consumption
+            Full-load: ≤3.00W @ 12VDC
+        Environmental Limit
+            Operating temperature range: -40~75℃
+            Relative humidity: 5%～95%（no condensation
+        Physical Characteristic
+            Housing: IP30 protection, metal
+            Installation: wall or desktop mounting
+        
 
 
 Hi,
 
-For the project MKC monitoring system i have to buy one flowmeter sensor and RS-485 Ethernet Edge Device.
+For the project MKC monitoring system, for physical testing i have to buy one flowmeter sensor and RS-485 Ethernet Edge Device.
 
