@@ -63,6 +63,46 @@ Email : sales@flowtech-instruments.com
 Website : www.flowtech-instruments.com
 Mobile Number: 08469769988 / 9428876496 / 8160255957
 
+Detailed Explanation
+--------------------
+Flowmeter
+    The output of the sensor is of a pulse with a 16 bit resolution.
+    
+    Minimum conductivity 
+        The conductivity of the media must be greater than 20 µS/cm.
+    Liner selection
+        Use hard rubber lining for drinking water and waste water.
+        Use PFA/FEP lining suitable under vacuum line.
+    Electrode selection
+        S.S. 316 / S.S. 316L for general purpose, sewage, water and district heating systems
+    Mounting location
+        There must be no flow fluctuations.
+        Avoid locations where vacuum can occur; especially for flow sensors with PTFE linings.
+        Avoid locations with vibrations from for example pumps.
+        Avoid locations with extensive temperature changes.
+        Avoid corrosive environments and locations with a great risk of condensation, or consult 
+            factory for special builds for these locations.
+        Take care that condensate and water cannot enter the connector box on the flow sensor.
+        There must be sufficient free space around the flow sensor.
+    Pressure Loss
+        Decreasing the internal diameter from 100 mm (DN) to 80 mm (DO) will cause a pressure 
+            loss of 0.003 Bar @ 3 m/s.
+    Accuracy
+        The measuring accuracy will be better than ± 0.5%, provided that the flow sensor has 
+            the correct dimension.
+    Sizing of Flow Sensor
+        Flowtech recommends that flow velocities in tubes are kept between 1 – 3 m/s for 
+            reliable and safe operation.
+    EMF Type Guidelines
+        Integral Type : Suitable for ground level and upto 5 feet above ground level or vertical
+            lines upto 10 feet.
+        Remote Type : Suitable for overhead lines or limitations of vertical space.
+        Wafer Type : Suitable for bigger size lines as well as limitations of pipe length.
+        TC Joint : Suitable for food industries.
+    
+
+
+
 Hi,
 
 For the project MKC monitoring system i have to buy one flowmeter sensor and RS-485 Ethernet Edge Device.
