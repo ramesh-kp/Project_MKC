@@ -145,7 +145,32 @@ RS-485 Ethernet Edge Device
             Housing: IP30 protection, metal
             Installation: wall or desktop mounting
         
+Water Level Wired Rod Type
+    It incorporates stainless steel and insulated rubber, is IP68 rated. 
+    Suitable for application in severe environments and uses the RS485 Modbus-RTU Protocol.
+    Features
+        Anti-corrosion  material,  excellent  anti-corrosion  performance, and durable Anti-blocking design, easy to clean.
+    Description
+        The liquid level sensor measures the height of the liquid and converting it to the Modbus-RTU protocol. 
+    Specifications
+        Measurement Range	0 ~ 5 meters
+        Cable Length	5.3 meters
+        Output Signal	RS485 Modbus-RTU Protocol
+        Response Time	5ms( (≤90%F.S)
+        Power Supply	11-30V DC
+        IP Rating	IP68
+        Device Weight	670g
 
+Water Level Sensor Ultrasonic
+    Protection Grade:   IP67
+    Working Pressure:   ordinary pressure
+    Model Number:       HCUS-400 Ultrasonic Level solid meter
+    Measuring Range:    0-30 m
+    Operating temperature:  -20℃ ~ 60℃
+    output mode:        4 ~20 MA/RS485 Modbus
+
+
+    
 
 Hi,
 
