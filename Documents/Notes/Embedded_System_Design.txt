@@ -9,10 +9,7 @@
 9.  Verification
 10. Validation
 
+Need to know the frequency and deviceid of the flowmeters.
 
-Deviceid
-Need to know the frequency of the flowmeters.
-
-Hi,
 
 
