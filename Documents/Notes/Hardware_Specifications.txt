@@ -169,10 +169,3 @@ Water Level Sensor Ultrasonic
     Operating temperature:  -20℃ ~ 60℃
     output mode:        4 ~20 MA/RS485 Modbus
 
-
-    
-
-Hi,
-
-For the project MKC monitoring system, for physical testing i have to buy one flowmeter sensor and RS-485 Ethernet Edge Device.
-
