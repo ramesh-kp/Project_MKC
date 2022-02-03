@@ -1,0 +1,265 @@
+Message Frame Configuration
+---------------------------
+Start               :   Silent Interval
+RTU Address         :   1 byte
+Function code       :   1 byte
+Data                :   n bytes
+Error Check code    :   2 bytes
+End                 :   Silent Interval
+
+RTU address
+-----------
+    "1" - "247" (01H - F7H Hexadecimal 1 - 247 Decimal) can be set for the flow meter. The default is "1” (01H).
+    When a message from the master communication device is received, only the flow meter with the
+    matching RTU address returns a response.
+
+Function code
+-------------
+    Each code specifies a function that the flow meter is commanded to perform.
+    The following function codes are available.
+    Code (hex)  :   Function
+    03          :   Read out a parameter or flow meter information.
+    05          :   Clear the integration value upper limit alarm.
+    06          :   Writing of a single parameter
+    10          :   Writing of multiple parameters
+
+    [Function code 03] Reading of parameters and flow meter information
+    The function code 03H reads parameters, and flow meter information.
+    The function code and data portions, which are described in "4 Message Frame Configuration,” are shown below.
+
+    Query configuration
+    -------------------
+    Function code   :   03H
+    Data
+        Start address           :   (Upper)
+                                :   (Lower)
+        Number of registers     :   (Upper)
+                                :   (Lower)
+    Function code       :   03H
+    Start address       :   Register address (0100H to 0119H) and (0200H to 020EH).
+    Number of registers :   Number of data to be read out (0001H to 001AH)
+    Note that the maximum number of reading data depends on register addresses.
+
+    Response configuration
+    ----------------------
+    Function code   :   03H
+    Data
+        Number of data bytes    :   Arbitrary
+        Data 1      :   (Upper)
+                    :   (Lower)
+        Data 2      :   (Upper)
+                    :   (Lower)
+        Data N      :   (Upper)
+                    :   (Lower)
+    Function code   :   03H
+    Number of data bytes    :   Number of bytes in response data
+    Data            :   Read out data
+
+    Example
+    #######
+    A case where [Address 0101H] Output pulse constant (0001H：10L/P,) and 
+    [Address 0102H] Alarm output contact state (0000H：normal open) are read out.
+
+    Query (hex value)
+    -----------------
+    Start           :   Silent interval
+    RTU address     :   01
+    Function code   :   03
+    Data
+        Start address
+            (Upper) :   01
+            (Lower) :   01
+        Number of registers
+            (Upper) :   00
+            (Lower) :   02
+    Error check code    
+        (Lower)     :   (CRC)
+        (Upper)     :   (CRC)
+    End             :   Silent interval
+
+    Response (hex value)
+    --------------------
+    Start           :   Silent interval
+    RTU address     :   01
+    Function Code   :   03
+    Data
+        Number of data bytes    :   04
+        Data 1 (Data of address 010)
+            (Upper) :   00
+            (Lower) :   01
+        Data 2 (Data of address 0102)
+            (Upper) :   00
+            (Lower) :   00
+    Error check code
+        (Lower)     :   (CRC）
+        (Upper)     :   (CRC）
+    End             :   Silent interval
+
+    [Function code 05] Integration value upper limit alarm clear
+    Function code 05H is intended for a command to clear an integration value upper limit alarm of the flow meter.
+    An alarm state occurs when an integration value per hour exceeds a set upper limit.
+    The function code and data portions, which are described in "4 Message Frame Configuration,” are shown below.
+
+    Query configuration
+    -------------------
+    Function code      :    05H
+    Data
+        Start address   :   03H
+                        :   00H
+        Changed data    :   00H
+                        :   00H
+    Function code   :   05H
+    Start address   :   0300H (Fixed)
+    Changed data    :   0000H (Fixed)
+
+    Response configuration
+    ----------------------
+    Function code   :   05H
+    Data
+        Start address   :   03H
+                        :   00H
+        Changed data    :   00H
+                        :   00H
+    Function code   :   05H
+    Start address   :   0300H (Fixed)
+    Changed data    :   000H (Fixed)
+
+    [Function code 06] Single parameter write
+    Function code：06H is intended to make a change (perform a write) to contents of a parameter.
+    Shown below are parts of the function code and the data in “4 Message Frame Configuration”.
+
+    Query configuration
+    -------------------
+    Function code       :    06H
+    Data
+        Start address   :   (Upper)
+                        :   (Lower)
+        Changed data    :   (Upper)
+                        :   (Lower)
+        Function code   :   06H
+        Start address   :   Register address（0100H to 0119H）
+        Changed data    :   Arbitrary (For the range of changed data that may be set, refer to “7.2.1 Various 
+                            Types of Parameters).
+
+    Response configuration
+    ----------------------
+    Function code       :   06H
+    Data
+        Start address   :   (Upper)
+                        :   (Lower)
+        Changed data    :   (Upper)
+                        :   (Lower)
+    Function code       :   06H
+    Start address       :   Same as the start address in a query
+    Changed data        :   Same as the changed data in a query
+    
+    Example
+    #######
+    A case where [Address 0100H] Conversion reference temperature is changed to 35℃ (0x0023).
+
+    Query (hex value)
+    -----------------
+    Start           :   Silent interval
+    RTU address     :   01
+    Function code   :   06
+    Data
+        Start address
+            (Upper) :   01
+            (Lower) :   00
+        Changed data
+            (Upper) :   00
+            (Lower) :   23
+    Error check code
+        (Lower)     :   (CRC)
+        (Upper)     :   (CRC)
+    End             :   Silent interval
+
+    Response (hex value)
+    --------------------
+    Start           :   Silent interval
+    RTU Address     :   01
+    Function code   :   06
+    Data
+        Start address
+            (Upper) :   01
+            (Lower) :   00
+        Changed data
+            (Upper) :   00
+            (Lower) :   23
+    Error check code
+        (Lower)     :   (CRC)
+        (Upper)     :   (CRC)
+    End             :   Silent interval
+
+    [Function code 10] Multiple parameter writes
+    Function code: 10H is an intended to change (write) contents of a plurality of consecutive parameters.
+    Shown below are parts of the function code and data in “4 Message Frame Configuration”.
+
+    Query configuration
+    -------------------
+    Function code   :   10H
+    Data
+        Start address       :   (Upper)
+                            :   (Lower)
+        Number of registers :   (Upper)
+                            :   (Lower)
+        Number of data bytes    :   Arbitrary
+        Data 1              :   (Upper)
+                            :   (Lower)
+        Data 2              :   (Upper)
+                            :   (Lower)
+        Data N              :   (Upper)
+                            :   (Lower)
+        Function code       :   10H
+        Start address       :   Register address (0100H to 0119H)
+        Number of registers :   Number of data to be written (0001H to 001AH)
+        Number of data bytes:   Number of bytes of data to be written
+        Changed data        :   Arbitrary (For the range of changed data that may be set, refer to “7.2.1
+                                Various Types of Parameters).
+        
+        Response configuration
+        ----------------------
+        Function code       :   10H
+        Data
+            Start address   :   (Upper)
+                            :   (Lower)
+            Number of registers :   (Upper)
+                                :   (Lower)
+            Function code       :   10H
+            Start address       :   Same as the start address in the query
+            Number of registers :   Same as the number of registers in the query
+
+Communication-related Item
+--------------------------
+    When a single write or a multiple write to a item / items related to the communications (RTU
+    address, communication bit rate) is performed, the flow meter responds there to with parameters
+    before the change has been made. 
+    For subsequent communications, the flowmeter operates with the changed set value.
+
+
+
+
+
+
+
+
+    
+Data
+----
+    Data used to perform a function code. 
+    Configuration of this data section varies depending on the function code. 
+    Refer to “7. Data Specifications” for details.
+
+Error check code
+----------------
+    This code is intended to detect an error (bit change) in a message in the signal transmission process.
+    The checking method is based on the CRC method.
+    For details, refer to "9 Calculation of Error Check Code(CRC-16)”.
+    When the flow meter receives a message, it calculates a CRC value based on the received message,
+    and compares it with the sent CRC value.
+    If the two values do not match, the flowmeter determines that an error has occurred.
+    In the case of a message to be transmitted by the flowmeter, the flowmeter calculates a CRC value
+    based on the message to be transmitted, and transmits the message with the CRC value added to the
+    end of the message.
+
+
