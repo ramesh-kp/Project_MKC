@@ -122,5 +122,108 @@ MODBUS Message Timing (RTU Mode)
     Similarly, if a new message begins earlier than 3.5 character times following a previous message, 
     the receiving device will consider it a continuation of the previous message. 
     This will result in an error, as the value in the final CRC field will not be valid for the combined messages.
+
+How Characters are Transmitted Serially
+---------------------------------------
+    When messages are transmitted on standard MODBUS serial networks each character or byte is sent in this order 
+    (left to right).
+        With Parity Checking (11 bit characters):
+            One start bit, 8 bit data, one parity bit and one stop bit.
+        Without Parity Checking, 2 Stop Bits (11 bit characters):
+            One start bit, 8 bit data and two stop bits.
+        The Integra products additionally support No parity, One stop bit (10 bit characters):
+            One start bit, 8 bit data and one stop bit.
+
+Error Checking Methods
+----------------------
+    Standard MODBUS serial networks use two error checking processes, the error check bytes mentioned above 
+    check message integrity whilst Parity checking (even or odd) can be applied to each character in the message.
+    The master is configured by the user to wait for a predetermined timeout interval. 
+    The master will wait for this period of time before deciding that the slave is not going to respond and 
+    that the transaction should be aborted. 
+    Care must be taken when determining the timeout period from both the master and the slaves specifications. 
+    The slave may define the ‘response time’ as being the period from the receipt of the last bit of the query 
+    to the transmission of the first bit of the response. 
+    The master may define the ‘response time’ as period between transmitting the first bit of the query 
+    to the receipt of the last bit of the response. 
+    It can be seen that message transmission time, which is a function of the baud rate, 
+    must be included in the timeout calculation.
+
+Parity Checking
+---------------
+    If parity checking is enabled - either Even or Odd Parity is specified - the quantity of “1’s” will be counted in
+    the data portion of each of the eight bits in the character. 
+    The parity bit will then be set to a 0 or 1 to result in an Even or Odd total of “1’s”.
+    Note that parity checking can only detect an error if an odd number of bits are picked up or dropped in a character frame 
+    during transmission, if for example two 1’s are corrupted to 0’s the parity check will not find the error.
+    If No Parity checking is specified, no parity bit is transmitted and no parity check can be made. 
+    An additional stop bit is transmitted to fill out the character frame when 2 stop bits are selected.
+    If No Parity checking is specified and one stop bit is selected the character is effectively shortened by one bit.
+
+CRC Checking
+------------
+    The error check bytes of the MODBUS messages contain a Cyclical Redundancy Check (CRC) value that is used to check 
+    the content of the entire message. 
+    The error check bytes must always be present to comply with the MODBUS protocol; there is no option to disable it.
+    The error check bytes represent a 16-bit binary value, calculated by the transmitting device. 
+    The receiving device must recalculate the CRC during receipt of the message and compare the calculated value to the
+    value received in the error check bytes. 
+    If the two values are not equal, the message should be discarded.
+    The error check calculation is started by first pre-loading a 16-bit register to all 1’s (i.e. Hex (FFFF)) each
+    successive 8-bit byte of the message is applied to the current contents of the register. 
+    Note: only the eight bits of data in each character are used for generating the CRC, start bits, stop bits and 
+    the parity bit, if one is used, are not included in the error check bytes.
+    During generation of the error check bytes, each 8-bit character is exclusive OR'ed with the register contents. 
+    The result is shifted in the direction of the least significant bit (LSB), with a zero filled into the 
+    most significant bit (MSB) position. 
+    The LSB prior to the shift is extracted and examined. 
+    If the LSB was a 1, the register is then exclusive OR'ed with a pre-set, fixed value. 
+    If the LSB was a 0, no exclusive OR takes place.
+    This process is repeated until eight shifts have been performed. 
+    After the last (eighth) shift, the next 8-bit byte is exclusive OR'ed with the register’s current value, 
+    and the process repeated. 
+    The final contents of the register, after all the bytes of the message have been applied, is the error check value.
     
+    Example
+    ......
+    In the following pseudo code “ErrorWord” is a 16-bit value representing the error check values.
+
+    BEGIN
+        ErrorWord = Hex (FFFF)
+            FOR Each byte in message
+                ErrorWord = ErrorWord XOR byte in message
+                    FOR Each bit in byte
+                        LSB = ErrorWord AND Hex (0001)
+                        IF LSB = 1 THEN ErrorWord = ErrorWord – 1
+                        ErrorWord = ErrorWord / 2
+                IF LSB = 1 THEN ErrorWord = ErrorWord XOR Hex (A001)
+                    NEXT bit in byte
+            NEXT Byte in message
+    END
+
+Function Codes
+--------------
+    The function code part of a MODBUS message defines the action to be taken by the slave. 
+    The SPR and Integra products support the following function codes:
+
+    Code        :   03
+    MODBUS name :   Read Holding Registers
+    Description :   Read the contents of read/write location
+
+    Code        :   04
+    MODBUS name :   Read Input Registers
+    Description :   Read the contents of read only location
+
+    Code        :   08
+    MODBUS name :   Diagnostics
+    Description :   Only sub-function zero is supported. 
+                    This returns the data element of the query unchanged.
+
+    Code        :   16
+    MODBUS name :   Pre-set Multiple Registers
+    Description :   Set the contents of read/write location      
+
+Product Specific Considerations
+-------------------------------
+
 
