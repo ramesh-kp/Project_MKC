@@ -225,5 +225,117 @@ Function Codes
 
 Product Specific Considerations
 -------------------------------
+    The MODBUS protocol defines “Registers” for the variables; a register is 16 bits long. 
+    The bits in an IEEE 754 format have the following significance:
+        24 - 31 bits    :   Data Hi Word, Hi Byte   :   SEEE EEEE
+        16 - 23 bits    :   Data Hi Word, Lo Byte   :   EMMM MMMM
+        8 - 15 bits     :   Data Lo Word, Hi Byte   :   MMMM MMMM
+        0 - 7 bits      :   Data Lo Word, Lo Byte   :   MMMM MMMM
+    Where:
+        S   :   the sign bit where 1 is negative and 0 is positive
+        E   :   E is the two’s complement exponent with an offset of 127 i.e. an exponent of zero is represented by
+                127, an exponent of 1 by 128 etc.
+        M   :   M is the 23-bit normal mantissa. The highest bit is always 1 and, therefore, is not stored.
+    
+    Using the above format the floating point number 240.5 is represented as <43><70><80><00>:
+        24 - 31 bits    :   43
+        16 - 23 bits    :   70
+        8 - 15 bits     :   80
+        0 - 7 bits      :   00
+    
+        24 - 31 bits    :   0100 0011
+        16 - 23 bits    :   0111 0000
+        8 - 15 bits     :   1000 0000
+        0 - 7 bits      :   0000 0000
 
+    From this you can determine the following information.
+        The sign bit is 0, indicating a positive number.
+        The exponent value is 10000110 binary or 134 decimal. 
+        Subtracting 127 from 134 leaves 7, which is the actual exponent.
+        The mantissa appears as the binary number 11100001000000000000000.
+        There is an implied decimal point at the left of the mantissa that is always preceded by a 1. 
+        This digit is not stored in the hexadecimal representation of the floating-point number. 
+        Adding 1 and the decimal point to the beginning of the mantissa gives the following: 1.11100001000000000000000
+        Now, we adjust the mantissa for the exponent. 
+        A negative exponent moves the decimal point to the left. 
+        A positive exponent moves the decimal point to the right. 
+        Because the exponent is 7, the mantissa is adjusted as follows: 11110000.1000000000000000
+        Finally, we have a binary floating-point number. 
+        Binary digits that are to the left of the decimal point represent the power of two corresponding to their position. 
+        For example, 
+        11110000 represents (1 x 2^7) + (1 x 2^6) + (1 x 2^5) + (1 x 2^4) + (0 x 2^3)+ (0 x 2^2) + (0 x 2^1)+ (0 x 2^0) = 240.
+        Binary digits that are to the right of the decimal point also represent a power of 2 corresponding to their position. 
+        As the digits are to the right of the decimal point the powers are negative. 
+        For example: 
+        100 represents (1 x 2^-1) + (0 x 2^-2)+ (0 x 2^-3) + … which equals 0.5.
+        Adding these two numbers together and making reference to the sign bit produces the number +240.5.
+        
+MODBUS Commands supported
+    All Crompton Integra Instruments support 
+        the “Read Input Register” (3X registers), 
+        the “Read Holding Register” (4X registers) and 
+        the “Pre-set Multiple Registers” (write 4X registers) 
+        commands of the MODBUS RTU protocol. 
+    All values stored and returned are in floating point format to IEEE 754 with the most significant byte first.
+
+    Read Input Registers
+        MODBUS code 04 reads the contents of the 3X registers.
+        Example:
+            The following query will request ‘Volts 1’ from an instrument with node address 1:
+            The Field Names are mentioned below
+            Slave Address           :   01
+            Function                :   04
+            Starting Address High   :   00
+            Starting Address Low    :   00
+            Number of Points High   :   00
+            Number of Points Low    :   02
+            Error Check Low         :   71
+            Error Check High        :   CB
+        Note: Data must be requested in register pairs i.e. 
+        the “Number of Points” must be even to request a floating point variable. 
+        If the “Number of points” is odd or the “Starting Address” falls in the middle of a floating point variable 
+        the product will return an error message.
+        Example:
+            The following response returns the contents of Volts 1 as 230.2
+            The Field Names are mentioned below
+            Slave Address               :   01
+            Function                    :   04
+            Byte Count                  :   04
+            Data, High Word, High Byte  :   43
+            Data, High Word, Low Byte   :   66
+            Data, Low Word, High Byte   :   33
+            Data, Low Word, Low Byte    :   34
+            Error Check Low             :   1B
+            Error Check High            :   38
+
+    Read Holding Registers
+        MODBUS code 03 reads the contents of the 4X registers.
+        Example:
+            The following query will request the prevailing ‘Demand Time’:
+            The Field Names are mentioned below
+            Slave Address               :   01
+            Function                    :   03
+            Starting Address High       :   00
+            Starting Address Low        :   00
+            Number of Points High       :   00
+            Number of Points Low        :   02
+            Error Check Low             :   C4
+            Error Check High            :   0B
+        Note: Data must be requested in register pairs i.e. 
+        the “Number of Points” must be even to request a floating point variable. 
+        If the “Number of points” is odd or the “Starting Address” falls in the middle of a floating point variable 
+        the Integra products will return an error message.
+        Example:
+            The following response returns the contents of Demand Time as 1
+            The Field Names are mentioned below
+            Slave Address               :   01
+            Function                    :   03
+            Byte Count                  :   04
+            Data, High Word, High Byte  :   3F
+            Data, High Word, Low Byte   :   80
+            Data, Low Word, High Byte   :   00
+            Data, Low Word, Low Byte    :   00
+            Error Check Low             :   F7
+            Error Check High            :   CF
+            
 
