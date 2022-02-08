@@ -337,5 +337,145 @@ MODBUS Commands supported
             Data, Low Word, Low Byte    :   00
             Error Check Low             :   F7
             Error Check High            :   CF
-            
 
+Write Holding Registers
+    MODBUS code 16 decimal (10 Hex) writes the contents of the 4X registers.
+    Example:
+        The following query will set the Demand Time to zero, which effectively resets the Demand Period:
+        The Field Names are mentioned below
+        Slave Address                   :   01
+        Function                        :   10
+        Starting Address High           :   00
+        Starting Address Low            :   00
+        Number of Registers High        :   00
+        Number of Registers Low         :   02
+        Byte Count                      :   04
+        Data, High Word, High Byte      :   00
+        Data, High Word, Low Byte       :   00
+        Data, Low Word, High Byte       :   00
+        Data, Low Word, Low Byte        :   00
+        Error Check Low                 :   3D
+        Error Check High                :   23
+    Note: Data must be written in register pairs i.e. 
+    the “Number of Points” must be even to set a floating point variable. 
+    If the “Number of points” is odd or the “Starting Address” falls in the middle of a floating point variable 
+    the Integra products will return an error message.
+    
+    The following response indicates that the write has been successful.
+    The Field Names are mentioned below
+    Slave Address               :   01
+    Function                    :   10
+    Starting Address High       :   00
+    Starting Address Low        :   00
+    Number of Registers High    :   00
+    Number of Registers Low     :   02
+    Error Check Low             :   41
+    Error Check High            :   C8
+
+Diagnostics
+    MODBUS code 08 provides a number of diagnostic sub-functions. 
+    Only the “Return Query Data” subfunction (sub-function 0) is supported on the Integra 1540, 1560, 1580.
+    Example:
+        The following query will send a diagnostic “return query data” query with the data elements set to 
+        Hex(AA) and Hex(55) and will expect these to be returned in the response:
+        The Field Names are mentioned below
+        Slave Address           :   01
+        Function                :   08
+        Sub-Function High       :   00
+        Sub-Function Low        :   00
+        Data Byte 1             :   AA
+        Data Byte 2             :   55
+        Error Check Low         :   5E
+        Error Check High        :   94
+    Note: Data must be written in register pairs i.e. 
+    the “Number of Points” must be even. 
+    If the “Number of points” is odd or the “Starting Address” falls in the middle of a floating point variable 
+    product will return an error message.
+
+    The following response indicates the correct reply to the query.
+    The Field Names are mentioned below
+    Slave Address           :   01
+    Function                :   08
+    Sub-Function High       :   00
+    Sub-Function Low        :   00
+    Data Byte 1             :   AA
+    Data Byte 2             :   55
+    Error Check Low         :   5E
+    Error Check High        :   94
+
+When things go wrong
+    Start with a simple network, one master and one slave, with SPR and Integra products this is easily
+        achieved as the network can be left intact whilst individual instruments are disconnected by removing
+        the RS485 connector from the rear of the instrument.
+    Check that all the “A’s” are connected together, check that all the “B’s” are connected together, check
+        that all the “Gnd’s” are connected together.
+    If using SpecView or PCView (PC software) with a RS232 to RS485 converter confirm that the data
+        “transmitted” onto the RS485 is not echoed back to the PC on the RS232 lines. (This facility is
+        sometimes a link option within the converter). Many PC based packages seem to be “confused” when
+        they receive an echo of the message they are transmitting.
+    Confirm that the Address of the instrument is the same as the “master” is expecting.
+    If the “network” operates with one instrument but not more than one check that each instrument has a
+        unique address.
+    Each request for data must be restricted to 20 parameters (40 in the case of the 1500 Series) or less.
+        Violating this requirement will impact the performance of the instrument and may result in a response
+        time in excess of the specification.
+    Check that the MODBUS mode (RTU or ASCII) and serial parameters (baud rate, number of data
+        bits, number of stop bits and parity) are the same for all devices on the network.
+    Check that the “master” is requesting floating-point variables (pairs of registers placed on floating
+        point boundaries) and is not “splitting” floating point variables.
+    Check that the floating-point byte order expected by the “master” is the same as that used by the
+        SPR and Integra products. (PCView and Citect packages can use a number of formats including that
+        supported by SPR and Integra).
+    If possible obtain a second RS232 to RS485 converter and connect it between the RS485 bus and an
+        additional PC equipped with a software package, which can display the data on the bus. Check for
+        the existence of valid requests.
+
+Product Information
+    The following section outline the general information about the use of Modbus with the products covered
+    by this guide. 
+    It also outlines the information available over the Modbus interface of the products.
+    Appendix A and B, provides a cross-reference as to which features are available over the Modbus
+interface for individual models.
+On the instrument, each electrical parameter measured or calculated and each configuration parameter is
+given a number that maps onto a Modbus address. To convert a Crompton Parameter number into a
+Modbus address, subtract one from the parameter number and double it.
+Exception Codes
+Whenever an SPR or Integra product receives a MODBUS message with valid parity and error check but
+which contains some other error (e.g. a request to set a register to an illegal value or a request for part of
+a floating point variable), an Exception code will be generated. (The message format is shown in the
+message Formats section)
+Exceptions are indicated by a value in the function code field of the response greater than Hex (80),
+obtained by OR'ing the original function code in the query with Hex (80). For example, if a function code of
+Hex (84) and exception code 2 were present in an exception response this indicates that a function 4
+query (Read Holding Registers) has resulted in an illegal data address error.
+The error codes and the corresponding types of error returned by the models covered in this guide are
+given in the following table:
+Exception
+Code
+MODBUS name Description Reported by
+01
+Illegal Function The function code is not supported by
+the product
+1000, 2000,
+1540, 1560,
+1580
+02 Illegal Data
+Address
+Attempt to access an invalid address or
+an attempt to read or write part of a
+floating point value
+1000, 2000,
+1540, 1560,
+1580
+03 Illegal Data Value Attempt to set a floating point variable to
+an invalid value
+1000, 2000,
+1540, 1560,
+1580
+05 Slave Device
+Failure
+An error occurred when the instrument
+attempted to store an update to it’s
+configuration
+1540, 1560,
+1580
