@@ -431,51 +431,25 @@ When things go wrong
         the existence of valid requests.
 
 Product Information
-    The following section outline the general information about the use of Modbus with the products covered
-    by this guide. 
-    It also outlines the information available over the Modbus interface of the products.
-    Appendix A and B, provides a cross-reference as to which features are available over the Modbus
-interface for individual models.
-On the instrument, each electrical parameter measured or calculated and each configuration parameter is
-given a number that maps onto a Modbus address. To convert a Crompton Parameter number into a
-Modbus address, subtract one from the parameter number and double it.
-Exception Codes
-Whenever an SPR or Integra product receives a MODBUS message with valid parity and error check but
-which contains some other error (e.g. a request to set a register to an illegal value or a request for part of
-a floating point variable), an Exception code will be generated. (The message format is shown in the
-message Formats section)
-Exceptions are indicated by a value in the function code field of the response greater than Hex (80),
-obtained by OR'ing the original function code in the query with Hex (80). For example, if a function code of
-Hex (84) and exception code 2 were present in an exception response this indicates that a function 4
-query (Read Holding Registers) has resulted in an illegal data address error.
-The error codes and the corresponding types of error returned by the models covered in this guide are
-given in the following table:
-Exception
-Code
-MODBUS name Description Reported by
-01
-Illegal Function The function code is not supported by
-the product
-1000, 2000,
-1540, 1560,
-1580
-02 Illegal Data
-Address
-Attempt to access an invalid address or
-an attempt to read or write part of a
-floating point value
-1000, 2000,
-1540, 1560,
-1580
-03 Illegal Data Value Attempt to set a floating point variable to
-an invalid value
-1000, 2000,
-1540, 1560,
-1580
-05 Slave Device
-Failure
-An error occurred when the instrument
-attempted to store an update to it’s
-configuration
-1540, 1560,
-1580
+-------------------
+*** Yet to complete
+
+
+ABB Water Flowmeter
+-------------------
+Modbus protocol
+    Transmission    :   Modbus RTU - RS485 serial connection
+    Baud rate       :   2400, 4800, 9600, 19200, 38400, 56000, 57600, 115200 baud
+                        Factory setting :   9600 baud
+    Parity          :   None, even, odd
+                        Factory setting :   odd
+    Stop bit        :   One, two
+                        Factory setting :   One
+    IEEE format     :   Little endian, big endian
+                        Factory setting :   Little endian
+    Response delay time :   0 to 200 milliseconds
+                            Factory setting :   10 milliseconds
+
+
+
+
