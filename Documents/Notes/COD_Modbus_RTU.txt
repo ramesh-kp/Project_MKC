@@ -1,0 +1,90 @@
+MODBUS Command Structure
+---------------------------------------
+Data format in this document:
+    Binary number – shown with suffix B. 
+        Example: 10001B
+    Decimal number – without nay suffix. 
+        Example: 256
+    Hexadecimal number—shown with prefix 0x. 
+        Example: 0x2A
+    ASCII character or string – shown with quotation marks. 
+        Example:” YL1014010022”
+
+Command Structure
+--------------------------
+    MODBUS defines a simple protocol data unit (PDU), which is transparent to communication layer.
+
+         MODBUS PDU - {FUNCTION CODE + DATA}
+
+    The mapping of MODBUS protocol on a specific bus or network introduces some additional fields on the Protocol Data Unit. 
+    The client that initiates a MODBUS transaction builds the MODBUS PDU, and then adds fields in order to build the appropriate communication PDU.
+    MODBUS Structure for Serial Communication
+
+        {MODBUS SERIAL LINE PDU {ADDRESS FIELD + MODBUS PDU {FUNCTION CODE + DATA} + CRC}}
+
+    On a MODBUS serial bus, address field only includes addresses for slave devices.
+    Slave address range for optical UV254 Sensor is: 1…247
+    Master device sends a "request frame" with a targeted slave address. 
+    When slave device responses, it has to put its own address in the "response frame", so that master device knows where the response comes from.
+    Function code indicates type of operations.
+    CRC is the result of redundancy check.
+
+MODBUS RTU Transmission Mode
+-----------------------------------------------
+	When devices communicate on a MODBUS using RTU (remote terminal unit) mode, each 8-bit byte message contains two 4-bit hexadecimal characters. 
+	The main advantage of the RTU mode is that it has higher character density, which enables better throughput compare to ASCII mode at same baud rate. 
+	Each RTU message must be transmitted in a continuous string of characters. 
+	
+	RTU mode format for each byte (11 bits):
+		Encoding system	:	8 bit binary.
+							Each 8-bit packet contains 4-bit hexadecimal characters (0-9, A-F)
+		Bit per byte 		:	1 start bit
+							8 data bits
+							1 stop bits
+							Least significant bit first
+							No parity check
+		Baud rate		:	9600bps
+	
+	Serial transmission of characters:
+		Every character or byte is sent under this sequence (right to left):
+		Most Significant Bit(MSB) .......... Least Significant Bit (LSB)
+		RTU Mode Bit Sequence:
+			{stop bit, 8th bit, 7th bit, 6th bit, 5th bit, 4th bit, 3rd bit, 2nd bit, 1st bit, start bit}
+
+    CRC Field Structure:
+        Redundancy check (CRC16)
+
+    Frame Structure:
+        RTU Message Frame Structure:
+            {Slave Address (1 byte), Function Code (1 byte), Data (0 - 252 bytes), CRC (2 bytes, 1 for CRC Low and 1 for CRC High)}
+
+    Maximum size of MODBUS frame is 256 bytes.
+    MODBUS RTU Message Frame
+	In RTU mode, message frames need to be separated by an idle interval of at least 3.5 character lengths. 
+	In rest of this document, this idle interval is called t3.5.
+		{t0 (at least 3.5 character) + Frame 1 + t1 (at least 3.5 character) + Frame 2 + t2 (at least 3.5 character) + Frame 3 + ......}
+	RTU Message Frame:
+		{Start (>=3.5 char) + MODBUS Message {Address (8 bits) + Function (8 bits) + Data (N * 8 bits) + CRC Check (16 bits)} + End (>= 3.5 char)}
+
+	Entire message frame must be sent as continuous stream of characters.
+	If idle time between two characters in a frame is longer than 1.5 characters, the message frame will be considered incomplete, and will be discarded by receiving side.
+
+MODBUS RTU CRC Check
+--------------------
+    In RTU mode, the error checking field is based on a cyclical redundant checking (CRC) method.
+    The CRC field checks entire content of MODBUS message, regardless of the existence of parity check bit. 
+    CRC16 checking method is utilized. 
+    CRC result is a 16-bit value with two 8-bit bytes, low order 8-bit byte first followed by high order 8-bit byte.
+
+MODBUS RTU for UV254 Sensor
+---------------------------
+
+    
+	
+		
+
+
+
+
+
+
