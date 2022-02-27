@@ -8,7 +8,6 @@ git add .
     Add the files in your new local repository. This stages them for the first commit.
 
 git commit -m "MKC 27/02/2022"
-    MKC 21/01/2022
     Commit the files that you have staged in your local repository.
 
 git status
