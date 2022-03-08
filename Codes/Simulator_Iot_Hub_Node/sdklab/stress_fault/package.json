@@ -1,0 +1,44 @@
+{
+  "name": "stressFault",
+  "version": "0.0.1",
+  "description": "Long haul tests for the Azure IoT SDKs for Node.js",
+  "main": "./dist/stress_fault.js",
+  "bin": "./dist/stress_fault.js",
+  "scripts": {
+    "npmlockrefresh": "npm i --package-lock-only",
+    "prettier": "npx prettier --write .",
+    "lint": "tslint --project . -c ../../tslint.json",
+    "build": "tsc",
+    "start": "node dist/stress_fault.js",
+    "prep": "npm run prettier && npm run lint && npm run build",
+    "run": "npm run prep && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azure/azure-iot-sdk-node.git"
+  },
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azure/azure-iot-sdk-node/issues"
+  },
+  "homepage": "https://github.com/azure/azure-iot-sdk-node#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "@types/uuid": "^3.4.5",
+    "encoding": "^0.1.13",
+    "tslint": "^6.1.3",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "azure-iot-common": "1.12.13",
+    "azure-iot-device": "1.17.8",
+    "azure-iot-device-amqp": "1.13.8",
+    "azure-iot-device-http": "1.13.8",
+    "azure-iot-device-mqtt": "1.15.8",
+    "azure-iothub": "1.14.6",
+    "debug": "^4.3.1",
+    "pem": "^1.14.2",
+    "uuid": "^8.3.2"
+  }
+}

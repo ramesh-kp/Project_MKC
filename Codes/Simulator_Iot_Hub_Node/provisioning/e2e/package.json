@@ -1,0 +1,51 @@
+{
+  "name": "azure-iot-provisioning-device-e2e",
+  "version": "1.8.13",
+  "description": "E2E tests for the Azure Device Provisioning SDK",
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.3",
+    "azure-iot-common": "1.12.13",
+    "azure-iot-provisioning-device": "1.8.12",
+    "azure-iot-provisioning-device-amqp": "1.8.12",
+    "azure-iot-provisioning-device-http": "1.8.12",
+    "azure-iot-provisioning-device-mqtt": "1.7.12",
+    "azure-iot-provisioning-service": "1.9.0",
+    "azure-iot-security-symmetric-key": "1.7.12",
+    "azure-iot-security-tpm": "1.8.12",
+    "azure-iot-security-x509": "1.7.12",
+    "azure-iothub": "1.14.6",
+    "chai": "^4.3.3",
+    "debug": "^4.3.1",
+    "jshint": "^2.13.4",
+    "mocha": "^9.2.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mocha-multi-reporters": "^1.1.7",
+    "nyc": "^15.0.0",
+    "pem": "^1.14.2",
+    "sinon": "^11.1.2",
+    "tss.js": "^2.0.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "npmlockrefresh": "npm i --package-lock-only",
+    "server_validation": "mocha --reporter mocha-multi-reporters --reporter-options configFile=../../mocha-reports.json _server_validation.js",
+    "service_create_delete": "mocha --reporter mocha-multi-reporters --reporter-options configFile=../../mocha-reports.json _service_create_delete.js",
+    "provisioning_e2e": "mocha --reporter mocha-multi-reporters --reporter-options configFile=../../mocha-reports.json _provisioning_e2e.js",
+    "lint": "jshint --show-non-errors .",
+    "alltest": "mocha -- _*.js",
+    "e2e": "npm -s run lint && npm -s run alltest"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azure/azure-iot-sdk-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Azure/azure-iot-sdk-node/issues"
+  },
+  "homepage": "https://github.com/Azure/azure-iot-sdk-node#readme"
+}
