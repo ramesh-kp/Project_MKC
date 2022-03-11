@@ -7,7 +7,7 @@ git status
 git add .
     Add the files in your new local repository. This stages them for the first commit.
 
-git commit -m "Added Node Code for IoT Simulator"
+git commit -m "MKC 11/03/2021"
     Commit the files that you have staged in your local repository.
 
 git status
