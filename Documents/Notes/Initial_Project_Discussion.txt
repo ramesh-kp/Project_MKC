@@ -64,3 +64,28 @@ Communicated these to Nazeer / Nishad : FYI (For Your Information)
 		(A high level diagram detailing these would be nice to have)
 	c)	Search for more options, collect price, availability and after sales support details
 	
+Demanded	
+1.	PH Sensor
+2.	Turbidity Sensor
+3.	TSS Sensor - Total Suspended Solids
+4.	TDS Sensor - Total Dissolved Solids
+5.	VS
+6.	COD Sensor - Chemical Oxygen Demand
+7.	BOD Sensor - Biochemical Oxygen Demand
+8.	Coliform Sensor
+9.	Flow Meter
+10.	Water Level Sensor
+11.	Temperature Sensor
+12.	Humidity Sensor
+13.	Rainfall Sensor
+14.	Smart Energy Meter
+
+Current Sensors
+1.	PH Sensor
+2.	TSS Sensor - Total Suspended Solids
+3.	TDS Sensor - Total Dissolved Solids
+4.	COD Sensor - Chemical Oxygen Demand
+5.	BOD Sensor - Biochemical Oxygen Demand
+6.	Flow Meter
+7.	Temperature Sensor
+8.	Smart Energy Meter
