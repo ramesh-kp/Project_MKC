@@ -1,58 +1,58 @@
 Closed
 ------
-An ultrasonic water level sensor must be placed in the well outside the WIRASas the well is more than 12m depth.
-2 overhead tank of total capacity 40,000l capacity.
-Sewage Treatment Plant (STP) sensors must be placed in a tank placed in the outlet of the STP.
+Because the well is deeper than 12 metres, an ultrasonic water level sensor must be installed outside the WIRAS.
+2 overhead tanks with a combined capacity of 40,000 litres.
+Sensors for sewage treatment plants (STPs) must be installed in a tank near the STP's output.
 
 Overhead Tank 
-    There are 2 overhead tank (Tank 1 and Tank 2).
-    1 tank is again divided into 2 sections (Tank 2.1 and Tank 2.2).
-    Distance between 2 tanks is approximately 60m.
-    Distance between the dam and nearest tank is 150m.
-    Tank 1 the inputs is from the dam and well.
-    Tank 2.1 the input is from well as the water from this tank is used in kitchen and cooler (drinking) only.
-    Tank 2.2 is used for fire safety only.
-    The Tank 1, Tank 2.1 and Tank 2.2 uses wired water level sensors as the maximum height of the overhead tank is 5m.
-    The inlet pipe diameter of the tank is 2 inch ASTM (from the dam and well).
-    While the outlet pip have a diameter 3 inch ASTM.
-    From dam and well 2 inch inlet pipe is used by changing the valves
+    There are two tanks in the building (Tank 1 and Tank 2).
+    One tank is divided into two pieces once more (Tank 2.1 and Tank 2.2).
+    The distance between two tanks is around 60 metres.
+    The dam is 150 metres away from the nearest tank.
+    The inputs to Tank 1 come from the dam and a well.
+    Tank 2.1 receives its water from a well and is solely utilised in the kitchen and cooler (drinking).
+    Tank 2.2 is exclusively used for fire protection.
+    Because the maximum height of the overhead tank is 5m, wired water level sensors are used in Tank 1, Tank 2.1, and Tank 2.2.
+    The tank's input pipe is ASTM 2 inch in diameter (from the dam and well).
+    The exit pip has an ASTM diameter of 3 inches.
+    Changing the valves allows 2 inch intake pipe to be utilised from the dam and well.
 
 STP Plant
-    The outlet of STP plant is 1.5 inch PVC pipe.
-    Need 2 flow meters in the inlet and outlet of the STP plant.
-    There will be 1 tank placed on the outside of the STP plant for placing the STP sensors.
+    The STP plant's output is a 1.5-inch PVC pipe.
+    Two flow metres are required for the STP plant's intake and output.
+    The STP sensors will be mounted in one tank on the exterior of the STP facility.
 
 Conclusion
-    One edge device near to the tank.
-    The power cables and RS485 cables of the water level sensor placed in the dam will be connected to WIRAS.
+    Near the tank, there is one edge gadget.
+    WIRAS will be linked to the power and RS485 cables of the water level sensor installed in the dam.
 
     Water level sensors
-        3 for 3 tanks (wired type as the tanks are only maximum 5m depth).
-        1 for well (ultrasonic type as the well is more than 12m depth).
-        2 for dam (height will be calculated by MKC team).
+        3 tanks for 3 tanks (wired type as the tanks are only maximum 5m depth).
+        1 for excellent (ultrasonic type as the well is more than 12m depth).
+        2 for the dam (height will be calculated by MKC team).
 
-    Flowmeter Sensors (Need a better clarification)
-        1 at the outlet of dam.
-        1 at the outlet of well.
-        1 in the kitchen inlet.
-        1 in the toilet inlet.
-        1 in the washroom inlet 1 in the STP inlet.
-        1 at the STP outlet.
+    Sensors for Flowmeters (Need a better clarification)
+        1 near the dam's outflow
+        1 at the well's outflow
+        1 inlet in the kitchen
+        There is one in the toilet inlet.
+        1 in the intake to the washroom 1 in the inflow of the STP.
+        1 at the STP receptacle.
 
     STP Sensors
-        All STP sensors must be dipped in the tank placed near to STP plant.
+        All STP sensors must be immersed in a tank near the STP facility.
 
     Energymeter
-        The energy meter must have an RS485 or USB output.
-        Or the output of the energy meter must be connected to a smart energy meter.
+        An RS485 or USB output is required for the energy metre.
+        Alternatively, the energy meter's output must be linked to a smart energy metre.
 
 Action Plan from MKC 
 --------------------
-MKC team will give the depth of the dam.
-MKC team needs to give the pipe diagram with exact diameter of each pipe.
-The internal connection of the pipe is not explained properly.
-The number of flowmeters depends on the connection of pipes.
-It also depends the number of edge devices.
-MKC team must set a tank in the outlet of STP plant.
-The STP sensors need to dip in the tank.
-The MKC team will arrange a meeting the third party who will procure and implement the hardwares.
+The dam's depth will be provided by the MKC team.
+The MKC team must provide a pipe schematic with each pipe's exact diameter.
+The pipe's interior connection is not fully defined.
+The number of flowmeters required is determined by the pipe connections.
+The quantity of edge devices also plays a role.
+A tank must be installed in the STP plant's output by the MKC team.
+The STP sensors must be submerged in the tank.
+The MKC staff will set up a meeting with the third-party vendor who will purchase and install the gear.

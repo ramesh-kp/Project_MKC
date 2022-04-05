@@ -1,80 +1,79 @@
 STP Sensors
-    Power source for the STP sensors will be 12V DC power supply with maximum current rating. 
-    Power cable must also have the same length of the transmitter and receiver wire. 
-    Sensors must be water proof since the sensors must be dipped in the water. 
-    Sensors must be dipped in the minimum direct distance of the plant. 
-    Depth of the sewage plant must be of maximum 1000m only the RS485 protocol can communicate.    
+    The STP sensors will be powered by a 12V DC power supply with a maximum current rating.
+    The length of the power line must match the length of the transmitter and receiver wires.
+    Because the sensors must be submerged in water, they must be waterproof.
+    Sensors must be dipped in the plant's minimal direct distance.
+    Only the RS485 protocol can communicate at a maximum depth of 1000 metres in the sewage plant.    
     
 RS485 To Ethernet Modbus Gateway
-    Power source for the RS485 To Ethernet Modbus Gateway will be 12V DC power supply. 
-    The gateway must be placed within 1000m from the sensors. 
-    The output of the gateway is an ethernet port. M
-    Maximum distance ethernet cable for communication is 100m. 
-    Server must be within 100m from the gateway. 
-    If the server is placed beyond 100m range, the communication between the gateway and the server is done by GSM module. 
-    When using the GSM module, the network must have full coverage in the area. 
-    There will be a microcontroller for sending the data’s through the GSM module. 
-    GSM have a 12V DC power supply. 
-    Need another covering with IP65 box as the existing box is not corrosion free. 
-    Commands for communication between gateway and sensors. 
-    Server needs to send the command to enable the port. 
-    After enabling the port server need to send the command to communicate with the sensors using RS485 protocol. 
-    The sensors will send the reading of the inputs according to the commands which will send to the server through gateway.
+    The RS485 To Ethernet Modbus Gateway will be powered by a 12V DC power supply.
+    Within 1000 metres of the sensors, the gateway must be installed.
+    The gateway's output is an ethernet port.
+    The maximum distance that an ethernet wire may be used for communication is 100 metres.
+    The server must be located within 100 metres of the gateway.
+    GSM module is used to communicate between the gateway and the server if the server is located outside the 100m range.
+    When utilising the GSM module, the network in the region must have complete coverage.
+    A microcontroller will be used to transfer data over the GSM module.
+    GSM is powered by a 12V DC source.
+    Because the present box has corroded, a new covering with an IP65 box is required.
+    The commands used to communicate between the gateway and the sensors.
+    The instruction to activate the port must be sent by the server.
+    After activating the port, the server must send a command to the sensors using the RS485 protocol.
+    The sensors will deliver the input readings in response to the orders that are sent to the server via the gateway.
         
 Water Level Sensor
-    Power source for the Water Level Sensor will be 12V DC power supply. 
-    Mainly 3 water sources are there to calculate the height. Natural well, Mini dam and Overhead Tank. 
-    There must be a 12V DC power supply near to the water sources. 
-    Wired water level sensors have maximum coverage distance 5m. 
-    Ultrasonic water level sensor have a maximum coverage distance of 30m. 
-    Sensors must be dipped in the plant. 
-    The output of the water level sensor is RS485. 
-    The sensor must be placed within 1000m from the gateway.
+    The Water Level Sensor will be powered by a 12V DC power supply.
+    To compute the height, three water sources are used. Overhead tank, natural well, and little dam
+    A 12V DC power supply must be located near the water sources.
+    The maximum coverage distance for wired water level sensors is 5 metres.
+    The maximum coverage distance of an ultrasonic water level sensor is 30 metres.
+    The plant must be immersed in sensors.
+    The water level sensor's output is RS485.
+    Within 1000 metres of the gateway, the sensor must be installed.
     
 Flow Meter Sensor
-    Power source for the Flow Meter Sensor. (12V DC power supply).
-    Flow meter is used in overhead tank for getting the total volume of the water consumption.
-    Flow meter is used in the kitchen, washroomm and toilets for getting the respective usages.
-    In seawage treatment plant flow meter is used in the inlet pipe and outlet pipe for getting the volume of the treated water and its usage. 
-    For each flow meter sensor there must be power supply.
-    The diameter of the flow meter depends on the diameter of the pipe.
-    The output of the water level sensor is RS485. The sensor must be placed within 1000m from the gateway.
+    The Flow Meter Sensor's power source. (12 volts DC power supply)
+    In an overhead tank, a flow metre is used to determine the overall volume of water consumed.
+    A flow metre is used in the kitchen, bathroom, and toilet to determine how much water is consumed.
+    A flow metre is used in the intake and output pipes of a wastewater treatment facility to determine the volume of treated water and its utilisation.
+    A power supply is required for each flow metre sensor.
+    The flow meter's diameter is determined by the pipe's diameter.
+    The water level sensor's output is RS485. Within 1000 metres of the gateway, the sensor must be installed.
   
 Energymeter
-    230v Ac power supply. 
-    Serial output RS485 or USB output. 
-    The meter must be placed within 1000m from the gateway.
+    The power supply is 230 volts ac.
+    RS485 serial output or USB output
+    Within 1000 metres of the gateway, the metre must be installed.
 
-Dont want exact accuracy of the depth of water source.
-Fix with wired water level sensor.
+You don't need to know the precise depth of the water source.
+Install a wired water level sensor to solve the problem.
 
 Problems Facing
 ...............
-Volume of the water source must be calculated (Mini dam and well).
-Checking the lower bed of the mini dam and well will be difficult.
-Position of flow meter sensors (Diameter and number of pipes effect the sensor specifications).
-Giving power to the flow meters will be difficult, depending upon the position of the flow meters.
-Size of the flow meters will depend on the diameter of the pipe.
-Position of water level sensors (Specially the terrain of the water source).
-Want to check the power backup in the MKC.
+It is necessary to calculate the volume of the water source (Mini dam and well).
+It will be difficult to inspect the micro dam's bottom bed and well.
+Sensors on flow metres are placed in the following locations (Diameter and number of pipes effect the sensor specifications).
+Depending on where the flow metres are located, providing electricity to them will be tricky.
+The diameter of the pipe will determine the size of the flow metres.
+Sensors for water level are located in the following locations (Specially the terrain of the water source).
+I'd want to examine the MKC's power backup.
 
 
 Other Inputs:
 -------------
--Q. Will it show the remaining water level (from all 3 sources) (in litres) or will there be any indicator when water level 
-    is too low? Will it show warning signal?
--Q. What is the backup if the flow sensor gets damaged due to extreme water pressure on flow.
-    Will it show sensor damaged indication.
--Q. Suppose in any case, if the tank is running out of water/empty. Will the sensor send distress signal to the meter?
+Will it display the remaining water level (in litres) from all three sources, or will there be a warning when the water level is too low? Is there a warning signal?
+What happens if the flow sensor is destroyed by high water pressure on the flow?
+Is there a warning if the sensor is damaged?
+Assume, in any event, that the tank is low on water or empty. Is it possible for the sensor to transmit a distress signal to the metre?
 
 From the client side
 --------------------
-Do the sensors need to check water quality in the seawage treatment plant before and after treating the water.
-Check whether we want to check the water quality parameters of water sources like well, dam and pond.
-Check single phase or three phase in MKC.
+Is it necessary for the sensors to assess the water quality in the sewage treatment plant before and after treatment?
+Check if we wish to test the water quality characteristics of water sources such as a well, a dam, or a pond.
+In MKC, look for single phase or three phase.
 
-Communication between energymeter and gateway.
-Error handling for identifying faulty sensors.
-Can Mqtt connection established in gateway.
+The energymeter and the gateway communicate with each other.
+Error handling in order to detect malfunctioning sensors.
+Is it possible to make a Mqtt connection in the gateway?
 
  

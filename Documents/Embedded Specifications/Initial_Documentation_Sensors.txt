@@ -1,18 +1,19 @@
 First Phase
 ---------------------------------------------------------------------------------------------
 Two methods:
-	Required sensors are integrated into single module which is available in the market.
-	Some of the sensors are missing in the module which must be integrated seperately.
+	The required sensors are combined into a single commercially available module.
+	Some sensors are missing from the module and must be added separately.
 	
-	Integrating each identical sensors seperately. Each sensors are available in the market.
+	Separately integrating each identical sensor. 
+	Each sensor may be found on the market.
 	
 Integrated Module:
-	Most of the sensors are integrated in the module. 
-	The sensors which are not present in the module is integrated seperately.
-	Simple to install.
-	Patent goes to the company.
-	Heavy Cost.
-	Low risk in installation.
+	The majority of the sensors are built inside the module. 
+	Sensors that are not included in the module are added separately. 
+	It's easy to set up. 
+	The corporation receives the patent. 
+	The price is high. 
+	Installation carries a low risk.
 	
 	Parameters included:
 	BOD, COD, TOC, DOC, Dissolved Oxygen, Pressure, Chloride, pH, Temperature, 
@@ -48,13 +49,13 @@ Integrated Module:
 	https://www.proteus-instruments.com/files/Proteus-Datasheet-updated-28-04-21-v1.4.pdf
 	
 Identical Sensors:
-	Sensors are integrated seperately.
-	Each sensors have identical specifications and must be purchased seperately from the matket.
-	Difficult to install.
-	Developed by our own by integrating all the sensors.
-	Low Cost.
-	Risk in installation is high.
-	Availability dependence on different sellers.
+	Sensors are connected in a separate way. 
+	Each sensor has the same specs as the others and must be obtained separately from the market. 
+	Installing it is difficult. 
+	By combining all of the sensors, we developed it on our own. 
+	The price is low. 
+	Installation carries a significant level of risk. 
+	Availability is contingent on various suppliers.
 	
 	Ph Sensors:
 		Specifications:

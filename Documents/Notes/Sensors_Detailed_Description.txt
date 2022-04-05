@@ -1,56 +1,55 @@
 Ph Sensor:
-	The pH stands for the power of hydrogen, which is a measurement of the hydrogen ion concentration in the body. 
-	This is used in Water quality testing and Aquaculture. 
-	The total pH scale ranges from 1 to 14, with 7 considered to be neutral. 
-	A pH less than 7 is said to be acidic and solutions with a pH greater than 7 are basic or alkaline. 
-	The PH electrode has a single cylinder that allows direct connection to the input terminal of a pH meter, 
-	controller, or any pH device which has a BNC input terminal. 
-	The pH electrode probe is accurate and reliable that can give almost instantaneous readings.
+	The pH stands for hydrogen power, which is a measurement of the body's hydrogen ion concentration. 
+	This is used in the testing of water quality and aquaculture. 
+	The pH scale goes from 1 to 14, with 7 being considered neutral.
+	Acidic solutions have a pH less than 7, whereas basic or alkaline solutions have a pH more than 7. 
+	A single cylinder on the PH electrode permits direct connection to the input terminal of a pH metre, 
+	controller, or any other pH device with a BNC input terminal.
+	The pH electrode probe is precise and dependable, allowing for near-instantaneous measurements.
 	
 Turbidity Sensor:
-	Turbidity sensors measure the amount of light that is scattered by the suspended solids in water. 
-	As the amount of total suspended solids (TSS) in water increases, the water’s turbidity level (and cloudiness or haziness) increases. 
-	Turbidity sensors are used in river and stream gaging, wastewater and effluent measurements, control instrumentation for settling ponds, 
-	sediment transport research, and laboratory measurements.
+	Turbidity sensors assess how much light is dispersed in water by suspended materials. 
+	The turbidity level (and cloudiness or haziness) of water increases as the amount of total suspended solids (TSS) 
+	in the water increases. 
+	River and stream gauging, wastewater and effluent measurements, settling pond control instruments, sediment transport studies, 
+	and laboratory measurements all employ turbidity sensors.
 	
 Total Suspended Solids:
-	TSS is an important water quality parameter measure for wastewater treatment operations and environmental health. 
-	Wastewater contains large quantities of suspended organic and inorganic material that must be removed through screening, 
-	filtration or settling/flotation methods prior to environmental discharge.
+	The total dissolved solids (TSS) is an essential water quality metric for wastewater treatment and environmental health. 
+	Before being discharged into the environment, wastewater contains considerable amounts of suspended organic and inorganic particles 
+	that must be removed via screening, filtering, or settling/flotation processes.
 	
 TDS Sensor:
-	This item can be used for water purifiers and filters, food (vegetables, fruits) and beverage quality monitoring, 
-	swimming pools, spas, aquariums, and hydroponics.
+	Water purifiers and filters, food (vegetables, fruits) and beverage quality monitoring, swimming pools, spas, aquariums, 
+	and hydroponics are all possible applications for this item.
 	
 
 BOD/COD Sensor: 
-	Real Tech’s bypass BOD/COD sensor provides affordable real-time measurement of organic matter in water or wastewater. 
-	The BOD/COD sensor provides superior measurement performance across multiple wavelengths of light using UV LEDs.
-	Designed to meet the needs of many monitoring applications, the BL series offers multiple sensor path length selections to meet the 
-	desired measurement range.
+	The bypass BOD/COD sensor from Real Tech allows for cost-effective real-time monitoring of organic matter in water or wastewater. 
+	Using UV LEDs, the BOD/COD sensor has excellent measuring performance across many wavelengths of light. 
+	The BL series is designed to fulfil the demands of a wide range of monitoring applications, with numerous sensor route length 
+	options to match the needed measurement range.
 
-	Chemical Oxygen Demand (COD) is a test that measures the amount of oxygen required to chemically oxidize the organic material and inorganic nutrients, 
-	such as Ammonia or Nitrate, present in water. 
+	Chemical Oxygen Demand (COD) is a test that determines how much oxygen is needed to chemically oxidise organic matter and 
+	inorganic nutrients in water, such as ammonia and nitrate.
 
-	BOD (Biochemical Oxygen Demand) Determination is a simple and easy way for monitoring the microorganisms' activity in water samples with extremely 
-	reliable results. 
-	The BOD measure this change in gas pressure between the beginning to the end of the analysis and give a result expressed in mg/l.
+	BOD (Biochemical Oxygen Demand) Determination is a simple and accurate method for assessing the activity of microorganisms in 
+	water samples. 
+	The BOD calculates the change in gas pressure from the start to the finish of the analysis and gives a result in mg/l.
 		
 Coliforms:
-	Coliforms (coliform bacteria) are rod-shaped gram-negative bacteria that 
-	are commonly used as an indicator of the sanitary quality of water. 
-	Coliforms are ubiquitous in the environment but are prevalent in the 
-	intestine and faecal material of warm-blooded animals. 
+	Coliforms (gram-negative bacteria) are rod-shaped gram-negative bacteria that are often employed as a sanitary water quality 
+	indicator. 
+	Coliforms are found throughout the environment, although they are most numerous in the gut and faeces of warm-blooded animals.
 	
 Flow Rate Sensor:
-	A flow sensor (more commonly referred to as a “flow meter”) is an electronic device that measures or regulates the flow rate of liquids and 
-	gasses within pipes and tubes. 
-	Flow sensors are generally connected to gauges to render their measurements, 
-	but they can also be connected to computers and digital interfaces.
+	A flow sensor (sometimes known as a "flow metre") is an electrical device that detects and controls the flow rate of liquids and 
+	gases via pipes and tubes. 
+	Flow sensors are often connected to gauges to display their readings, but they may also be linked to computers and digital interfaces.
 
 Liquid Level Sensor
-	Ultrasonic level sensors are used for non-contact level sensing of highly viscous liquids, as well as bulk solids. 
-	They are also widely used in water treatment applications for pump control and open channel flow measurement.
-	Ultrasonic level sensors are also affected by the changing speed of sound due to moisture, temperature, and pressures. 
-	Proper mounting of the transducer is required to ensure the best response to reflected sound. 
-	The ultrasonic sensor enjoys wide popularity due to the powerful mix of low price and high functionality.
+	Non-contact level detection of very viscous liquids and bulk solids is done with ultrasonic level sensors. 
+	Pump control and open channel flow monitoring are very common in water treatment applications. 
+	The changing speed of sound caused by moisture, temperature, and pressure has an impact on ultrasonic level sensors. 
+	To get the optimum reaction to reflected sound, the transducer must be mounted properly. 
+	The ultrasonic sensor is quite popular because of its potent combination of low cost and high performance.

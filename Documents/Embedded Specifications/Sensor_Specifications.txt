@@ -105,11 +105,11 @@ RS485 Edge Device
     Working temperature     :   -40 - 85 C
     Installation            :   Wall mounting
 
-	Configure IP address, server and client mode, data bag size etc.
-    Real COM driver working mode
-    Support cross-gateway and cross-router communication
-    Support WEB and Telnet configuration
-    Support virtual serial COM port access and Network interruption automatic recovery
+	Set the IP address, server and client modes, data bag size, and other options.
+	Working mode of a real COM driver. 
+	Cross-gateway and cross-router communication is supported.
+	Configuration through WEB and Telnet is supported.
+	Access to a virtual serial COM port is supported, as well as automated network interruption recovery.
 
 Energy Meter
     https://www.indiamart.com/proddetail/three-phase-energy-meter-with-rs-485-11668153291.html?pos=3&kwd=energy%20meter%20rs232&tags=A||||8227.221|Price|product

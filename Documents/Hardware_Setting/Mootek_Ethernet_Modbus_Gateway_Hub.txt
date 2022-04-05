@@ -1,0 +1,10 @@
+1.	Give 12v power to the device (Ethernet Modbus gateway).
+2.	Connect the LAN port to the network LAN.
+3.	Change the network to which you're presently connected.
+4.	The IPV4 connection should be changed.
+5.	192.168.1.51 is the IP address.
+6.	255.255.255.0 is the subnet mask.
+7.	192.168.0.3 is the default gateway.
+
+
+
