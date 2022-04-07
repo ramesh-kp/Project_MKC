@@ -6,5 +6,139 @@
 6.	255.255.255.0 is the subnet mask.
 7.	192.168.0.3 is the default gateway.
 
+In GUI Mode
+-----------
+Default Configurations
+Network Configurations
+	Serial No	:	YBB0217001219
+	IP address	:	192.168.1.254
+	Netmask		:	255.255.255.0
+	Gateway		:	192.168.1.1
+	DNS server	:	202.96.134.133
+	Server port	:	4002 (1 - 65535)
+	Repeat time	:	10 (10 - 65535s)
+
+RTU Master Mode
+RTU Master	:	RS485
+				Port		:	COM3,
+				Baud rate	:	9600,
+				Parity bit	:	None,
+				Data bit	:	8,
+				Stop bit	:	1
+RTU Slave	:	Ethernet
+				IP address		:	192.168.1.80,
+				Slave ID		:	1,
+				TCP port number	:	501,
+				Slave ID Start	:	1,
+				Slave ID End	:	1,
+				Slave ID Offset	:	0				
+MODBUS Gateway	:	Port		:	COM1
+					BaudRate	:	9600
+					DataBits	:	8
+					StopBits	:	1
+					ParityBits	:	None
+
+RTU Slave Mode
+RTU Master	:	Ethernet
+				Slave ID		:	2,
+				TCP port number	:	502,
+RTU Slave	:	RS485
+				Port		:	COM3
+				BaudRate	:	9600
+				Parity bit	:	None
+				Data bit	:	8
+				Stop bit	:	1
+MODBUS Gateway	:	Port		:	COM1
+					BaudRate	:	9600
+					DataBits	:	8
+					StopBits	:	1
+					ParityBits	:	None				
+
+Not found in the page
+	IP Map
+
+CLI Mode
+---------
+1.	Telnet is disabled by default, so you'll need to activate it to use it.
+2.	Type telnet 192.168.1.254 in the command prompt.
+3.	Please enter your username and password.
+	Username : admin
+	Password : admin
+4.	Enter "ModbusGateway(Device)#" into the console, which is the default mode.
+	
+Different Modes
+1.	Modbus	:	Show or modify Modbus information, such as setting the slave ID mapping configuration
+2.	Serial	:	Show or modify serial information， like as baud rate, data bit, flow control
+3.	Security:	Show or modify the IP and MAC address filtering, user name and password settings
+4.	Manage	:	Show or modify IP address and subnet mask, Set Console Overtime and Reset to default configure
+5.	Information :	Show or modify device type, name, device description, serial number, contact way, etc
+6.	Quit	:	Exit and return to the system view
+7.	Exit	:	Exit and return to the system view
+
+CLI Commands: Different Steps
+1.	Use the procedures below to retrieve the device's IP address.
+	First Command	:	Manage
+	Second Command	:	Show net_config
+
+2.	Follow the instructions below to configure serial communication settings.
+	First Command	:	Serial
+	Second Command	:	Com alias (Port) (Alias)
+						Com alias 2 Check
+						Set port 2's "Alias" to "Check"
+	Third Command	:	Com buadrate (Port) (BaudRate)
+						Com buadrate 2 9600
+						Set port 2's "Buadrate" to "9600"
+	Fourth Command	:	Com Linctrl (Port) (Parity) (Data) (Stop)
+						Com Linctrl 2 0 2 0	
+						Set the Parity Bit, Data Bit, and Stop Bit values for port 2 to None, 8 Bits, and 1 correspondingly.				
+						Parity	Bit	:	0 - None
+										1 - Odd
+										2 - Even
+										3 - Mark
+										4 - Space
+						Stop Bit	:	0 - 1
+										1 - 2
+	Fifth Command	:	Show config (Port)
+						Show config 2 
+						Show the port 2 detiled configuration.
+3.	Follow the instructions below to configure Modbus settings.
+	First Command	:	
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
