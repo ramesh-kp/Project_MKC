@@ -1,0 +1,27 @@
+unit 0 or 1		-	0xaa 0x03 0x00 0x01 0x00 0x0a 0x8d 0xd6
+					aa 03 00 01 00 0a 8d d6
+					
+					Reception
+					AA 03 14 00 00 00 AA 00 08 A9 5F 00 00 04 92 00 00 05 F0 00 00 09 08 FA 4E
+			 
+voltage 230v 	-	0xaa 0x03 0x00 0x1d 0x00 0x0a 0x4c 0x10
+					aa 03 00 1d 00 0a 4c 10
+					
+					Reception
+					AA 03 14 00 00 00 00 00 00 00 00 00 00 00 64 00 00 00 64 00 00 00 64 88 BA 
+					
+RTC 120422		-	0xaa 0x03 0x00 0x07 0x00 0x0a 0x6d 0xd7
+					aa 03 00 08 00 0a 6d d7
+
+					Reception
+					AA 03 14 00 00 05 F0 00 00 09 09 00 00 00 00 00 00 00 00 00 00 00 00 22 65 
+
+My ip	:	192.168.0.105
+Aneesh ip	:	192.168.0.112
+
+Sending data description in 16 bits 
+	The device id is represented by the first and second bits.
+	The third and fourth bits are used to hold the register.
+	Energymeter parameters are addressed on the fifth, sixth, seventh, and eighth bits.
+	Crc check sums are the thirteenth, fourteenth, fifteenth, and sixteenth bits.
+	

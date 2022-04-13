@@ -1,0 +1,2 @@
+1.  Online CRC calclutor
+    https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/
