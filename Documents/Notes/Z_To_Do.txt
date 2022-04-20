@@ -1,3 +1,0 @@
-1.  Contact Mootek technical team and make things faster.
-2.  Establish connection with the azure iot hub.
-3.  Get the tracking id for STP sensors from Benson.

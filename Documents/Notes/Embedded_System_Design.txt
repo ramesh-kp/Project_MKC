@@ -9,6 +9,6 @@
 9.  Verification
 10. Validation
 
-The flowmeters' Frequency and Deviceid must be known.
-The manufacturerDeviceID, sensorSerialID, and slaveID must all be reset if the Modbus address is unknown.
-The following are the steps to resetting the aforementioned IDs.
+The frequency and deviceid of the flowmeters must be known.
+If the Modbus address is unknown, the manufacturerDeviceID, sensorSerialID, and slaveID must all be reset.
+
