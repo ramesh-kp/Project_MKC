@@ -1,0 +1,5 @@
+Change the connetion in RS485 to USB converter.
+Setup the Raspberry Pi and run the Energymeter connection.
+Communicate the Raspberry Pi with Azure IoT Hub.
+
+

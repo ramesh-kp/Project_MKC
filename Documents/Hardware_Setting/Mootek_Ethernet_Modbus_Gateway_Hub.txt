@@ -1,0 +1,17 @@
+1.	Give 12v power to the device (Ethernet Modbus gateway).
+2.	Connect the LAN port to the network LAN.
+3.	Change the network to which you're presently connected.
+4.	The IPV4 connection should be changed.
+5.	192.168.1.51 is the IP address.
+6.	255.255.255.0 is the subnet mask.
+7.	192.168.0.3 is the default gateway.
+8.	502 is the port number.
+
+Using Realterm Software to check the connection.
+	1.	In the display options, choose Hex (Space).
+	2.	In the Port option, change the port number to <<< 192.168.1.254:502 >>>.
+	3.	In the Echo Port option, change the port number to <<< 192.168.1.254:502 >>>.
+	4.	In the Echo Port option, check the boxes for <<< Echo On >>> and <<< Monitor >>>.
+	5.	In the Send option, paste the request command.
+	6.	To send the data, use the <<< Send Number >>> button.
+	7.	The Realterm monitor shows the sensor's response.

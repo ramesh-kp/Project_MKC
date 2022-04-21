@@ -1,57 +1,57 @@
 Water Management
 ----------------
 06/01/2022
-Convert the value coming from the sensors to a meaningful value.
-How do we install the sensors.
-Material of the RS 485 box (Example Iron).
-Where to install the sensors (Middle of the pond or side of the pond).
-How do we connect the wires of the sensors.
-Where to place the RS 485 box (Rainy season it shoulnot get wet).
-Identify the location of the sensors.
-What are the challenges to install at the physical MKC location.
-Wiring, Putting the Box, Power coming all things need to be checked.
-Check the length of the cables.
-Where the power should be taken from (buliding).
-Check the power source of the embedded part.
-Volume of the level whether in the range sea level.
+Convert the data from the sensors into something useful.
+What is the best way to install the sensors?
+The RS 485 box's material (Example Iron).
+Where should the sensors be installed? (Middle of the pond or side of the pond).
+What is the best way to connect the sensor wires?
+Where should the RS 485 box be placed? (Rainy season it shoulnot get wet).
+Determine where the sensors are.
+What are the obstacles to installing at the MKC location?
+Everything needs to be double-checked, including the wiring, the box, and the power supply.
+Make sure the cables are all the same length.
+Where should the power come from? (buliding).
+Examine the integrated part's power supply.
+Whether the level is in the range of sea level.
 
 ************************************************************
-Find here available sensors. (Water level Sensors and Fire Sensors)
-Check the solutions provided by Naico.
+Here you'll find a list of available sensors. (Fire sensors and water level sensors)
+Take a look at Naico's solutions.
 
 ************************************************************
-What are things to takecare as part of installing sensors from the sensors vendor perspective.
-Check the videos of the sensors especially demonstration of install.
-Range of the sensors output.
+From the standpoint of the sensor manufacturer, what should be kept in mind when installing sensors?
+Check out the sensor movies, especially the installation demonstration.
+The sensor's output range.
 
 07/01/2022
-Activities in embedded system
-    Finding installation details.
-    Validating the data.
-    Identifying the functional working before installation.
-    Installation finetuning calibration.
-Python code to calibrate data from the sensors.
-Document the Data interpretations, Range and Specifications of the Water quality sensors.
+Embedded system activities
+    Obtaining installation information.
+    Validating the information.
+    Prior to installation, determining the functional working.
+    Calibration of the installation finetuning.
+Python code for calibrating sensor data.
+Document the water quality sensors' data interpretations, range, and specifications.
 
 
 ************************************************************
-Check whether the flow meter sensor depends upon the size of the pipe.
-Contact those persons who have installed the industrial grade water management sensors.
-Check the industrial installation guidlines.
-Document for each sensors how to install, how to read, how to calibrate and what are the interpretations.
-Check whether there is any water level sensors using ultrasound or laser technology to find the readings.
-Contact the vendors of each sensors.
-Contact with the offline distributers (local vendors) to procur the sensors.
-Draw the connection diagram.
-Draw sensor installation diagram.
-Draw the data structure diagram.
+Check to see if the flow metre sensor is affected by pipe size.
+Please get in touch with the people who installed the industrial-grade water management sensors.
+Check out the guidelines for industrial installation.
+Document how to set up each sensor, how to read it, how to calibrate it, and what the results mean.
+To discover the readings, look for any water level sensors that use ultrasonic or laser technology.
+Make contact with the sensor's manufacturer.
+To obtain the sensors, contact the offline distributors (local dealers).
+Make a diagram of the connections.
+Make a schematic of the sensor installation.
+Make a diagram of the data structure.
 
 Energy Management
 -----------------
 06/01/2022
-Check USB connector on the energy meter connected in the home.
-Check the communication between the energy meter and system.
+Examine the USB connector on the home's energy meter.
+Examine the energy meter's and system's communication.
 
 07/01/2022
-Buy one sample energy meter.
-Buy one sample energymeter with USB output.
+Purchase a single sample energy metre.
+Purchase a USB-enabled sample energymeter.
