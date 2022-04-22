@@ -7,5 +7,10 @@
 3.	Azure IoT Raspberry Pi online simulator
 	https://azure-samples.github.io/raspberry-pi-web-simulator/#getstarted
 	
-
+4.	Problem-solving The Raspberry Pi's SD card becomes smaller.
+	https://www.youtube.com/watch?v=2kYa8ew2V9I
+	
+5.	Sample code for Azure IoT on Raspberry Pi.
+	https://www.c-sharpcorner.com/article/azure-iot-and-raspberry-pi/
+	
 	
