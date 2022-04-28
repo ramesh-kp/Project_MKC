@@ -20,3 +20,6 @@ Using Realterm Software to check the connection.
 	5.	In the Send option, paste the request command.
 	6.	To send the data, use the <<< Send Number >>> button.
 	7.	The Realterm monitor shows the sensor's response.
+
+
+0x00 0x04 0x00 0x00 0x00 0x06 0x5A 0x03 0x00 0x00 0x00 0x19 

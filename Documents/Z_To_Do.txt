@@ -1,3 +1,6 @@
+Contact Water Level Sensor and do the needful
+Check flowmeter with proper pressure
+Read from Azure iot hub
 
 
 
