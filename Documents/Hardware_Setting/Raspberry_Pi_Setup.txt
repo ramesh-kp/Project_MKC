@@ -1,3 +1,6 @@
+username	:	pimkc
+password	:	Naico@1234
+
 To set up the ethernet port on a Raspberry Pi, follow these instructions.
 	sudo nano /etc/dhcpcd.conf
 		#interface eth0
@@ -6,9 +9,5 @@ To set up the ethernet port on a Raspberry Pi, follow these instructions.
 		#static domain_name_servers=8.8.8.8.8.8.4.4
 
 Use the command to install a library on a Raspberry Pi.
-	python3 -m pip install whatever
+	python3 -m pip install <<< whatever >>>
 
-Azure IoT Raspberry Pi online simulator
-	https://azure-samples.github.io/raspberry-pi-web-simulator/#getstarted
-	Change the connectionString with Azure IoT device primary key.
-	

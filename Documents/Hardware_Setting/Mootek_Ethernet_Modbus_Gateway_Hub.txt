@@ -5,7 +5,12 @@
 5.	192.168.1.51 is the IP address.
 6.	255.255.255.0 is the subnet mask.
 7.	192.168.0.3 is the default gateway.
-8.	502 is the port number.
+8.	502 is the default port number.
+9.	When a new sensor is connected to the Modbus gateway, the sensor information and communication details must first be configured 
+	in the <<< 3onedata >>> website, which may be accessible through the IP <<< 192.168.1.254 >>>.
+10.	Select <<< Slave ID >>> from the <<< Modbus Settings >>> menu, change the <<< Channel Type >>> and <<< Slave ID Range >>> to 
+	<<< RTU Slave >>> and Sensor slave ID, respectively.
+11.	After that, transmit the TCP Modbus data to the specified slave id.
 
 Using Realterm Software to check the connection.
 	1.	In the display options, choose Hex (Space).
@@ -15,3 +20,6 @@ Using Realterm Software to check the connection.
 	5.	In the Send option, paste the request command.
 	6.	To send the data, use the <<< Send Number >>> button.
 	7.	The Realterm monitor shows the sensor's response.
+
+
+0x00 0x04 0x00 0x00 0x00 0x06 0x5A 0x03 0x00 0x00 0x00 0x19 

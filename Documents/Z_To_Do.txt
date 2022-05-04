@@ -1,5 +1,6 @@
-Change the connetion in RS485 to USB converter.
-Setup the Raspberry Pi and run the Energymeter connection.
-Communicate the Raspberry Pi with Azure IoT Hub.
+Contact Water Level Sensor and do the needful
+Check flowmeter with proper pressure
+Read from Azure iot hub
+
 
 

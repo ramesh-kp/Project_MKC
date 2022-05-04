@@ -1,0 +1,18 @@
+1.	Connect the DC power supply to the sensor, the red wire to the positive terminal, and the green wire to the negative terminal.
+2.	Connect the sensor's Modbus communication cable to the gateway hub, blue to RS485+, and yellow to RS485-.
+3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
+4.	Set the Energymeter's configuration via the MODBUS RTU protocol.
+	Slave ID			:	150
+	First Register		:	40001
+	Number of Registers	:	10
+	Function Code		:	3
+	Minus Offset		:	40001
+	Register Size		:	16 bit registers
+5.	Request for a TCP IP connection to the Energymeter.
+	0x00 0x02 0x00 0x00 0x00 0x06 0x01 0x03 0x00 0x00 0x00 0x0A 
+6.	Response from the TCP IP connection of the Energymeter.
+	00 01 00 00 00 17 01 03 14 00 01 00 03 00 01 00 00 00 19 00 00 07 D0 1A E5 03 E8 00 02 
+7.	The needed bits of the units utilised are 35, 36, 37, and 38.
+8.	In the above example (00 19)
+9.	Convert the hexadecimal value to a decimal value.
+10.	The decimal value in centimetres is the actual reading.
