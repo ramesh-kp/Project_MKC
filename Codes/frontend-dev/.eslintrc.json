@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@next/next/recommended",
+    "prettier"
+  ],
+
+  "rules": {
+    "no-unused-vars": "off",
+    "quotes": "off",
+    "semi": "off",
+    "no-useless-escape": "warn",
+    "react/no-unescaped-entities": "warn",
+    "@next/next/no-page-custom-font": "warn",
+    "no-use-before-define": "warn",
+    "react/jsx-no-target-blank": "warn",
+    "multiline-ternary": "off",
+    "space-before-function-paren": "off",
+    "camelcase": "warn",
+    "comma-dangle": ["off", "never"],
+    "no-console": "warn" /* we are not handling api errors, so for caching the error*/
+  }
+}

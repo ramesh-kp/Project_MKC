@@ -1,0 +1,432 @@
+mutation AuthenticateUserWithPassword($email: String!, $password: String!) {
+  authenticateUserWithPassword(email: $email, password: $password) {
+    ... on UserAuthenticationWithPasswordSuccess {
+      sessionToken
+      item {
+        name
+        email
+        id
+        role
+        tenant {
+          id
+          name
+          status
+        }
+      }
+    }
+    ... on UserAuthenticationWithPasswordFailure {
+      message
+    }
+  }
+}
+mutation SendUserPasswordResetLink($email: String!) {
+  sendUserPasswordResetLink(email: $email)
+}
+query AuthenticatedItem {
+  authenticatedItem {
+    ... on User {
+      id
+      name
+      email
+      role
+      status
+      tenant {
+        id
+        name
+        status
+      }
+    }
+  }
+}
+query Users(
+  $where: UserWhereInput!
+  $skip: Int!
+  $take: Int
+  $orderBy: [UserOrderByInput!]!
+  $usersCountWhere2: UserWhereInput!
+) {
+  users(where: $where, skip: $skip, take: $take, orderBy: $orderBy) {
+    id
+    name
+    email
+    role
+    phone
+    status
+    tenant {
+      id
+      name
+    }
+  }
+  usersCount(where: $usersCountWhere2)
+}
+
+query Tenants(
+  $where: TenantWhereInput!
+  $orderBy: [TenantOrderByInput!]!
+  $take: Int
+  $skip: Int!
+  $tenantsCountWhere2: TenantWhereInput!
+) {
+  tenants(where: $where, orderBy: $orderBy, take: $take, skip: $skip) {
+    id
+    name
+    status
+    location
+    description
+    owners {
+      id
+      name
+    }
+    facilities {
+      id
+      name
+    }
+    facilitiesCount
+    parent {
+      id
+      name
+    }
+    resources {
+      id
+      name
+      deviceReadSum
+      resourceCategory
+    }
+  }
+  tenantsCount(where: $tenantsCountWhere2)
+}
+
+mutation CreateUser($data: UserCreateInput!) {
+  createUser(data: $data) {
+    id
+    name
+    email
+    phone
+    status
+  }
+}
+
+mutation UpdateUser($where: UserWhereUniqueInput!, $data: UserUpdateInput!) {
+  updateUser(where: $where, data: $data) {
+    id
+    name
+    email
+    phone
+    role
+    status
+  }
+}
+
+mutation logout {
+  endSession
+}
+
+mutation CreateTenant($data: TenantCreateInput!) {
+  createTenant(data: $data) {
+    id
+    name
+    location
+    description
+    status
+    owners {
+      id
+      name
+    }
+  }
+}
+
+mutation UpdateTenant(
+  $where: TenantWhereUniqueInput!
+  $data: TenantUpdateInput!
+) {
+  updateTenant(where: $where, data: $data) {
+    id
+    name
+    location
+    description
+    status
+  }
+}
+
+query Facilities {
+  facilities {
+    id
+    name
+  }
+}
+
+mutation CreateFacility($data: FacilityCreateInput!) {
+  createFacility(data: $data) {
+    id
+    name
+    status
+  }
+}
+
+mutation RedeemUserPasswordResetToken(
+  $email: String!
+  $token: String!
+  $password: String!
+) {
+  redeemUserPasswordResetToken(
+    email: $email
+    token: $token
+    password: $password
+  ) {
+    code
+    message
+  }
+}
+query TenantDetails($where: TenantWhereUniqueInput!) {
+  tenant(where: $where) {
+    id
+    name
+    location
+    description
+    status
+    owners {
+      id
+      name
+    }
+    facilities {
+      id
+      name
+    }
+    resources {
+      id
+      name
+      resourceCategory
+      capacity
+      unit
+      deviceReadSum
+      deviceReadAvg
+    }
+    resourcesCount
+    children {
+      id
+      name
+      location
+      description
+      status
+      owners {
+        id
+        name
+      }
+      facilities {
+        id
+        name
+      }
+    }
+    childrenCount
+  }
+}
+
+query Devices(
+  $take: Int
+  $skip: Int!
+  $where: DeviceWhereInput!
+  $devicesCountWhere2: DeviceWhereInput!
+) {
+  devices(take: $take, skip: $skip, where: $where) {
+    id
+    name
+    deviceId
+    edgeDeviceId
+    portNumber
+    description
+    status
+    deviceType {
+      id
+      name
+    }
+    facility {
+      id
+      name
+    }
+    resource {
+      id
+      name
+      resourceCategory
+    }
+  }
+  devicesCount(where: $devicesCountWhere2)
+}
+
+mutation CreateDevice($data: DeviceCreateInput!) {
+  createDevice(data: $data) {
+    id
+    deviceId
+  }
+}
+
+mutation UpdateDevice(
+  $where: DeviceWhereUniqueInput!
+  $data: DeviceUpdateInput!
+) {
+  updateDevice(where: $where, data: $data) {
+    id
+    deviceId
+  }
+}
+
+query Resources(
+  $where: ResourceWhereInput!
+  $take: Int
+  $skip: Int!
+  $resourcesCountWhere2: ResourceWhereInput!
+) {
+  resources(where: $where, take: $take, skip: $skip) {
+    id
+    name
+    resourceCategory
+    capacity
+    unit
+    status
+  }
+  resourcesCount(where: $resourcesCountWhere2)
+}
+
+query DeviceTypes {
+  deviceTypes {
+    id
+    name
+  }
+}
+
+query FacilitiesUnderTenant($where: FacilityWhereInput!) {
+  facilities(where: $where) {
+    id
+    name
+  }
+}
+
+mutation CreateResource($data: ResourceCreateInput!) {
+  createResource(data: $data) {
+    id
+    name
+    status
+    resourceCategory
+  }
+}
+
+mutation UpdateResource(
+  $where: ResourceWhereUniqueInput!
+  $data: ResourceUpdateInput!
+) {
+  updateResource(where: $where, data: $data) {
+    id
+    name
+    status
+    resourceCategory
+  }
+}
+
+query ResourcesDataByDate(
+  $from: DateTime!
+  $to: DateTime!
+  $where: ResourceWhereInput!
+) {
+  resources(where: $where) {
+    id
+    name
+    status
+    capacity
+    unit
+    resourceCategory
+    deviceReadSum(from: $from, to: $to)
+    deviceReadAvg(from: $from, to: $to)
+    deviceReadCurrent(from: $from, to: $to)
+  }
+}
+
+query TenantDetailsByDate(
+  $where: TenantWhereUniqueInput!
+  $from: DateTime!
+  $to: DateTime!
+  $deviceReadSumFrom2: DateTime!
+  $deviceReadSumTo2: DateTime!
+) {
+  tenant(where: $where) {
+    id
+    name
+    facilities {
+      id
+      name
+      deviceReadSum(from: $from, to: $to)
+      deviceReadAvg(from: $from, to: $to)
+    }
+    resources {
+      id
+      name
+      status
+      capacity
+      unit
+      resourceCategory
+      deviceReadSum(from: $deviceReadSumFrom2, to: $deviceReadSumTo2)
+      deviceReadAvg(from: $deviceReadSumFrom2, to: $deviceReadSumTo2)
+      deviceReadCurrent(from: $deviceReadSumFrom2, to: $deviceReadSumTo2)
+    }
+  }
+}
+
+query TenantsByDate(
+  $where: TenantWhereInput!
+  $from: DateTime!
+  $to: DateTime!
+  $deviceReadSumFrom2: DateTime!
+  $deviceReadSumTo2: DateTime!
+) {
+  tenants(where: $where) {
+    id
+    name
+    facilities {
+      id
+      name
+      deviceReadSum(from: $deviceReadSumFrom2, to: $deviceReadSumTo2)
+      deviceReadAvg(from: $deviceReadSumFrom2, to: $deviceReadSumTo2)
+    }
+    resources {
+      id
+      name
+      deviceReadSum(from: $from, to: $to)
+      deviceReadAvg(from: $from, to: $to)
+      capacity
+      unit
+    }
+  }
+}
+
+query TenantsDataByCategory(
+  $where: ResourceWhereInput!
+  $from: DateTime!
+  $to: DateTime!
+  $tenantsWhere2: TenantWhereInput!
+) {
+  tenants(where: $tenantsWhere2) {
+    id
+    name
+    resources(where: $where) {
+      id
+      name
+      capacity
+      unit
+      resourceCategory
+      deviceReadSum(from: $from, to: $to)
+      deviceReadAvg(from: $from, to: $to)
+    }
+  }
+}
+
+query WaterQualityDevicesDetails($where: DeviceWhereInput!) {
+  devices(where: $where) {
+    id
+    name
+    deviceReadSum
+    deviceReadAvg
+    deviceType {
+      id
+      name
+      scale
+    }
+  }
+}
