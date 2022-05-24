@@ -1,5 +1,5 @@
 username	:	pimkc
-password	:	Naico@1234
+password	:	naicomkc
 
 To set up the ethernet port on a Raspberry Pi, follow these instructions.
 	sudo nano /etc/dhcpcd.conf
@@ -10,4 +10,5 @@ To set up the ethernet port on a Raspberry Pi, follow these instructions.
 
 Use the command to install a library on a Raspberry Pi.
 	python3 -m pip install <<< whatever >>>
+	
 

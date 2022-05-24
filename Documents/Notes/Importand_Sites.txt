@@ -11,6 +11,15 @@
 	https://www.youtube.com/watch?v=2kYa8ew2V9I
 	
 5.	Sample code for Azure IoT on Raspberry Pi.
-	https://www.c-sharpcorner.com/article/azure-iot-and-raspberry-pi/
-	
-	
+	Sending Data
+	https://github.com/yovikas1730/Sending-data-to-Azure
+
+Importand Sites
+https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/sync_samples/recv.py
+https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/async_samples/iot_hub_connection_string_receive_async.py
+https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-c2d
+
+
+https://github.com/Azure/azure-event-hubs-python
+naicomkc
+

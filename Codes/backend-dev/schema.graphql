@@ -271,16 +271,16 @@ type Tenant {
   ): [Resource!]
   resourcesCount(where: ResourceWhereInput! = {}): Int
   deviceReadSum(
-    from: DateTime! = "2022-03-15T15:06:02.568Z"
-    to: DateTime! = "2022-03-22T15:06:02.568Z"
+    from: DateTime! = "2022-05-09T09:48:26.647Z"
+    to: DateTime! = "2022-05-16T09:48:26.647Z"
   ): Float
   deviceReadAvg(
-    from: DateTime! = "2022-03-15T15:06:02.569Z"
-    to: DateTime! = "2022-03-22T15:06:02.569Z"
+    from: DateTime! = "2022-05-09T09:48:26.648Z"
+    to: DateTime! = "2022-05-16T09:48:26.648Z"
   ): Float
   deviceReadCurrent(
-    from: DateTime! = "2022-03-15T15:06:02.569Z"
-    to: DateTime! = "2022-03-22T15:06:02.569Z"
+    from: DateTime! = "2022-05-09T09:48:26.648Z"
+    to: DateTime! = "2022-05-16T09:48:26.648Z"
   ): Float
   createdAt: DateTime
   updatedAt: DateTime
@@ -457,16 +457,16 @@ type Facility {
   ): [Device!]
   devicesCount(where: DeviceWhereInput! = {}): Int
   deviceReadSum(
-    from: DateTime! = "2022-03-15T15:06:02.569Z"
-    to: DateTime! = "2022-03-22T15:06:02.569Z"
+    from: DateTime! = "2022-05-09T09:48:26.649Z"
+    to: DateTime! = "2022-05-16T09:48:26.649Z"
   ): Float
   deviceReadAvg(
-    from: DateTime! = "2022-03-15T15:06:02.569Z"
-    to: DateTime! = "2022-03-22T15:06:02.569Z"
+    from: DateTime! = "2022-05-09T09:48:26.649Z"
+    to: DateTime! = "2022-05-16T09:48:26.649Z"
   ): Float
   deviceReadCurrent(
-    from: DateTime! = "2022-03-15T15:06:02.569Z"
-    to: DateTime! = "2022-03-22T15:06:02.569Z"
+    from: DateTime! = "2022-05-09T09:48:26.649Z"
+    to: DateTime! = "2022-05-16T09:48:26.649Z"
   ): Float
   createdAt: DateTime
   updatedAt: DateTime
@@ -542,16 +542,16 @@ type Device {
   ): [DeviceRead!]
   deviceReadsCount(where: DeviceReadWhereInput! = {}): Int
   deviceReadSum(
-    from: DateTime! = "2022-03-15T15:06:02.570Z"
-    to: DateTime! = "2022-03-22T15:06:02.570Z"
+    from: DateTime! = "2022-05-09T09:48:26.650Z"
+    to: DateTime! = "2022-05-16T09:48:26.650Z"
   ): Float
   deviceReadAvg(
-    from: DateTime! = "2022-03-15T15:06:02.570Z"
-    to: DateTime! = "2022-03-22T15:06:02.570Z"
+    from: DateTime! = "2022-05-09T09:48:26.650Z"
+    to: DateTime! = "2022-05-16T09:48:26.650Z"
   ): Float
   deviceReadCurrent(
-    from: DateTime! = "2022-03-15T15:06:02.570Z"
-    to: DateTime! = "2022-03-22T15:06:02.570Z"
+    from: DateTime! = "2022-05-09T09:48:26.650Z"
+    to: DateTime! = "2022-05-16T09:48:26.650Z"
   ): Float
   edgeDeviceId: String
   portNumber: String
@@ -715,16 +715,16 @@ type Resource {
   devicesCount(where: DeviceWhereInput! = {}): Int
   tenant: Tenant
   deviceReadSum(
-    from: DateTime! = "2022-03-15T15:06:02.571Z"
-    to: DateTime! = "2022-03-22T15:06:02.571Z"
+    from: DateTime! = "2022-05-09T09:48:26.651Z"
+    to: DateTime! = "2022-05-16T09:48:26.651Z"
   ): Float
   deviceReadAvg(
-    from: DateTime! = "2022-03-15T15:06:02.571Z"
-    to: DateTime! = "2022-03-22T15:06:02.571Z"
+    from: DateTime! = "2022-05-09T09:48:26.651Z"
+    to: DateTime! = "2022-05-16T09:48:26.651Z"
   ): Float
   deviceReadCurrent(
-    from: DateTime! = "2022-03-15T15:06:02.571Z"
-    to: DateTime! = "2022-03-22T15:06:02.571Z"
+    from: DateTime! = "2022-05-09T09:48:26.651Z"
+    to: DateTime! = "2022-05-16T09:48:26.651Z"
   ): Float
   createdAt: DateTime
   updatedAt: DateTime
@@ -852,16 +852,16 @@ type DeviceType {
   ): [Device!]
   devicesCount(where: DeviceWhereInput! = {}): Int
   deviceReadSum(
-    from: DateTime! = "2022-03-15T15:06:02.571Z"
-    to: DateTime! = "2022-03-22T15:06:02.571Z"
+    from: DateTime! = "2022-05-09T09:48:26.653Z"
+    to: DateTime! = "2022-05-16T09:48:26.653Z"
   ): Float
   deviceReadAvg(
-    from: DateTime! = "2022-03-15T15:06:02.572Z"
-    to: DateTime! = "2022-03-22T15:06:02.572Z"
+    from: DateTime! = "2022-05-09T09:48:26.653Z"
+    to: DateTime! = "2022-05-16T09:48:26.653Z"
   ): Float
   deviceReadCurrent(
-    from: DateTime! = "2022-03-15T15:06:02.572Z"
-    to: DateTime! = "2022-03-22T15:06:02.572Z"
+    from: DateTime! = "2022-05-09T09:48:26.653Z"
+    to: DateTime! = "2022-05-16T09:48:26.653Z"
   ): Float
   createdAt: DateTime
   updatedAt: DateTime

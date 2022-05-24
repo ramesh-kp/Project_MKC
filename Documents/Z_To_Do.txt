@@ -1,4 +1,8 @@
-Read from Azure iot hub
+Error in the format of message to send to the iot azure hub.
+Difficult to read message from azure iot hub.
 
+https://docs.microsoft.com/en-us/answers/questions/694645/connectiondroppederror-when-receiving-c2d-messages.html
+https://sandervandevelde.wordpress.com/2022/01/24/azure-iot-deviceclient-sdk-python-demonstration-the-basics/
+https://issuemode.com/issues/Azure/azure-iot-sdk-python/49495117
 
 
