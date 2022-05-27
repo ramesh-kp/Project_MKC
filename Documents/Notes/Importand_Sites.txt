@@ -14,10 +14,14 @@
 	Sending Data
 	https://github.com/yovikas1730/Sending-data-to-Azure
 
+6.	Online little endian to big endian 
+	https://www.scadacore.com/tools/programming-calculators/online-hex-converter/
+
 Importand Sites
 https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/sync_samples/recv.py
 https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/async_samples/iot_hub_connection_string_receive_async.py
 https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-c2d
+https://sandervandevelde.wordpress.com/2022/01/24/azure-iot-deviceclient-sdk-python-demonstration-the-basics/
 
 
 https://github.com/Azure/azure-event-hubs-python

@@ -20,3 +20,4 @@
 8.	In the above example (0B 0E)
 9.	Convert the hexadecimal value to a decimal value.
 10.	To determine the actual unit use, divide the decimal amount by 1000.
+
