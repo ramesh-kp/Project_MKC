@@ -5,4 +5,7 @@ https://docs.microsoft.com/en-us/answers/questions/694645/connectiondroppederror
 https://sandervandevelde.wordpress.com/2022/01/24/azure-iot-deviceclient-sdk-python-demonstration-the-basics/
 https://issuemode.com/issues/Azure/azure-iot-sdk-python/49495117
 
+send the data according to the time which can be configured
+application should have listener full time.
+should send all types of error codes.
 

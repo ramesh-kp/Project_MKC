@@ -1,22 +1,7 @@
+1.	Connect the wirings for the COD, BOD and TSS sensor.
+2.  Red - power cord (VCC), Black - ground (GND), Yellow - 485 data line _A (485_A) and White - 485 data line _B (485_B)
+3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
 
-Temperature
-25.367570
-COD
-4.129626
-
-Data send       -   64 03 26 00 00 04 46 B4
-Data recieved   -   64 03 08 9A F3 CA 41 BB 17 84 40 EB B3
-
-Temperature
-9A F3 CA 41
-COD
-BB 17 84 40
-
-00 05 00 00 00 06 AA 03 00 01 00 2E
-                  64 03 26 00 00 04
-				  
-49729
+00 04 00 00 00 17 64 03 14 2A 02 D9 41 15 D8 A6 40 AA 79 05 40 00 00 00 00 00 00 00 00
 
 
-00 03 00 00 00 0B 64 03 08 BA A6 CC 41 82 EB 84 40 
-00 05 00 00 00 0B 64 03 08 6A A6 CD 41 4A 01 87 40 
