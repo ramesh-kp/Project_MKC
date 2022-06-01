@@ -1,7 +1,12 @@
-1.	Connect the wirings for the COD, BOD and TSS sensor.
-2.  Red - power cord (VCC), Black - ground (GND), Yellow - 485 data line _A (485_A) and White - 485 data line _B (485_B)
+1.	Connect the 12v power supply to the COD, BOD and TSS sensor.
+2.	The red and black wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
 3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
-
-00 04 00 00 00 17 64 03 14 2A 02 D9 41 15 D8 A6 40 AA 79 05 40 00 00 00 00 00 00 00 00
+4.	Set the Energymeter's configuration via the MODBUS RTU protocol.
+	Slave ID			:	100
+	First Register		:	49729
+	Number of Registers	:	10
+	Function Code		:	3
+	Minus Offset		:	40001
+	Register Size		:	16 bit registers
 
 

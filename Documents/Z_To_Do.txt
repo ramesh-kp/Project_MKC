@@ -5,7 +5,34 @@ https://docs.microsoft.com/en-us/answers/questions/694645/connectiondroppederror
 https://sandervandevelde.wordpress.com/2022/01/24/azure-iot-deviceclient-sdk-python-demonstration-the-basics/
 https://issuemode.com/issues/Azure/azure-iot-sdk-python/49495117
 
-send the data according to the time which can be configured
-application should have listener full time.
-should send all types of error codes.
+General
+the application should have a listener full time.
+The water level sensor needs to raise the complaint in the Alibaba and reorder the sensor.
+Parallelly check the other sources also.
+Buy water level sensor and Industrial Pi from the local market.
+Check the cost of the Flowmeter having a one-inch diameter.
+Check all the adapters and their qualities used in the project.
+Need to create a detailed description of the implementation of sensors on the site (How, Place, and Connection Diagram).
+Need to implement the Energymeter and STP Sensor integration on June 17.
+Need to consider the structure scalability.
+Update the Bill Of Material of all the components and update it to the clients.
+Need to create a complete documentation of 
+        Configuration of Gateway hub in the web interface.
+        Configuration of Gateway address in the internal network.
+        Implementation of sensors in the live site.
 
+Technical
+send the data according to the time which can be configured from the front end.
+should send all types of error codes.
+Standard format for sending the data which can be readable to the node.
+The protocol should same. 
+Define all the ports of all the Gateway hubs (Need to know the number of sensors used in the project).
+
+Can you give me the information about
+	Minimum order of quantity.
+	12v Power supply.
+	Rs485 protocol interface.
+	Antifungal.
+	Accuracy and Precision of the sensor.
+	Other product that has in your company.
+	
