@@ -1,0 +1,39 @@
+Energymeter Working
+1.  The input voltage is 230 volts single phase.
+2.  Loads are connected to the output.
+3.  The data is collected via RS485 wires connected to the Gateway Hub.
+4.  An ethernet connection connects the Gateway Hub to the Raspberry Pi.
+5.  Ckwh, Ckah, Voltage, Power Factor Line 1, Power Factor Line 2, Power Factor Line 3, Total Power Factor, and Frequency are the parameters obtained by the Energymeters.
+
+COD, BOD and TSS Working
+1.  The input voltage is 12 v.
+2.  Connections are
+    Red - Power Cord (VCC)
+    Black - Ground (GND)
+    Yellow - 485 data line _A (485_A)
+    White - 485 data line _B (485_B)
+3.  The data is collected via RS485 wires connected to the Gateway Hub.
+4.  An ethernet connection connects the Gateway Hub to the Raspberry Pi.
+5.  COD, BOD, TSS, and Temperature are the parameters obtained from the sensor.
+
+Ph Working
+1.  The input voltage is 12 v.
+2.  Connections are
+    Red - Power Cord (VCC)
+    Black - Ground (GND)
+    Yellow - 485 data line _A (485_A)
+    White - 485 data line _B (485_B)
+3.  The data is collected via RS485 wires connected to the Gateway Hub.
+4.  An ethernet connection connects the Gateway Hub to the Raspberry Pi.
+5.  Ph data is obtained from the sensor.
+
+TSS Working
+1.  The input voltage is 12 v.
+2.  Connections are
+    Red - Power Cord (VCC)
+    Black - Ground (GND)
+    Yellow - 485 data line _A (485_A)
+    White - 485 data line _B (485_B)
+3.  The data is collected via RS485 wires connected to the Gateway Hub.
+4.  An ethernet connection connects the Gateway Hub to the Raspberry Pi.
+5.  TSS value is obtained from the sensor.

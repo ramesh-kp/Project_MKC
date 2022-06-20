@@ -1,4 +1,7 @@
 1.	Connect the AC power supply to the Energymeter.
+2.	Connect the red
+
+
 2.	The red and black wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
 3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
 4.	Set the Energymeter's configuration via the MODBUS RTU protocol.
@@ -8,16 +11,5 @@
 	Function Code		:	3
 	Minus Offset		:	40001
 	Register Size		:	16 bit registers
-5.	Request for a TCP IP connection to the Energymeter.
-	0x00 0x02 0x00 0x00 0x00 0x06 0xAA 0x03 0x00 0x01 0x00 0x2E
-6.	Response from the TCP IP connection of the Energymeter.
-	00 01 00 00 00 5F AA 03 5C 00 00 00 AA 00 08 A9 5F 00 00 0B
-	0E 00 00 0C 76 00 00 09 0B 00 00 00 00 00 00 00 00 00 00 00
-	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 64 00 00 00
-	64 00 00 00 64 00 00 00 00 00 00 00 00 00 00 00 64 00 00 01 EE
-7.	The needed bits of the units utilised are 39, 40, 41, and 42.
-8.	In the above example (0B 0E)
-9.	Convert the hexadecimal value to a decimal value.
-10.	To determine the actual unit use, divide the decimal amount by 1000.
+
 

@@ -1,12 +1,12 @@
-1.	Connect the 12v power supply to the COD, BOD and TSS sensor.
-2.	The red and black wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
-3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
-4.	Set the Energymeter's configuration via the MODBUS RTU protocol.
-	Slave ID			:	100
-	First Register		:	49729
-	Number of Registers	:	10
-	Function Code		:	3
-	Minus Offset		:	40001
-	Register Size		:	16 bit registers
+1.	Connect the 12v power supply to the COD, BOD, and TSS sensor, Red to the power cord (VCC), and Black to GND (GND) of the adapter.
+2.  The yellow and white wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
+3.  Connect the RS485+ to D+ (1st) and RS485- to D- (2nd) pin of the Gateway hub.
+3.  Use the IP address 192.168.1.254 and the port number 502 to connect.
+4.  Configure the settings in the Gateway web address.
+5.  Change the Alias name and MODBUS Slave ID.
+6.  Set the Slave ID, Start Address, and Number of Registers in Python Code.
 
+	Slave ID			:	100
+    First Register		:	49729
+    Number of Registers	:	10
 

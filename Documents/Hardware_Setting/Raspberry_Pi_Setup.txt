@@ -10,5 +10,4 @@ To set up the ethernet port on a Raspberry Pi, follow these instructions.
 
 Use the command to install a library on a Raspberry Pi.
 	python3 -m pip install <<< whatever >>>
-	
 
