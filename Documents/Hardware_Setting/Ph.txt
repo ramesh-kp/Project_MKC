@@ -1,0 +1,35 @@
+1.	Connect the 12v power supply to the TDS sensor, Red to the power cord (VCC), and Black to GND (GND) of the adapter.
+2.  The yellow and white wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
+3.  Connect the RS485+ to D+ (1st) and RS485- to D- (2nd) pin of the Gateway hub.
+3.  Use the IP address 192.168.1.254 and the port number 502 to connect.
+4.  Configure the settings in the Gateway web address.
+5.  Change the Alias name (Ph Sensor) and MODBUS Slave ID (110).
+6.  Set the Slave ID, Start Address, and Number of Registers in Python Code.
+	Slave ID			:	110
+    First Register		:	49729
+    Number of Registers	:	5
+7.	The sensor will give Ph value.
+8.  Measurement range:	0-14 pH
+9.	Maintenance and Maintenance
+        The normal service life of the electrode is one year, which will be shortened due to bad environment or improper maintenance.
+        During measurement, it shall be cleaned in distilled water (or deionized water) first and drained with filter paper to prevent 
+        impurities from being brought into the tested solution. 
+        The electrode bulb and the liquid volume shall be completely immersed in the tested solution.
+        When the electrode is not in use, clean it and insert it into a protective sleeve with 3.3m potassium chloride solution, 
+        or insert the electrode into a container with 3.3m potassium chloride solution.
+        There is dirt on the glass ball at the top of the electrode, which can be cleaned with 0.1n hydrochloric acid and then intruded 
+        into the 3.3mkCL solution for internal activation. Do not touch it by hand. 
+        To ensure the long-term accurate measurement, the electrode should be cleaned, maintained and calibrated regularly.
+        The metal electrode will oxidize after being used for a period of time, and the electrode head will become black. 
+        Fine sandpaper can be used to polish the electrode head and remove the oxidized part, so as to ensure the sensitivity of 
+        the electrode measurement.
+        Check whether the wiring terminal is dry. 
+        If it is stained, wipe it with anhydrous alcohol and use it after blow-dry.
+        Long-term immersion in distilled water or protein solution should be avoided, and contact with silicone grease should be avoided.
+        If the electrode is used for a long time, its glass film may become translucent or with sediment.
+        At this time, hydrochloric acid can be used for washing and water flushing.
+        It is recommended that users clean the electrode regularly and coordinate with the instrument calibration.
+        When you use the above methods to maintain and maintain the electrode, the calibration procedure and normal measurement still 
+        cannot be carried out, indicating that the electrode can no longer recover the response, please replace the electrode.
+	
+	

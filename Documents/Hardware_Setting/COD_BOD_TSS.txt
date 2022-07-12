@@ -3,10 +3,49 @@
 3.  Connect the RS485+ to D+ (1st) and RS485- to D- (2nd) pin of the Gateway hub.
 3.  Use the IP address 192.168.1.254 and the port number 502 to connect.
 4.  Configure the settings in the Gateway web address.
-5.  Change the Alias name and MODBUS Slave ID.
+5.  Change the Alias name (COD, BOD and TSS) and MODBUS Slave ID (100).
 6.  Set the Slave ID, Start Address, and Number of Registers in Python Code.
-
 	Slave ID			:	100
     First Register		:	49729
     Number of Registers	:	10
+7.  Installation note 
+    1.	Avoid collision when installing the sensor; avoid shaking back and forth during measurement. 
+    	If the water flow in the monitoring area is turbulent, the sensor needs to be fixed;
+    2.	When the sensor is installed and measured, it must be installed horizontally to prevent foreign matter from depositing on the 
+        measurement monitoring window, resulting in inaccurate measurement data;
+    3.	The measurement area, such as branches and attachments, is easy to jam the cleaning brush shaft and cause the sensor to jam. 
+        You need to consider choosing a protective cover for protection installation;
+    4.	Install the sensor, the depth from the water surface is no more than 2 meters; the sensor is submerged below the water level 
+        of 30cm; 
+    5.	The sensor is installed in an area with slow water flow and no bubbles
+8.  Maintenance and precautions
+    1.	Measuring window: 
+        Check whether the measuring window is attached to and fouling; use a moist dust-free cloth to wipe the window; if the scale is 
+        difficult to wipe, use a dust-free cloth dampened with detergent to clean; or use diluted hydrochloric acid to wipe.
+        Be careful not to touch it directly with your hands when using diluted hydrochloric acid.
+    2.	Cleaning brush: 
+        Prevent foreign objects from blocking the rotation stroke of the cleaning brush, and ensure that no foreign objects are blocked 
+        at the cleaning rotating shaft; if there are many branches and attachments in the monitoring area, you need to consider 
+        selecting a protective cover for protection installation. 
+        The protective cover can be selected separately by contacting the sales staff of our company.
+    3.	The outer surface of the sensor: 
+    	Regularly clean the surface attachments, you can use washing liquid to clean
+    4.	Automatic cleaning and continuous use for 18 months, need to return to the factory to replace the dynamic sealing device.
+9.	Matters needing attention
+    1.	Measurement window: 
+        Sharp objects cannot be used to scratch the measurement monitoring window; avoid air bubbles adhesion during monitoring and 
+        measurement.
+    2.	Automatic cleaning brush: 
+        Do not force the rotating shaft of the cleaning brush.
+    3.	Installation attention: 
+        The sensor is best installed horizontally to avoid foreign matter depositing in the measurement monitoring window; when the 
+        foreign matter such as tree branches in the monitoring measurement area is easily blocked to the shaft, a protective cover 
+        should be selected for protection installation as much as possible.
+10. The others
+    1.	Problem:    The operation interface cannot be connected or the measurement result is not displayed.
+        Reason:	The cable wiring method is wrong. The sensor address is incorrect.
+        Solution:	Check the wiring connection. Check the address out.
+    2.	Problem:	The measured value is too high, too low or the value is continuously unstable
+    	Reason:	Sensor window is attached to foreign objects. Sensor self-cleaning damage.
+        Solution:	Clean the surface of the sensor window. Contact after-sales.
 

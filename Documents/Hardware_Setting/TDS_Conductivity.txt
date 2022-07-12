@@ -1,0 +1,28 @@
+1.	Connect the 12v power supply to the TDS sensor, Red to the power cord (VCC), and Black to GND (GND) of the adapter.
+2.  The yellow and white wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
+3.  Connect the RS485+ to D+ (1st) and RS485- to D- (2nd) pin of the Gateway hub.
+3.  Use the IP address 192.168.1.254 and the port number 502 to connect.
+4.  Configure the settings in the Gateway web address.
+5.  Change the Alias name (TDS Sensor) and MODBUS Slave ID (120).
+6.  Set the Slave ID, Start Address, and Number of Registers in Python Code.
+	Slave ID			:	120
+    First Register		:	49729
+    Number of Registers	:	4
+7.	The sensor will give two outputs - TDS and Conductivity
+8.  Measurement range:	Conductivity    :1-30000us/cm;
+                        TDS：   0-15000mg/L;
+                        Salinity：  0-18.5ppt;；0-1.85%；0-18.5g/L
+9.	Scope of Measurement:   0～30000μS·cm-1 ；0~500000μS·cm-1
+                            Temperature：   0-50 degree celsius
+10.	Maintenance and Maintenance
+        Check the instrument once a year for the best, if the user unconditionally can be sent to our company to help check.
+        The maintenance period of the cleaning electrode can be determined according to the cleanliness of the water sample, 
+        and the surface inside and outside the electrode should be free of fouling deposition.
+        For stainless steel conductance electrode and platinum conductance electrode, if contamination is found, 
+        it should be cleaned in time, brushed with 50% warm detergent (or household soap powder) and nylon brush, 
+        and then washed inside the electrode with distilled water. 
+        Ensure no grease deposition on the surface of internal and external electrodes. 
+        Do not touch the electrode with your fingers; clean the deposit with strong adhesion with 2% dilute hydrochloric acid solution, 
+        then wash it with clean water; for platinum black conductance electrode, do not brush the electrode head with brush or 
+        other substances, just rinse the electrode head with clean water; keep the cable and plug dry to ensure reliable contact.
+	

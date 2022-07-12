@@ -1,56 +1,22 @@
-Error in the format of message to send to the iot azure hub.
-Difficult to read message from azure iot hub.
+120-130
+78 10 30 00 00 01 02 82 00 F9 61 
+78 10 30 00 00 01 05 60 
 
-https://docs.microsoft.com/en-us/answers/questions/694645/connectiondroppederror-when-receiving-c2d-messages.html
-https://sandervandevelde.wordpress.com/2022/01/24/azure-iot-deviceclient-sdk-python-demonstration-the-basics/
-https://issuemode.com/issues/Azure/azure-iot-sdk-python/49495117
+130-120
+82 10 30 00 00 01 02 78 00 C1 65 
+82 10 30 00 00 01 11 3A 
 
-General
-the application should have a listener full time.
-The water level sensor needs to raise the complaint in the Alibaba and reorder the sensor.
-Parallelly check the other sources also.
-Buy water level sensor and Industrial Pi from the local market.
-Check the cost of the Flowmeter having a one-inch diameter.
-Check all the adapters and their qualities used in the project.
-Need to create a detailed description of the implementation of sensors on the site (How, Place, and Connection Diagram).
-Need to implement the Energymeter and STP Sensor integration on June 17.
-Need to consider the structure scalability.
-Need to create a complete documentation of 
-        Configuration of Gateway hub in the web interface.
-        Configuration of Gateway address in the internal network.
-        Implementation of sensors in the live site.
-
-Technical
-Define all the ports of all the Gateway hubs (Need to know the number of sensors used in the project).
-
-Tasks
-1. Get information from Azure IoT.
-2. Save the data from Azure in a log file.
-3. Clear all sensor setups, including the frequency time, if the message is "RESET."
-4. Set the configuration of Energymeter if the message is "Energymeter" with "Device ID."
-5. Set the COD, BOD, and TSS sensor configuration if the notification says "COD, BOD, and TSS" with "Device ID."
-6. Threading must be used to run the receiving and transmitting functions in parallel.
-7.
-
-diagnostic aspects
+start address - 12289
+value - 130
 
 
+log.debug("Write to multiple holding registers and read back")
+rq = client.write_registers(1, [10] * 8, unit=UNIT)
 
 
+120 - [30720, 0, 0, 0]
+130 - [33280, 0, 0, 0]
 
+96 10 30 00 00 01 02 82 00
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Modbus/TCP
