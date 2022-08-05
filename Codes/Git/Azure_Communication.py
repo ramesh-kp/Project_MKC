@@ -103,7 +103,7 @@ class Send_Sensor_Datas:
         Output Type:        Dictionary
 
         '''
-        Slave_Id = Energymeter_Reading_Raw[1]
+        slave_id = Energymeter_Reading_Raw[1]
         Ckwh = Energymeter_Reading_Raw[5]/1000
         Ckah = Energymeter_Reading_Raw[7]/1000
         Voltage = Energymeter_Reading_Raw[9]/10
@@ -112,7 +112,7 @@ class Send_Sensor_Datas:
         Power_Factor_Line_3 = Energymeter_Reading_Raw[37]/100
         Total_Power_Factor = Energymeter_Reading_Raw[43]/100
         Frequency = Energymeter_Reading_Raw[45]/10
-        Energymeter_Data = {"Energymeter_Device_ID": Slave_Id, "Energymeter_Ckwh": Ckwh, "Energymeter_Ckah": Ckah, "Energymeter_Voltage": Voltage, "Energymeter_Power_Factor_Line_1": Power_Factor_Line_1,
+        Energymeter_Data = {"Energymeter_Device_ID": slave_id, "Energymeter_Ckwh": Ckwh, "Energymeter_Ckah": Ckah, "Energymeter_Voltage": Voltage, "Energymeter_Power_Factor_Line_1": Power_Factor_Line_1,
                             "Energymeter_Power_Factor_Line_2": Power_Factor_Line_2, "Energymeter_Power_Factor_Line_3": Power_Factor_Line_3, "Energymeter_Total_Power_Factor": Total_Power_Factor, "Energymeter_Frequency": Frequency}
         return Energymeter_Data
 

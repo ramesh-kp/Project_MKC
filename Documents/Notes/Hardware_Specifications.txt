@@ -42,7 +42,7 @@ The kind of RS-485 Ethernet Edge Device will differ depending on the quantity of
 
 The vendors providing RS-485 Ethernet Edge Device is 
 MOOTEK TECHNOLOGIES
-New No.:10|Old No.:14|-2nd Floor                          
+New No.:10|Old No.:14|-2nd Floor
 Aranganathan Subway Road| KAVERI NAGAR
 SAIDAPET | CHENNAI 600015|
 Mob:+91-7092520520|Skype: mootek Nathiya

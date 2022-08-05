@@ -39,7 +39,8 @@ def Set_Slave_ID(default, number):
 
 def Slave_ID_Number():
     try:
-        id = Gateway_Connect().read_holding_registers(count=15, address=12289, unit=120)
+        id = Gateway_Connect().read_holding_registers(count=1, address=12289, unit=120)
+        print(id.registers)
         first_digit = hex(id.registers[0])
         first_digit = first_digit[2:]
         ab = bytearray.fromhex(first_digit)
@@ -52,4 +53,4 @@ def Slave_ID_Number():
 
 
 Slave_ID_Number()
-Set_Slave_ID("120", "120")
+Set_Slave_ID("120", "1")

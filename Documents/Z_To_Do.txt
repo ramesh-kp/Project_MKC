@@ -1,22 +1,5 @@
-120-130
-78 10 30 00 00 01 02 82 00 F9 61 
-78 10 30 00 00 01 05 60 
-
-130-120
-82 10 30 00 00 01 02 78 00 C1 65 
-82 10 30 00 00 01 11 3A 
-
-start address - 12289
-value - 130
+Sonar Qube
+sonar-scanner.bat -D"sonar.projectKey=MKC_From_Scratch" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_cab3762f3c9672221179e4418548d55db8ad8d79"
 
 
-log.debug("Write to multiple holding registers and read back")
-rq = client.write_registers(1, [10] * 8, unit=UNIT)
-
-
-120 - [30720, 0, 0, 0]
-130 - [33280, 0, 0, 0]
-
-96 10 30 00 00 01 02 82 00
-
-Modbus/TCP
+Python: Coding Guideline, Tooling, Unit Testing and Packages
