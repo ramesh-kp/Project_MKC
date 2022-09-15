@@ -1,0 +1,88 @@
+The project scope includes the following application modules:
+    Water Resources Management
+    Power Resources Management
+    Vehicle Parking Space Management
+    Environment Monitoring System
+
+Naico will implement a central smart solution encompassing the above management systems.
+The data from each management system will be obtained from the above-mentioned management systems and utilized to gain insights.
+
+Scope
+High level scope of the entire project is to make MKC Smart.
+There are many services that can be automated and controlled via Web Application.
+As an initial step, started with four main services as below
+    Water Level Monitoring
+    Sewage Treat Plan – Monitoring the quality parameters
+    Power Consumption Monitoring
+    Automated Vehicle Parking System
+    Automated environment monitoring system
+
+As a very beginning step of this mass automation, scope was drilled down further to implement monitoring system in one of the MKC
+facility called WIRAS (World Institute of Research And Studies) where Water Level Monitoring, STP Quality Parameter Checking and
+Power Consumption monitoring will be implemented (Phase 1 part of the Project).
+
+As part of the project, Naico will be providing all the detailed specifications for the implementations of the sensors and related
+Data/Power Sources, MKC will be procuring and installing the same on premises.
+
+Naico will be developing a responsive web application that will run on both web and mobile platforms.
+There will be 2 types of users: Admin & Tenant.
+(Note: As of now, Naico is working with Tropical Environmental Solutions (TES) for developing the monitoring solution for sewage
+treatment plant, so MKC & TES together will decide the data integration between STP monitoring system with MKC monitoring dashboard
+application.)
+
+Major modules of Monitoring app dashboard include:
+Admin & Tenant can login to the dashboard using registered username and password.
+Admin will have privilege to view the dashboard of all facilities inside MKC campus while Tenant will have privilege to view the
+dashboard of assigned facility.
+Admin will have the privilege to add new users and assign the privilege to view data of their respective facilities.
+Admin and Tenant dashboard will consist of data related to water resources, power resources and Sewage Treatment Plant.
+
+Out of Scope
+    Anything not considered in the proposal will be out of scope.
+    VS Sensor for STP are not included in the proposal
+
+The following sensors will be installed during the system's first deployment phase:
+    COD Sensor - Chemical Oxygen Demand (Not Get)
+    BOD Sensor - Biochemical Oxygen Demand (Not Get)
+    TSS Sensor - Total Suspended Solids (Not Get)
+    Temperature Sensor
+    PH Sensor
+    TDS Sensor - Total Dissolved Solids
+    Continuity Sensor
+
+The second stage of system deployment will include the installation of the following sensors:
+    Turbidity Sensor
+    Flow Meter
+    Water Level Sensor
+    Humidity Sensor
+
+The following sensors at the wastewater treatment facility are not included:
+    VS Sensor
+    Coliform Sensor
+    
+###################################################################################################################
+Out of Scope
+    Anything not considered in the proposal will be out of scope.
+    VS Sensor and Coliform Sensor for STP are not included in the proposal
+
+The following sensors will be installed during the system's first deployment phase:
+    COD Sensor - Chemical Oxygen Demand (Not Get)
+    BOD Sensor - Biochemical Oxygen Demand (Not Get)
+    TSS Sensor - Total Suspended Solids (Not Get)
+    Temperature Sensor
+    PH Sensor
+    TDS Sensor - Total Dissolved Solids
+    Continuity Sensor
+
+The second stage of system deployment will include the installation of the following sensors:
+    Turbidity Sensor
+    Flow Meter
+    Water Level Sensor
+    Humidity Sensor
+
+The following sensors at the wastewater treatment facility are not included:
+    VS Sensor
+    Coliform Sensor
+    
+
+
