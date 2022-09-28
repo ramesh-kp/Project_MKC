@@ -1,0 +1,12 @@
+2022-08-03 12:31:57,672 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:41:10,831 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:42:14,656 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:44:25,963 - 33 - INFO - 'ModbusIOException' object has no attribute 'registers'
+2022-08-03 12:44:25,965 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:44:25,965 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:44:55,507 - 33 - INFO - 'ModbusIOException' object has no attribute 'registers'
+2022-08-03 12:44:55,509 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:44:55,509 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-04 11:39:25,061 - 33 - INFO - Replacement index 1 out of range for positional args tuple
+2022-08-04 11:39:25,062 - 33 - INFO - 'IndexError' object has no attribute 'values'
+2022-08-04 11:39:25,062 - 33 - INFO - 'IndexError' object has no attribute 'values'

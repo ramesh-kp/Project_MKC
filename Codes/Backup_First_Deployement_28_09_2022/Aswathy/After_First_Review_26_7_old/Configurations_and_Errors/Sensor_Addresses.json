@@ -1,0 +1,22 @@
+{
+    "Device_Address": {
+        "Energymeter_Start_Address": 1,
+        "COD_Start_Address": 12288,
+        "BOD_Start_Address": 12288,
+        "Temperature_Start_Address": 12288,
+        "TSS_Start_Address": 12288,
+        "Ph_Start_Address": 12288,
+        "TDS_Start_Address": 12288,
+        "Conductivity_Start_Address": 12288
+    },
+    "Device_ID": {
+        "Energymeter_Default_ID": 170,
+        "COD_Default_ID": 1,
+        "BOD_Default_ID": 1,
+        "Temperature_Default_ID": 1,
+        "TSS_Default_ID": 1,
+        "Ph_Default_ID": 1,
+        "TDS_Default_ID": 1,
+        "Conductivity_Default_ID": 1
+    }
+}

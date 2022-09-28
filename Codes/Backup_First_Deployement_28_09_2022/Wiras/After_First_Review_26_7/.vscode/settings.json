@@ -1,0 +1,10 @@
+{      
+    "python.linting.pylintPath": "venv/bin/pylint",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+    "--init-hook",
+    "import sys; sys.path.append('/home/pimkc/Desktop/Wiras/After_First_Review_26_7')",
+    "import sys; sys.path.append('/home/pimkc/Desktop/Wiras/After_First_Review_26_7/Utilities')"
+]
+}

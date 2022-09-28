@@ -1,0 +1,22 @@
+2022-08-03 12:31:51,661 - 33 - INFO - 'ModbusIOException' object has no attribute 'registers'
+2022-08-03 12:31:51,662 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:31:51,662 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:31:54,666 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:31:54,666 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:31:57,670 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:31:57,670 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:31:57,672 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:31:57,672 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:41:04,818 - 33 - INFO - 'ModbusIOException' object has no attribute 'registers'
+2022-08-03 12:41:04,819 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:41:04,819 - 33 - INFO - 'AttributeError' object has no attribute 'values'
+2022-08-03 12:41:07,824 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:41:07,824 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:41:10,829 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:41:10,829 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:41:10,831 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:41:10,831 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:42:08,641 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-03 12:42:11,646 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:42:14,653 - 218 - ERROR - Connection to (192.168.1.254, 502) failed: timed out
+2022-08-03 12:42:14,656 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]

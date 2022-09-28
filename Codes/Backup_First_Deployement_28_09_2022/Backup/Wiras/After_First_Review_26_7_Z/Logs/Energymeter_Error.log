@@ -1,0 +1,41 @@
+2022-08-04 14:40:26,402 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:40:26,407 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:40:26,407 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:41:24,778 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 14:41:29,313 - 33 - INFO - 'EnergymeterDeviceID'
+2022-08-04 14:41:29,315 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:41:29,315 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:41:29,317 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:41:29,317 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:41:29,317 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:07,471 - 33 - INFO - 'EnergymeterDeviceID'
+2022-08-04 14:42:07,472 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:42:07,472 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:42:07,473 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:07,473 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:07,473 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:09,594 - 33 - INFO - 'EnergymeterDeviceID'
+2022-08-04 14:42:09,595 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:42:09,595 - 33 - INFO - 'KeyError' object is not iterable
+2022-08-04 14:42:09,595 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:09,595 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:42:09,595 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:43:31,406 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 14:44:07,837 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 14:52:57,239 - 33 - INFO - 'NoneType' object is not iterable
+2022-08-04 14:52:57,239 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:52:57,239 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:53:15,353 - 33 - INFO - 'NoneType' object is not iterable
+2022-08-04 14:53:15,354 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:53:15,354 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:53:16,707 - 33 - INFO - 'NoneType' object is not iterable
+2022-08-04 14:53:16,708 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 14:53:16,708 - 33 - INFO - 'TypeError' object has no attribute 'values'
+2022-08-04 15:13:10,987 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 15:13:51,713 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 15:14:10,577 - 33 - INFO - 'int' object is not callable
+2022-08-04 15:14:33,236 - 33 - INFO - Modbus Error: [Connection] Failed to connect[ModbusTcpClient(192.168.1.254:502)]
+2022-08-04 15:17:48,270 - 33 - INFO - Replacement index 1 out of range for positional args tuple
+2022-08-04 15:17:48,271 - 33 - INFO - 'IndexError' object is not iterable
+2022-08-04 15:17:48,271 - 33 - INFO - 'IndexError' object is not iterable
+2022-08-04 15:37:56,020 - 33 - INFO - name 'energymeter_final_data' is not defined

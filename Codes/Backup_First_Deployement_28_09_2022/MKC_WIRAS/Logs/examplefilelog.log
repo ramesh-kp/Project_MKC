@@ -1,0 +1,7 @@
+
+-------------------start-------------------
+ File created at Fri Sep 16 11:34:12 2022
+ Log is written to :examplefilelog.log for the deviceid 110
+-------------------Stop-------------------
+2022-09-16 11:34:12,469 - CRITICAL - Hello
+2022-09-16 11:44:33,896 - CRITICAL - Hello
