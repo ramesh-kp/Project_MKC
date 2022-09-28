@@ -1,5 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./MKC_Firmware"
-    ]
-}
