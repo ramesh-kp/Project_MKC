@@ -1,7 +1,4 @@
 1.	Connect the AC power supply to the Energymeter.
-2.	Connect the red
-
-
 2.	The red and black wires should be connected to RS485+ (A or D+) and RS485- (B or D-), respectively.
 3.	Use the IP address 192.168.1.254 and the port number 502 to connect.
 4.	Set the Energymeter's configuration via the MODBUS RTU protocol.

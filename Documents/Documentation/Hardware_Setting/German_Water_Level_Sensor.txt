@@ -1,0 +1,11 @@
+Hardware connection
+1.	Connect the 12 v power supply to the water level sensor.
+	The red wire (positive) to white wire of the water level sensor.
+	The black wire (negative) to brown wire of the water level sensor.
+2.	Connect the RS-485 connection of water level sensor to the ethernet interface.
+	The green wire (RS485+) of water level sensor to the green wire of the ethernet cable.
+	The yellow wire (RS485-) of water level sensor to the brown-white wire of the ethernet cable.
+3.	Connect the ethernet cable to the port of the 16-port gateway hub.
+	150 - Com 1 of the 16 port gateway hub.
+
+

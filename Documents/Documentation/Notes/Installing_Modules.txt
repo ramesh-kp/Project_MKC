@@ -1,0 +1,29 @@
+ModuleNotFoundError: No module named 'azure'
+pip install azure
+pip3 install azure
+
+ModuleNotFoundError: No module named 'azure.iot'
+pip install azure-iot-device
+pip3 install azure-iot-device
+
+ModuleNotFoundError: No module named 'azure.eventhub'
+pip install azure-eventhub
+pip3 install azure-eventhub
+
+ModuleNotFoundError: No module named 'pymodbus'
+pip install pymodbus
+pip3 install pymodbus
+
+ModuleNotFoundError: No module named 'pytz'
+pip install pytz
+pip3 install pytz
+
+wifi over lan
+https://superuser.com/questions/331720/how-do-i-set-the-priority-of-network-connections-in-ubuntu
+sudo apt-get install ifmetric
+sudo ifmetric wlan0 50
+
+
+HostName=mkc-iot-hub.azure-devices.net;DeviceId=Embedded_Azure_Communication;SharedAccessKey=6UYksdEfFpR6RS9nvCiznB89ZdsYhNcuNKOY6Kg8R9s=
+
+

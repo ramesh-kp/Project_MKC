@@ -1,0 +1,13 @@
+1.  Connect the 230 v power supply to the Flowmeter.
+    The red wire (Phase) is connected to the P terminal.
+    The black wire (Nuetral) is connected to the N terminal.
+    The green wire (Earth) is connected to the E terminal.
+2.  Connect the RS-485 connection to the Flowmeter.
+    The orange wire (RS-485+) is connected to the A terminal.
+    The grey wire (RS-485-) is connected to the B terminal.
+3.  Change the slave id of the Flowmeter.
+    1.  press Enter Key
+    2.	Password    :   0
+    3.  Select RTU SETUP    : communication mode
+    4.  BAUD    :   9600
+    5.  NODE    :   Slave id of the Flow meter.

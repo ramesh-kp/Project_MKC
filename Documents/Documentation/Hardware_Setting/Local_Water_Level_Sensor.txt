@@ -1,0 +1,35 @@
+Hardware connection
+1.	Connect the 230 v power supply to the process meter.
+	The red wire (Phase) to pin number 1 of the process meter.
+	The black wire (Neutral) to pin number 2 of the process meter.
+2.	Connect the RS-485 connection of the water level sensor to the process meter.
+	The red wire (RS-485+) to pin number 6 of the process meter.
+	The black wire (RS-485-) to pin number 9 of the process meter.s meter.
+3.	Connect the RS-485 connection to the ethernet interface.
+	The orange wire (RS485+) connection from pin number 16 of the process meter to the green wire of the ethernet cable.
+	The grey wire (RS485-) connection from pin number 15 of the process meter to the brown-white wire of the ethernet cable.
+4.	Connect the ethernet cable to the port of the 16-port gateway hub.
+	151 - Com 2 of the 16 port gateway hub.
+	152 - Com 3 of the 16 port gateway hub.
+	153	- Com 4 of the 16 port gateway hub.
+	154 - Com 5 of the 16 port gateway hub.
+	155 - Com 6 of the 16 port gateway hub.
+
+Configuration of process meter.
+	Power the process meter with 230 v power supply.
+	Press the menu button (first switch for 30 sec) to get the password.
+	The password is 1000.
+	Use the left button, up button button and down button to configure the process meter.
+	Ok button is menu button.
+	Configure the settings
+		FL = 0.000
+		FH = 500.0 (Use 500.0 for 5 meter cable and 1000 for 10 meter cables)
+		dp = 88.88
+		FT = 001
+		BRL = 0.000
+		BRH = 20.00
+		ADDR = slave id
+		BAUD = 9600
+		PRTY = None
+	Press left key to save the configuration.
+

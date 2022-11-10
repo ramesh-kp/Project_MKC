@@ -1,0 +1,79 @@
+List of tasks pending for second phase deployment
+
+1.	Need to recive all the sensors in hand.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+
+2.	Need to establish the RS485 communication with all the sensors.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	Six water level sensors and five flowmeters, totaling about 12 sensors, must be delivered.
+	All the sensors must be established.
+	Both the water level sensor and the flowmeter need to be checked for at least one day.
+	All the flowmeters and water level sensors need to be checked.
+
+3.	Need to check the communication of the sensors using 16 port MODBUS gateway hub.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	A minimum of one day is required to configure the 16 port MODBUS gateway hub for RS485 connection.
+	
+4.	Need to check the communication of the 16 port MODBUS gateway hub using ethernet cable.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	A minimum of two day is required to check the communication between 16 port MODBUS gateway hub and senssor with an ethernet cable. 
+	Concern: If the sensor is not responding according to the hardware setup we have done we have to buy another converter which can convert RS485 protocol to ethernet protocol. 
+
+5.	Need to convert the RS485 readings to real value as the water level sensors are coming from new vendors.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	At least half a day is needed to convert RS485 signals to actual water level sensor values.
+	
+6.	Need to migrate the sensors to our new code.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	The migration of water level sensors' code to our new code requires at least a half-day.
+
+7.	Need to do unit testing.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	The entire unit testing of the water level sensors required at least one day.
+
+8.	Need to check the working and RS485 communication of Flowmeters from the client side as we cannot able to give the exact pressure through the flowmeter which only give correct output from flowmeter.
+	Dependency: Sensors. On this Saturday, October 15, 2022, the sensors are expected to arrive.
+	Dependency: Client site is required to check the working and reading of flowmeters.
+	Dependency: Need to stay in the client site for checking, calibrating and testing the flowmeters.
+	A minimum of 3 - 5 days in the client site is required for checking, calibrating and testing the flowmeters.
+	
+The estimation mentioned above is an approximation in the most basic regard. Everything will vary in accordance with sensor behaviour.
+	
+
+459.3
+425.2
+
+Ask the distance of the wire from the sensor to server.
+Ask the blueprint of the wiring.
+Coupling to cover the wires between sensors and ethernet cable.
+Check the 16 port MODBUS using the system and raspberry pi.
+
+Check the ID with type of different sensors.
+Add type of different sensors in the database.
+Add the name of vendors in the database.
+Add the accuracy of different sensors in the database.
+//Clear the data communication 
+
+The message will first be formatted in MQTT, and then the data packet will include a key-value pair with 
+the message's serial number as the key and the reading from the sensors as the value.
+
+In the value section, there will be another key-value pair in which the key will be 
+(SensorName)_Device_ID_(SerialNumberOfTheSensor) and the value will be the corresponding device ID, 
+and  (SensorName)_Device_Data_(SerialNumberOfTheSensor) and the value will be the reading from the sensor, 
+and so on.
+For example:
+{'Local_Time': '24/08/2022 10:42:35.614979', 'BOD_Device_ID_0': 100, 'BOD_Data_0': 4.96, 
+'BOD_Device_ID_1': 100, 'BOD_Data_1': 4.96, 'COD_Device_ID_0': 100, 'COD_Data_0': 6.9, 
+'COD_Device_ID_1': 100, 'COD_Data_1': 4.9, }
+
+
+
+
+
+
+
+
+
+
+
+
