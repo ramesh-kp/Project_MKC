@@ -83,6 +83,3 @@ The second stage of system deployment will include the installation of the follo
 The following sensors at the wastewater treatment facility are not included:
     VS Sensor
     Coliform Sensor
-    
-
-

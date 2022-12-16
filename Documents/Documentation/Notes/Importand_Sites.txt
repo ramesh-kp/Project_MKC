@@ -21,7 +21,6 @@
 	https://openlabpro.com/guide/mqtt-packet-format/
 	http://www.steves-internet-guide.com/mqtt-protocol-messages-overview/
 
-
 Importand Sites
 https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/sync_samples/recv.py
 https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/eventhub/azure-eventhub/samples/async_samples/iot_hub_connection_string_receive_async.py

@@ -1,0 +1,48 @@
+To set up the ethernet port on a Raspberry Pi, follow these instructions.
+	sudo nano /etc/dhcpcd.conf
+		#interface eth0
+		#static ip_address=192.168.1.75
+		#static routers=192.168.0.3
+		#static domain_name_servers=8.8.8.8.8.8.4.4
+
+Use the command to install a library on a Raspberry Pi.
+	python3 -m pip install <<< whatever >>>
+
+1.  Format the SD Card first using following commands
+    1.  """DiskPart""" in windows search.
+    2.  """List Disk""" in command window.
+    3.	"""select disk X""" in command window.
+    4.  """clean""" in command window.
+    5.  """create partition primary""" in command window.
+    6.  Format the SD Card by double clicking in """This PC"""
+2.  Write the new Raspberry Pi image using """Raspberry Pi Imager""".
+3.	Enable the VNC in Raspberry Pi using following commands.
+	1.	"""sudo raspi-config""" in terminal.
+	2.	"""Interface Options""" in the GUI.
+	3.	"""VNC""" in the GUI.
+	4.	"""OK""" in the GUI to enable the VNC.
+4.	Click the """VNC""" icon in the tool bar.
+5.	Sign in the VNC and set the password for VNC.
+6.	Insatll pi-apps using following commands (Refer """https://www.youtube.com/watch?v=OT17OQNiGcA""").
+	1.	"""wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash"""
+	2.	Open """Pi Apps""".
+	3.	Install the following apps in the Pi Apps - Box86, Notepad++, Visual Studio Code.
+
+7.  Change Python 3.9.X to Python 3.10.X (Refer """https://aruljohn.com/blog/python-raspberrypi/""").
+	1.	"""wget https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz"""
+	2.	"""sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev"""
+	3.	"""tar -xzvf Python-3.10.7.tgz"""
+	4.	"""cd Python-3.10.7/"""
+	5.	"""./configure --enable-optimizations"""
+	6.	"""sudo make altinstall"""
+	7.	"""/usr/local/bin/python3.10 -V"""
+	8.	"""/usr/bin/python3 -V"""
+	9.	"""sudo rm /usr/bin/python"""
+	10.	"""sudo ln -s /usr/local/bin/python3.10 /usr/bin/python"""
+	11.	"""python -V"""
+	12. """sudo ln -sf /usr/bin/python3.9 /usr/bin/python3""" - use python3.9 as the default python3
+	13.	"""pip install pip==21.3.1"""
+8.	Convert .py file to .exe file using linux command.
+	1.	"""pip install pyinstaller"""
+	2.	"""python3 -m PyInstaller --onefile (main.py)"""
+

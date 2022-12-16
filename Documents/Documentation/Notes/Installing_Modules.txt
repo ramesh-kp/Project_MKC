@@ -1,3 +1,9 @@
+Install wine in raspberry Pi
+https://www.youtube.com/watch?v=OT17OQNiGcA
+
+Update python to 3.10.7 in raspberry Pi
+https://aruljohn.com/blog/python-raspberrypi/
+
 ModuleNotFoundError: No module named 'azure'
 pip install azure
 pip3 install azure

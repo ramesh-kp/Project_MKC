@@ -9,4 +9,29 @@
 	Minus Offset		:	40001
 	Register Size		:	16 bit registers
 
+New Energymeter:
+https://www.youtube.com/watch?v=DJN1KfDoi9g
+Configure according the above youtube link
+
+Single phase 3 wire
+
+Changed the configuration to :
+
+ConFIG - 1 Phase
+PT Primary - 240.0P.P
+PT Secondary - 240.0P.5
+CT Primary - 250.0C.P
+CT Secondary - 5.000C.5
+Reverse Lock - no
+d5.PFUA
+d5bL.d1
+1000.d1
+3.000d.d
+9600.bA
+no. Pr
+170.0SL
+----PY
+rEslEn
+250.0P0
+Yh. E.5
 

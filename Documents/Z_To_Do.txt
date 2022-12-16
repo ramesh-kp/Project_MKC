@@ -1,5 +1,8 @@
 Sonar Qube
 sonar-scanner.bat -D"sonar.projectKey=MKC_From_Scratch" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_cab3762f3c9672221179e4418548d55db8ad8d79"
 
+python -m pyinstaller --onefile new.py
+https://www.youtube.com/watch?v=wJ8g8Gke0i4
+
 
 
