@@ -1,10 +1,3 @@
-To set up the ethernet port on a Raspberry Pi, follow these instructions.
-	sudo nano /etc/dhcpcd.conf
-		#interface eth0
-		#static ip_address=192.168.1.75
-		#static routers=192.168.0.3
-		#static domain_name_servers=8.8.8.8.8.8.4.4
-
 Use the command to install a library on a Raspberry Pi.
 	python3 -m pip install <<< whatever >>>
 
@@ -21,28 +14,90 @@ Use the command to install a library on a Raspberry Pi.
 	2.	"""Interface Options""" in the GUI.
 	3.	"""VNC""" in the GUI.
 	4.	"""OK""" in the GUI to enable the VNC.
-4.	Click the """VNC""" icon in the tool bar.
-5.	Sign in the VNC and set the password for VNC.
-6.	Insatll pi-apps using following commands (Refer """https://www.youtube.com/watch?v=OT17OQNiGcA""").
-	1.	"""wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash"""
-	2.	Open """Pi Apps""".
-	3.	Install the following apps in the Pi Apps - Box86, Notepad++, Visual Studio Code.
-
-7.  Change Python 3.9.X to Python 3.10.X (Refer """https://aruljohn.com/blog/python-raspberrypi/""").
+	5.	"""SSH""" in the GUI.
+	6.	"""OK""" in the GUI to enable the SSH.
+	4.	Click the """VNC""" icon in the tool bar.
+4.	Sign in the VNC and set the password for VNC.
+5.	Update and Upgrade the OS.
+	1.	"""sudo apt update"""
+	2.	"""sudo apt upgrade"""
+6.	Change the LAN IP address of the Raspberry Pi to MODBUS Gateway IP address subnet.
+	1.	"""sudo nano /etc/dhcpcd.conf"""
+	2.	Copy the two lines in the first line.
+	3.	"""interface eth0"""
+	4.	"""static ip_address=192.168.1.75"""
+7.	Check the python version is 3.10.X. If it is not the above version then change the version to 3.10.X.
+8.	Install other dependency libraries
+	1.	"""sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev"""
+	2.  """sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget"""
+9.  Change Python 3.9.X to Python 3.10.X (Refer """https://aruljohn.com/blog/python-raspberrypi/""").
 	1.	"""wget https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz"""
-	2.	"""sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev"""
-	3.	"""tar -xzvf Python-3.10.7.tgz"""
-	4.	"""cd Python-3.10.7/"""
-	5.	"""./configure --enable-optimizations"""
-	6.	"""sudo make altinstall"""
+	2.	"""tar -xzvf Python-3.10.7.tgz"""
+	3.	"""cd Python-3.10.7/"""
+	4.	"""./configure --enable-shared --enable-optimizations"""
+	5.	"""sudo make altinstall"""
+	6.	"""sudo ldconfig"""
 	7.	"""/usr/local/bin/python3.10 -V"""
 	8.	"""/usr/bin/python3 -V"""
 	9.	"""sudo rm /usr/bin/python"""
 	10.	"""sudo ln -s /usr/local/bin/python3.10 /usr/bin/python"""
 	11.	"""python -V"""
-	12. """sudo ln -sf /usr/bin/python3.9 /usr/bin/python3""" - use python3.9 as the default python3
-	13.	"""pip install pip==21.3.1"""
-8.	Convert .py file to .exe file using linux command.
-	1.	"""pip install pyinstaller"""
-	2.	"""python3 -m PyInstaller --onefile (main.py)"""
+10.	Install Rust and Cmake
+	1.  """sudo apt -y install rustc"""
+	2.  """sudo apt install -y cmake"""
+	3.	"""sudo apt-get install python-dev python-setuptools python3-pip python3-smbus"""
+
+11.	Copy the code to the new SD card and unzip the code in the same location.
+	1.	"""unzip mkc.zip"""
+	
+	or
+
+	Clone the new code from the Git Repository.
+	1.	"""git clone https://github.com/Markaz-Knowledge-City/MKC-Embedded.git"""
+	2.	Switch to latest branch
+12. Run the code """./autorun""" by navigating to that location.
+
+
+Not needed in the new environment
+==================================
+1. Create a virtual environment.
+	1.	"""python3.10 -m venv env"""
+	2.	"""source env/bin/activate"""
+	3.	"""pip cache purge"""
+	4.	"""pip install --upgrade pip"""
+	5.	"""pip install -r requirements.txt"""
+2.	Solve all the errors in the code.
+3.	Convert .py file to .exe file using linux command.
+	1.	"""pip install auto-py-to-exe"""
+	2.	"""pyinstaller --onefile -w autorun.py"""
+4.	Nsis download
+	1.	https://www.youtube.com/watch?v=UZX5kH72Yx4&t=339s - for reference
+	2.	https://www.youtube.com/watch?v=D6jXMw7STUQ
+	3.	https://nsis.sourceforge.io/Download
+5.	Zip Folder command
+	1.	"""zip -r <output_file> <folder_1>"""
+6.	Install pi-apps using following commands (Refer """https://www.youtube.com/watch?v=OT17OQNiGcA""").
+	1.	"""wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash"""
+	2.	Open """Pi Apps""".
+	3.	Install the following apps in the Pi Apps - Box86, Notepad++, Visual Studio Code.
+
+
+Bootable Code
+sudo apt-get install gnome-terminal
+
+Script for running the application
+==================================
+import os
+program_directory = os.path.join(os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop'), "MKC-Embedded")
+os.chdir(program_directory)
+os.system("gnome-terminal -x ./autorun")
+
+
+
+Create a folder in .config and name it autorun
+Create a file in that folder and name it autostart.desktop
+Copy the code to that file
+==========================
+[Desktop Entry]
+Exec = python3 /home/naicomkc/Desktop/main.py
 

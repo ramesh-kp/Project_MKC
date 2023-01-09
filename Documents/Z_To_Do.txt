@@ -4,5 +4,12 @@ sonar-scanner.bat -D"sonar.projectKey=MKC_From_Scratch" -D"sonar.sources=." -D"s
 python -m pyinstaller --onefile new.py
 https://www.youtube.com/watch?v=wJ8g8Gke0i4
 
-
+1.	Host the applications in our server.
+2.	Change the color code in the maps if the sensor is inactive or having the error.
+3.	3 dots and success stories in the dashboard.
+4.	Location in sustainability means.
+5.	Images of site in the "Add Site" (including the places where the sensors are placed).
+7.	Error codes in the mail.
+8.	Code to check the criticality of the sensor.
+9.	Check the flowmeter and energymeter in the smart city premise.
 

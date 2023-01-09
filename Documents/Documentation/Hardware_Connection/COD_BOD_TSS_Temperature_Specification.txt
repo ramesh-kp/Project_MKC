@@ -1,0 +1,64 @@
+Product features
+Model Number:	FLDBH6605D
+Output:	Rs-485,MODBUS/RTU
+Measurement Methods:	UV 254 Dual-wavelength ultraviolet absorption method
+COD Range:	0～2000mg/L or Customize
+COD Accuracy:	±5%F.S.
+COD Resolution:	0.1mg/L or 0.01mg/L
+BOD Range:	0~500mg/L or Customize
+TSS Range:	0～1000mg/L
+Repeatability:	±1%F.S.
+Working Condition:	0.1～50℃、<0.3MPa
+Calibration:	Two points
+Response Time:	10s T90
+Power Supply:	12 or 24VDC±10%，15mA; 200mA when the brush rotates
+Dimensions:	Diameter 48 mm ; Length 186 mm; Optional protection cover
+IP Grade:	IP68，10m
+Flow Rate:	Less than 3m/s
+Life Time:	Sensor 3 years, cleaning brush system 18 months
+Cable Length:	5m(default), customizable
+Sensor Material:	Titanium alloy, 316L, quartz glass
+Maintenance:	Sensor 3 months, cleaning brush 6 months
+Parameters:	COD, BOD, turbidity, and temperature
+
+Installation note 
+1.	Avoid collision when installing the sensor; avoid shaking back and forth during measurement. 
+	If the water flow in the monitoring area is turbulent, the sensor needs to be fixed;
+2.	When the sensor is installed and measured, it must be installed horizontally to prevent foreign matter from depositing on the measurement monitoring window, resulting in inaccurate measurement data;
+3.	The measurement area, such as branches and attachments, is easy to jam the cleaning brush shaft and cause the sensor to jam. You need to consider choosing a protective cover for protection installation;
+4.	Install the sensor, the depth from the water surface is no more than 2 meters; the sensor is submerged below the water level of 30cm; 
+5.	The sensor is installed in an area with slow water flow and no bubbles
+
+Wiring connection
+1.	Brown - Power supply（12 or 24VDC）
+2.	Black — GND
+3.	Blue — 485A
+4.	White — 485B
+5.	Bare wire - shield
+
+Maintenance and precautions
+1.	Measuring window: 
+	Check whether the measuring window is attached to and fouling; use a moist dust-free cloth to wipe the window; if the scale is difficult to wipe, use a dust-free cloth dampened with detergent to clean; or use diluted hydrochloric acid to wipe. 
+	Be careful not to touch it directly with your hands when using diluted hydrochloric acid.
+2.	Cleaning brush: 
+	Prevent foreign objects from blocking the rotation stroke of the cleaning brush, and ensure that no foreign objects are blocked at the cleaning rotating shaft; if there are many branches and attachments in the monitoring area, you need to consider selecting a protective cover for protection installation. 
+	The protective cover can be selected separately by contacting the sales staff of our company.
+3.	The outer surface of the sensor: 
+	Regularly clean the surface attachments, you can use washing liquid to clean
+4.	Automatic cleaning and continuous use for 18 months, need to return to the factory to replace the dynamic sealing device.
+
+Matters needing attention
+1.	Measurement window: 
+	Sharp objects cannot be used to scratch the measurement monitoring window; avoid air bubbles adhesion during monitoring and measurement.
+2.	Automatic cleaning brush: 
+	Do not force the rotating shaft of the cleaning brush.
+3.	Installation attention: 
+	The sensor is best installed horizontally to avoid foreign matter depositing in the measurement monitoring window; when the foreign matter such as tree branches in the monitoring measurement area is easily blocked to the shaft, a protective cover should be selected for protection installation as much as possible.
+	
+The others
+1.	Problem:	The operation interface cannot be connected or the measurement result is not displayed.
+	Reason:	The cable wiring method is wrong. The sensor address is incorrect.
+	Solution:	Check the wiring connection. Check the address out.
+2.	Problem:	The measured value is too high, too low or the value is continuously unstable
+	Reason:	Sensor window is attached to foreign objects. Sensor self-cleaning damage.
+	Solution:	Clean the surface of the sensor window. Contact after-sales.
